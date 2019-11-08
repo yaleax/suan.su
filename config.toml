@@ -133,7 +133,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
   [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
     enable = true
-    repo = "choicky/itlaws.cn-comments"    # The repo to store comments
+    repo = "yaleax/suan.su-comments"    # The repo to store comments
     issueTerm = "pathname"
 
   [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
