@@ -44,16 +44,6 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "IT"
-  weight = 12
-  identifier = "it"
-  url = "/categories/it/"
-[[menu.main]]
-  name = "Laws"
-  weight = 14
-  identifier = "laws"
-  url = "/categories/laws/"
-[[menu.main]]
   name = "Archives"
   weight = 20
   identifier = "archives"
@@ -81,9 +71,9 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "it & Laws"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["IT", "Laws", "互联网", "信息技术", "法律", "法务"]
-  description = "IT & Laws, 熟悉IT、互联网的民商刑律师"
+  logoTitle = "Suan"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["", "", "", "", "", ""]
+  description = ""
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 1000
