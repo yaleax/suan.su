@@ -1,5 +1,5 @@
 baseURL = "https://suan.su"
-title = "suan"
+title = "Suan"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -31,7 +31,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   languageCode = "zh-cn"
 
 [author]                  # essential                     # 必需
-  name = "suan"
+  name = "Suan"
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
