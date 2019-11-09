@@ -144,6 +144,10 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
   [params.livere]          	#LiveRe comment. see https://www.livere.com/
     uid = ""
+    
+  [params.search.google]    # google custom search, see https://cse.google.com
+    enable = true
+    id = "017830063551158709441:ehemo1pu8mc"
 
   [params.reward]                                         # 文章打赏
     enable = true
