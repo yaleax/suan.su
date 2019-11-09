@@ -11,9 +11,10 @@ comment: true
 toc: false
 autoCollapseToc: false
 contentCopyright: copyleft
+weight: 1
 menu:
   main:
-    parent: docs
+    parent: ''
     weight: 1
 ---
 
