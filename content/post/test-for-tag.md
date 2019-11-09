@@ -5,14 +5,15 @@ author: 3cho
 date: 2019-11-09T05:14:30.666Z
 lastmod: 2019-11-09T05:26:47.139Z
 tags: []
-categories:
-  - index
-  - shortcodes
+categories: []
 draft: false
 comment: true
-toc: true
+toc: false
 autoCollapseToc: false
 contentCopyright: copyleft
+menu:
+  main:
+    weight: 1
 ---
 
 # H1
