@@ -10,7 +10,7 @@ weight: ''
 ---
 ## 零、起源
 
-经过一周的摸索和实践，终于把这个博客搭建成功了。简单介绍一下博客所使用的技术支持。博客生成平台使用的是 [Hugo](https://gohugo.io/)，主题是 [Jane](https://github.com/xianmin/hugo-theme-jane),博客代码托管在 [GitHub](https://github.com/)，网站托管供应商是 [Netlify](https://www.netlify.com/)，博客后台管理平台是 [Netlify CMS](https://www.netlifycms.org/)，域名购买于 [RuTLD](https://ru-tld.ru/en/),DNS服务提供商是[CloudFlare](CloudFlare)，域名证书和 CDN网络加速也是由 [ClouFlare](https://www.cloudflare.com/) 。上面提到的这些服务，除了购买域名需要花钱，其他都是免费的，购买域名不是必须的， Netlify 可以提供的二级域名。 
+经过一周的摸索和实践，终于把这个博客搭建成功了。简单介绍一下本博客所使用的技术。博客生成平台使用的是 [Hugo](https://gohugo.io/)，主题是 [Jane](https://github.com/xianmin/hugo-theme-jane),博客代码托管在 [GitHub](https://github.com/)，网站托管供应商是 [Netlify](https://www.netlify.com/)，博客后台管理平台是 [Netlify CMS](https://www.netlifycms.org/)，域名购买于 [RuTLD](https://ru-tld.ru/en/),DNS服务提供商是[CloudFlare](CloudFlare)，域名证书和 CDN网络加速也是由 [ClouFlare](https://www.cloudflare.com/) 。上面提到的这些服务，除了购买域名需要花钱，其他都是免费的，购买域名不是必须的， Netlify 可以提供的二级域名。 
 
 ## 一、前置条件
 
