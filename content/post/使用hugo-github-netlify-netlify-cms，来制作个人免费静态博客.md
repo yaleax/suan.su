@@ -14,9 +14,9 @@ weight: ''
 
 ## 一、前置条件
 
-1. 注册 [GitHub](https://github.com/)
-2. 注册 [Netlify](https://www.netlifycms.org/)
-3. 注册[CloudFlare](CloudFlare)
+1. 点击注册 [GitHub](https://github.com/join)
+2. 点击注册 [Netlify](https://app.netlify.com/signup)
+3. 点击注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
 
 ## 二、Hugo 介绍
 
