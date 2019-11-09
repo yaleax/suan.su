@@ -32,13 +32,9 @@ weight: ''
 
 先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.0，你也可以直接复制下面的代码，进行下载和安装。
 
-
-
-
 ```bash
 #使用 wget 下载 hugo
 wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
-
 #使用 dpkg 安装 .deb 文件
 sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
@@ -47,14 +43,20 @@ sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 
 ```bash
 # 使用 mkdir命令，创建网站目录
-
 mkdir -p /var/www
-
 # 使用 cd命令，进入创建的目录
-
 cd /var/www
-
-# 新建站点，名字为3cho,你可以替换成自己的名字
-
+# 新建站点，名字以3cho为例,你可以替换成自己的名字
 hugo new site 3cho
+```
+
+安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载
+
+```bash
+# 进入新建好的3cho目录
+cd /var/www/3cho
+# 安装主题（不同主题安装方式不同）
+git clone https://github.com/olOwOlo/hugo-theme-even themes/even
+#复制主题自带的 config.toml文件到当前根目录
+cp themes/even/exampleSite/config.toml ./config.toml
 ```
