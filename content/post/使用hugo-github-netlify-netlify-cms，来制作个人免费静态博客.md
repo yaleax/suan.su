@@ -166,6 +166,24 @@ mkdir /var/www/3cho/static/admin
 mkdir /var/www/3cho/static/img
 ```
 6.创建Netlify CMS页面
-``
+```bash
 touch /var/www/3cho/static/admin/index.html
+```
+7.复制下面的文件粘贴进去
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+  </body>
+</html>
 
+```
