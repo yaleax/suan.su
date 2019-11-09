@@ -29,7 +29,7 @@ DNS服务商：[CloudFlare](CloudFlare)
 1. 点击注册 [GitHub](https://github.com/join)
 2. 点击注册 [Netlify](https://app.netlify.com/signup)
 3. 点击注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
-4. 一台可以访问网络的计算机
+4. 一台可以访问网络的计算机（废话）
 
 ## 二、Hugo 介绍
 
