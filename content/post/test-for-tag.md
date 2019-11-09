@@ -13,6 +13,7 @@ autoCollapseToc: false
 contentCopyright: copyleft
 menu:
   main:
+    parent: docs
     weight: 1
 ---
 
