@@ -1,5 +1,5 @@
 ---
-title: test for netlify cms
+title: Blog from netlify cms
 date: 2019-11-08T15:12:04.017Z
 description: cms
 ---
