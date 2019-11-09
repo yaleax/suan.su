@@ -179,7 +179,7 @@ mkdir /var/www/3cho/static/img
 ```
 6.创建Netlify CMS页面
 ```bash
-touch /var/www/3cho/static/admin/index.html
+nano /var/www/3cho/static/admin/index.html
 ```
 7.复制下面的文件粘贴进去
 ```html
@@ -197,5 +197,458 @@ touch /var/www/3cho/static/admin/index.html
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
   </body>
 </html>
+```
+粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+8.创建Netlify CMS配置文件
+
+```bash
+nano /var/www/3cho/static/admin/config.yml
 
 ```
+9.复制下面的文件粘贴进去
+```yml
+backend:
+  name: git-gateway
+  branch: master
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: config
+    label: Config
+    files:
+      - name: config
+        label: Config
+        file: config.toml
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: false
+          - widget: string
+            name: baseURL
+            label: Base URL
+            required: false
+            hint: Hostname (and path)  to the root
+          - widget: boolean
+            name: enableRobotsTXT
+            label: Enable Robots Text
+            required: false
+          - widget: boolean
+            name: enableEmoji
+            label: Enable Emoji
+            required: false
+          - widget: string
+            name: theme
+            label: Theme name
+            required: false
+          - widget: boolean
+            name: hasCJKLanguage
+            label: Has CJK Language
+            required: false
+          - widget: number
+            name: paginate
+            label: Paginate
+            required: false
+            hint: Number of articles displayed on the homepage
+            valueType: int
+          - widget: number
+            name: rssLimit
+            label: Rss Limint
+            required: false
+            hint: Limit Entry Count to Rss file
+            valueType: int
+          - widget: string
+            name: disqusShortname
+            label: Disqus Shortname
+            required: false
+          - widget: string
+            name: googleAnalytics
+            label: Google Analytics code
+            required: false
+          - widget: string
+            name: copyright
+            label: Copyright
+            required: false
+          - widget: string
+            name: defaultContentLanguage
+            label: Default Content Language
+            required: false
+          - widget: object
+            name: languages
+            label: Languages
+            required: false
+            fields:
+              - widget: object
+                name: en
+                label: English
+                required: false
+                fields:
+                  - widget: string
+                    name: languageCode
+                    label: Language code
+                    required: false
+          - widget: object
+            name: author
+            label: Author
+            required: false
+            fields:
+              - widget: string
+                name: name
+                label: Name
+                required: false
+          - widget: object
+            name: sitemap
+            label: Sitemap
+            required: false
+            fields:
+              - widget: string
+                name: changefreq
+                label: Change frequency
+                required: false
+              - widget: number
+                name: priority
+                label: Priority
+                required: false
+                valueType: float
+              - widget: string
+                name: filename
+                label: Filename
+                required: false
+          - widget: object
+            name: menu
+            label: Menu
+            required: false
+            fields:
+              - widget: list
+                name: main
+                label: Main Menu
+                required: false
+                fields:
+                  - widget: string
+                    name: name
+                    label: Menu Name
+                    required: false
+                  - widget: number
+                    name: weight
+                    label: Page order weight
+                    required: false
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                  - widget: string
+                    name: url
+                    label: Menu Link
+                    required: false
+          - widget: object
+            name: params
+            label: Site Parameters
+            required: false
+            fields:
+              - widget: string
+                name: since
+                label: Since
+                required: false
+                hint: Site Creation Time
+              - widget: boolean
+                name: homeFullContent
+                label: Home Full Content
+                required: false
+                hint: >-
+                  if false, show post summaries on home page. Othewise show full
+                  content.
+              - widget: boolean
+                name: rssFullContent
+                label: Rss Full Content
+                required: false
+                hint: 'if false, Rss feed instead of the summary'
+              - widget: string
+                name: logoTitle
+                label: Logo Title
+                required: false
+              - widget: list
+                name: keywords
+                label: Keywords
+                required: false
+                field:
+                  label: String
+                  name: string
+                  widget: string
+              - widget: string
+                name: description
+                label: description
+                required: false
+              - widget: string
+                name: dateFormatToUse
+                label: Date Format
+                required: false
+              - widget: boolean
+                name: toc
+                label: TOC
+                required: false
+              - widget: boolean
+                name: photoswipe
+                label: Photo Swipe
+                required: false
+              - widget: string
+                name: contentCopyright
+                label: Content Copyright
+                required: false
+              - widget: list
+                name: customCSS
+                label: Custom Css
+                required: false
+                hint: >-
+                  if ['custom.css'], load '/static/css/custom.css' fileif
+                  ['custom.css'], load '/static/css/custom.css' file
+                field:
+                  label: String
+                  name: string
+                  widget: string
+              - widget: list
+                name: customJS
+                label: Custom JS
+                required: false
+                hint: 'if [''custom.js''], load ''/static/js/custom.js'' file'
+                field:
+                  label: String
+                  name: string
+                  widget: string
+              - widget: object
+                name: social
+                label: Social
+                required: false
+                fields:
+                  - widget: string
+                    name: a-email
+                    label: Email
+                    required: false
+                  - widget: string
+                    name: b-stack-overflow
+                    label: StackOverflow
+                    required: false
+                  - widget: string
+                    name: c-twitter
+                    label: Twitter
+                    required: false
+                  - widget: string
+                    name: d-facebook
+                    label: Facebook
+                    required: false
+                  - widget: string
+                    name: e-linkedin
+                    label: Linkedin
+                    required: false
+                  - widget: string
+                    name: f-google
+                    label: Google
+                    required: false
+                  - widget: string
+                    name: g-github
+                    label: Github
+                    required: false
+                  - widget: string
+                    name: h-weibo
+                    label: Weibo
+                    required: false
+                  - widget: string
+                    name: i-zhihu
+                    label: Zhihu
+                    required: false
+                  - widget: string
+                    name: j-douban
+                    label: Douban
+                    required: false
+                  - widget: string
+                    name: k-pocket
+                    label: Pocket
+                    required: false
+                  - widget: string
+                    name: l-tumblr
+                    label: Tumblr
+                    required: false
+                  - widget: string
+                    name: m-instagram
+                    label: Instagram
+                    required: false
+                  - widget: string
+                    name: n-gitlab
+                    label: Gitlab
+                    required: false
+                  - widget: string
+                    name: o-goodreads
+                    label: Goodreads
+                    required: false
+                  - widget: string
+                    name: p-coding
+                    label: Coding
+                    required: false
+                  - widget: string
+                    name: q-bilibili
+                    label: Bilibili
+                    required: false
+                  - widget: string
+                    name: r-codeforces
+                    label: Codeforces
+                    required: false
+                  - widget: string
+                    name: s-mastodon
+                    label: Mastodon
+                    required: false
+  - name: basicpage
+    label: Basic pages
+    folder: content/
+    create: true
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: false
+      - widget: datetime
+        name: date
+        label: Publish Date
+        required: false
+      - widget: datetime
+        name: lastmod
+        label: Last Modified Date
+        required: false
+      - widget: string
+        name: menu
+        label: Menu
+        required: false
+      - widget: number
+        name: weight
+        label: Page Order weight
+        required: false
+        valueType: int
+      - widget: boolean
+        name: comment
+        label: Comment
+        required: false
+      - widget: boolean
+        name: mathjax
+        label: Mathjax
+        required: false
+        hint: 'see https://www.mathjax.org/'
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+  - name: post
+    label: Blog postss
+    folder: content/post
+    create: true
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - widget: string
+        name: title
+        label: Blog Title
+        required: false
+      - widget: string
+        name: description
+        label: Description
+        required: false
+      - widget: string
+        name: author
+        label: Blog Author
+        required: false
+      - widget: datetime
+        name: date
+        label: Publish date
+        required: false
+      - widget: datetime
+        name: lastmod
+        label: Last Modified Date
+        required: false
+      - widget: list
+        name: tags
+        label: Tags
+        required: false
+        field:
+          label: String
+          name: string
+          widget: string
+      - widget: list
+        name: categories
+        label: Categories
+        required: false
+        field:
+          label: String
+          name: string
+          widget: string
+      - widget: boolean
+        name: draft
+        label: Draft
+        required: false
+      - widget: boolean
+        name: comment
+        label: Comment
+        required: false
+      - widget: boolean
+        name: toc
+        label: Toc
+        required: false
+      - widget: boolean
+        name: autoCollapseToc
+        label: Auto Collaps Toc
+        required: false
+      - widget: string
+        name: contentCopyright
+        label: Content Copyright
+        required: false
+      - widget: boolean
+        name: reward
+        label: Reward
+        required: false
+      - widget: boolean
+        name: mathjax
+        label: Mathjax
+        required: false
+        hint: 'see https://www.mathjax.org/'
+      - widget: boolean
+        name: katex
+        label: Katex
+        required: false
+        hint: 'See https://github.com/KaTeX/KaTeX'
+      - widget: string
+        name: markup
+        label: Markup
+        required: false
+        hint: 'See https://gohugo.io/content-management/formats/#mmark'
+      - widget: number
+        name: weight
+        label: Weight
+        required: false
+        valueType: int
+      - widget: object
+        name: menu
+        label: Menu
+        required: false
+        fields:
+          - widget: object
+            name: main
+            label: Main
+            required: false
+            fields:
+              - widget: string
+                name: parent
+                label: Parent Menu
+                required: false
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                valueType: int
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+
+```
+粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
