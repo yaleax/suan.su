@@ -121,7 +121,7 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 五、Netlify 
+## 五、连接Netlify前的准备
 
 1.删除主题下面的.git文件，主题以 even为例
 
