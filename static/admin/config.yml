@@ -398,3 +398,45 @@ collections:
                     name: s-mastodon
                     label: Mastodon
                     required: false
+                      - name: basicpage
+    label: Basic pages
+    folder: content/
+    create: true
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: false
+      - widget: datetime
+        name: date
+        label: Publish Date
+        required: false
+      - widget: datetime
+        name: lastmod
+        label: Last Modified Date
+        required: false
+      - widget: string
+        name: menu
+        label: Menu
+        required: false
+      - widget: number
+        name: weight
+        label: Page Order weight
+        required: false
+        valueType: int
+      - widget: boolean
+        name: comment
+        label: Comment
+        required: false
+      - widget: boolean
+        name: mathjax
+        label: Mathjax
+        required: false
+        hint: 'see https://www.mathjax.org/'
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
