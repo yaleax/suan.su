@@ -22,20 +22,42 @@ weight: ''
 
 1. Hugo 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
 2. 多平台支持，你可以在自己的电脑上搭建Hugo平台，然后把生成好的静态博客推送到 GitHub里。放心，主流的操作系统都支持安装 hugo。
-3. Netlify 提供免费的静态博客托管服务和免费二级域名（类似<https://yia.netlify.com>），GitHub提供免费代码托管服务，Hugo 生成的文件，都会存在 GitHub里。
-4. Netlify CMS是一套开源的后台管理平台，支持 Markdown 语法，有了它，你可以以在线的方式更新博客了。如果你喜欢传统的 git 推送模式，最好也安装一个，因为，它可以帮你在任何电子设备上，更新博客，修改错别字。
-   5.题外话，在多天的
+3. Netlify 提供免费的静态博客托管服务和免费二级域名（类似<https://yia.netlify.com>），
+4. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
+5. Netlify CMS是一套开源的后台管理平台，支持 Markdown 语法，有了它，你可以以在线的方式更新博客了。如果你喜欢传统的 git 推送模式，最好也安装一个，因为它可以帮你在任何电子设备上，更新博客，修改错别字。
 
 ## 三、安装 Hugo
 
-在 Mac和 Linux 系统上，安装 Hugo 是很简单的事情，官方文档只有一句：
+下面以 ubuntu 系统为例安装：
 
-brew install hugo
-
-如果你没有 brew 工具，你可以安装 brew 工具，对于 Mac电脑也是一句：
+先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.0，你也可以直接复制下面的代码，进行下载和安装。
 
 ```
-/usr/bin/ruby -e "$(curl -fsSLhttps://raw.githubusercontent.com/Homebrew/install/master/install)"
+#使用 wget 下载 hugowget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb#使用 dpkg 安装 .deb 文件sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
 
-对于 Linxu
+创建网站存放目录
+
+```
+# 使用 mkdir命令，创建网站目录
+```
+
+```
+mkdir -p /var/www
+```
+
+```
+# 使用 cd命令，进入创建的目录
+```
+
+```
+cd /var/www
+```
+
+```
+# 新建站点，名字为3cho,你可以替换成自己的名字
+```
+
+```
+hugo new site 3cho
+```
