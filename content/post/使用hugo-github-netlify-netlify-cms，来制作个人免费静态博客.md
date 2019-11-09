@@ -8,6 +8,9 @@ tags:
   - 博客
 weight: ''
 ---
+#写在最前面
+这是一篇手动创建的教程，事实上你可以使用 Stackbit来自动创建，我的另外一篇文章会讲述如何做。手动创建除了有一点点成就感外，还能够帮助你理解这些服务是如何组合到一起的，每一部分用来干什么的。
+
 ## 零、起源
 
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单介绍一下本博客所使用的技术。博客生成平台使用的是 [Hugo](https://gohugo.io/)，主题是 [Jane](https://github.com/xianmin/hugo-theme-jane),博客代码托管在 [GitHub](https://github.com/)，网站托管供应商是 [Netlify](https://www.netlify.com/)，博客后台管理平台是 [Netlify CMS](https://www.netlifycms.org/)，域名购买于 [RuTLD](https://ru-tld.ru/en/),DNS服务提供商是[CloudFlare](CloudFlare)，域名证书和 CDN网络加速也是由 [CloudFlare](https://www.cloudflare.com/) 。上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名不是必要条件， Netlify 可以提供的二级域名。 
