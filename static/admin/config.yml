@@ -1,121 +1,10 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'post'
-    label: 'post'
-    folder: 'content/post'
-    create: true
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - widget: string
-        name: title
-        label: Blog Title
-        required: false
-      - widget: string
-        name: description
-        label: Description
-        required: false
-      - widget: string
-        name: author
-        label: Blog Author
-        required: false
-      - widget: datetime
-        name: date
-        label: Publish date
-        required: false
-      - widget: datetime
-        name: lastmod
-        label: Last Modified Date
-        required: false
-      - widget: list
-        name: tags
-        label: Tags
-        required: false
-        field:
-          label: String
-          name: string
-          widget: string
-      - widget: list
-        name: categories
-        label: Categories
-        required: false
-        field:
-          label: String
-          name: string
-          widget: string
-      - widget: boolean
-        name: draft
-        label: Draft
-        required: false
-      - widget: boolean
-        name: comment
-        label: Comment
-        required: false
-      - widget: boolean
-        name: toc
-        label: Toc
-        required: false
-      - widget: boolean
-        name: autoCollapseToc
-        label: Auto Collaps Toc
-        required: false
-      - widget: string
-        name: contentCopyright
-        label: Content Copyright
-        required: false
-      - widget: boolean
-        name: reward
-        label: Reward
-        required: false
-      - widget: boolean
-        name: mathjax
-        label: Mathjax
-        required: false
-        hint: 'see https://www.mathjax.org/'
-      - widget: boolean
-        name: katex
-        label: Katex
-        required: false
-        hint: 'See https://github.com/KaTeX/KaTeX'
-      - widget: string
-        name: markup
-        label: Markup
-        required: false
-        hint: 'See https://gohugo.io/content-management/formats/#mmark'
-      - widget: number
-        name: weight
-        label: Weight
-        required: false
-        valueType: int
-      - widget: object
-        name: menu
-        label: Menu
-        required: false
-        fields:
-          - widget: object
-            name: main
-            label: Main
-            required: false
-            fields:
-              - widget: string
-                name: parent
-                label: Parent Menu
-                required: false
-              - widget: number
-                name: weight
-                label: Weight
-                required: false
-                valueType: int
-      - widget: markdown
-        name: body
-        label: Content
-        required: false
-        hint: Page content
-          - name: config
+  - name: config
     label: Config
     files:
       - name: config
@@ -398,7 +287,7 @@ collections:
                     name: s-mastodon
                     label: Mastodon
                     required: false
-                      - name: basicpage
+  - name: basicpage
     label: Basic pages
     folder: content/
     create: true
@@ -435,6 +324,117 @@ collections:
         label: Mathjax
         required: false
         hint: 'see https://www.mathjax.org/'
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+  - name: post
+    label: Blog postss
+    folder: content/post
+    create: true
+    extension: md
+    slug: '{{slug}}'
+    fields:
+      - widget: string
+        name: title
+        label: Blog Title
+        required: false
+      - widget: string
+        name: description
+        label: Description
+        required: false
+      - widget: string
+        name: author
+        label: Blog Author
+        required: false
+      - widget: datetime
+        name: date
+        label: Publish date
+        required: false
+      - widget: datetime
+        name: lastmod
+        label: Last Modified Date
+        required: false
+      - widget: list
+        name: tags
+        label: Tags
+        required: false
+        field:
+          label: String
+          name: string
+          widget: string
+      - widget: list
+        name: categories
+        label: Categories
+        required: false
+        field:
+          label: String
+          name: string
+          widget: string
+      - widget: boolean
+        name: draft
+        label: Draft
+        required: false
+      - widget: boolean
+        name: comment
+        label: Comment
+        required: false
+      - widget: boolean
+        name: toc
+        label: Toc
+        required: false
+      - widget: boolean
+        name: autoCollapseToc
+        label: Auto Collaps Toc
+        required: false
+      - widget: string
+        name: contentCopyright
+        label: Content Copyright
+        required: false
+      - widget: boolean
+        name: reward
+        label: Reward
+        required: false
+      - widget: boolean
+        name: mathjax
+        label: Mathjax
+        required: false
+        hint: 'see https://www.mathjax.org/'
+      - widget: boolean
+        name: katex
+        label: Katex
+        required: false
+        hint: 'See https://github.com/KaTeX/KaTeX'
+      - widget: string
+        name: markup
+        label: Markup
+        required: false
+        hint: 'See https://gohugo.io/content-management/formats/#mmark'
+      - widget: number
+        name: weight
+        label: Weight
+        required: false
+        valueType: int
+      - widget: object
+        name: menu
+        label: Menu
+        required: false
+        fields:
+          - widget: object
+            name: main
+            label: Main
+            required: false
+            fields:
+              - widget: string
+                name: parent
+                label: Parent Menu
+                required: false
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                valueType: int
       - widget: markdown
         name: body
         label: Content
