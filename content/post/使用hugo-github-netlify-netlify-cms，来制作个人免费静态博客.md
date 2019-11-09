@@ -17,6 +17,7 @@ weight: ''
 1. 点击注册 [GitHub](https://github.com/join)
 2. 点击注册 [Netlify](https://app.netlify.com/signup)
 3. 点击注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
+4. 一台可以访问网络的计算机
 
 ## 二、Hugo 介绍
 
@@ -76,21 +77,25 @@ cp themes/even/exampleSite/config.toml ./config.toml
 ```bash
 #生成一篇新文章
 hugo new post/hello.md
-4.生成博客静态网站
+4.生成博客静态博客
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
-5.启动本地网站
+5.启动本地博客服务器
 ```bash
 hugo server
 ```
-点击访问你的网站[http://localhost:1313](http://localhost:1313)
+点击访问你的博客[http://localhost:1313](http://localhost:1313)
 
-到这里，网站搭建工作已经完成了，接下来是把这个网站，部署到网络上，这样其他人才可以访问你的网站了。
+到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
+
+6关闭本地博客服务器
+
+键盘同时按Control建和c建，关闭本地博客服务器
 
 ## 五、Create a new repository 创新一个新的 repository在 GitHub
 
-[点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，你不需要看文字，跟着图走就行。
+[点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，你不需要看文字，跟着图走就行。repository名字是什么很重要，下面我们要用它来替换3cho。
 
 1.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
 
@@ -104,9 +109,50 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-2.
 ## 五、Netlify 
 
+1.删除主题下面的.git文件，主题以 even为例
 
+```Bash
+cd /var/www/3cho/themes/even
+rm -rf .git
+```
+2.创建 Netlify 需要的配置文件
 
+```Bash
+nano netlify.toml
+```
+```toml
+#复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。可以不改。
 
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.59.1"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.59.1"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.59.1"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.59.1"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+```
