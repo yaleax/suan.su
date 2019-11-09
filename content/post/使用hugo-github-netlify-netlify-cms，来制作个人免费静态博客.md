@@ -122,7 +122,7 @@ rm -rf .git
 ```Bash
 nano netlify.toml
 ```
-复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
+3.复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
 ```toml
 [build]
 publish = "public"
@@ -155,3 +155,17 @@ HUGO_VERSION = "0.59.1"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 ```
+粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+4.创建 Netlify CMS所需要的配置文件和目录
+```bash
+touch static/.keep data/.keep
+```
+5.创建Netlify CMS需要用的 admin 和 img文件夹
+```bash
+mkdir /var/www/3cho/static/admin
+mkdir /var/www/3cho/static/img
+```
+6.创建Netlify CMS页面
+``
+touch /var/www/3cho/static/admin/index.html
+
