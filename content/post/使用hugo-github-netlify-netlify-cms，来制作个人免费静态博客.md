@@ -60,3 +60,30 @@ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 #复制主题自带的 config.toml文件到当前根目录
 cp themes/even/exampleSite/config.toml ./config.toml
 ```
+创建一篇测试新文章
+```bash
+#生成一篇新文章
+hugo new post/hello.md
+# 生成静态网页，包括草稿，生成好的内容在public目录中
+hugo -D
+```
+## 四、Create a new repository 创新一个新的 repository在 GitHub
+
+[点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，也不需要文字，跟着图走就行。
+
+初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
+
+```bash
+#仓库名字repository以3cho为例
+echo "# 3cho" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
+git push -u origin master
+```
+## 五、Netlify 
+
+
+
+
