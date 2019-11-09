@@ -1,19 +1,19 @@
 ---
-author: "Michael Henderson"
-date: 2014-09-28
-title: "Creating a New Theme"
-tags: [
-    "go",
-    "golang",
-    "templates",
-    "themes",
-    "development",
-]
-categories: [
-    "Development",
-    "golang",
-    "index",
-]
+title: Creating a New Theme
+author: Michael Henderson
+date: 2014-09-28T00:00:00.000Z
+lastmod: 2019-11-09T05:50:35.231Z
+tags:
+  - go
+  - golang
+  - templates
+  - themes
+  - development
+categories:
+  - Development
+  - golang
+  - index
+weight: 1
 ---
 
 
