@@ -8,20 +8,25 @@ tags:
   - 博客
 weight: 1
 ---
+## 零、起源
+
+经过一周的实践摸索，终于把这个博客搭建成功了。简单介绍一下博客所使用的技术支持。博客生成平台使用的是 [Hugo](https://gohugo.io/)，主题是 [Jane](https://github.com/xianmin/hugo-theme-jane),博客代码托管在 [GitHub](https://github.com/)，网站服务平台用的是 [Netlify](https://www.netlify.com/)，博客后台管理平台用的是 [Netlify CMS](https://www.netlifycms.org/)，域名DNS托管在[CloudFlare](CloudFlare)，域名证书和 CDN网络加速也是由 [ClouFlare](https://www.cloudflare.com/) 提供。上面提到的这些服务，除了购买域名需要花钱，其他都是免费的，如果你要自己的域名，可以选择 Netlify 提供的二级域名。 还有一个网站想要和大家分享， [StackBit](https://www.stackbit.com/)，在这个网站，你仅仅需要使用鼠标选择，就可以搭建一个静态博客，并且拥有后台管理界面，他所使用的供应商也是我上面提到的这几个。虽然StackBit现在主题不多，但是有了它，会大大降低了使用静态博客的门槛，以后我会再写一片文章专门介绍这个网站的。StackBit是一条捷径，但是对新手来说，还是会有坑。
+
+## 一、前置条件
+
+1. 注册 [GitHub](https://github.com/)
+2. 注册 [Netlify](https://www.netlifycms.org/)
+3. 注册[CloudFlare](CloudFlare)
+
 ## 一、Hugo 介绍
 
-1. Hugo 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度也是非常快的，静态博客对爬虫是很友好的，利于被搜索引擎抓取网站。
-2. 多平台支持，你可以在自己的电脑上搭建 Hugo平台，然后把生成好的静态博客推送到 GitHub上面。下面列举的电脑操作系统，都支持安装 Hugo。
-3. Netlify 提供免费的静态博客托管服务和免费二级域名（类似https://yia.netlify.com），GitHub提供免费代码托管服务，Hugo 生成的文件，都会存到 GitHub上面。
-4. 使用Linux 服务器搭建 Hugo+Caddy+V2ray+CDN(本文不介绍)
+1. Hugo 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
+2. 多平台支持，你可以在自己的电脑上搭建Hugo平台，然后把生成好的静态博客推送到 GitHub里。放心，主流的操作系统都支持安装 hugo。
+3. Netlify 提供免费的静态博客托管服务和免费二级域名（类似<https://yia.netlify.com>），GitHub提供免费代码托管服务，Hugo 生成的文件，都会存在 GitHub里。
+4. Netlify CMS是一套开源的后台管理平台，支持 Markdown 语法，有了它，你可以以在线的方式更新博客了。如果你喜欢传统的 git 推送模式，最好也安装一个，因为，它可以帮你在任何电子设备上，更新博客，修改错别字。
+   5.题外话，在多天的
 
-* Caddy 是 http 服务器
-* V2ray是网络代理工具
-* CND是分布式网络加速服务，服务商是 cloudflare。
-
-
-
-二、安装 Hugo
+## 二、安装 Hugo
 
 在 Mac和 Linux 系统上，安装 Hugo 是很简单的事情，官方文档只有一句：
 
