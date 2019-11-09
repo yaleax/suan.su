@@ -35,16 +35,17 @@ weight: ''
 
 
 
-```js
+```bash
 #使用 wget 下载 hugo
 wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
+
 #使用 dpkg 安装 .deb 文件
 sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
 
 创建网站存放目录
 
-```
+```bash
 # 使用 mkdir命令，创建网站目录
 
 mkdir -p /var/www
@@ -52,12 +53,8 @@ mkdir -p /var/www
 # 使用 cd命令，进入创建的目录
 
 cd /var/www
-```
 
-```
 # 新建站点，名字为3cho,你可以替换成自己的名字
-```
 
-```
 hugo new site 3cho
 ```
