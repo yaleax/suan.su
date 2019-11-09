@@ -28,7 +28,7 @@ weight: ''
 
 ## 三、安装 Hugo
 
-下面以 ubuntu 系统为例安装：
+1.Ubuntu系统：
 
 先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.0，你也可以直接复制下面的代码，进行下载和安装。
 
@@ -38,8 +38,20 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linu
 #使用 dpkg 安装 .deb 文件
 sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
+2.MacOS 系统：
 
-创建网站存放目录
+```bash
+brew install hugo
+```
+如果你没有[brew](https://brew.sh/)包工具，你可以用下面的命令安装brew包工具
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## 四、使用 Hugo创建静态博客 
+
+1.创建网站存放目录
 
 ```bash
 # 使用 mkdir命令，创建网站目录
@@ -50,7 +62,7 @@ cd /var/www
 hugo new site 3cho
 ```
 
-安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载
+2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载
 
 ```bash
 # 进入新建好的3cho目录
@@ -60,18 +72,27 @@ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 #复制主题自带的 config.toml文件到当前根目录
 cp themes/even/exampleSite/config.toml ./config.toml
 ```
-创建一篇测试新文章
+3.创建一篇测试新文章
 ```bash
 #生成一篇新文章
 hugo new post/hello.md
+4.生成博客静态网站
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
-## 四、Create a new repository 创新一个新的 repository在 GitHub
+5.启动本地网站
+```bash
+hugo server
+```
+点击访问你的网站[http://localhost:1313](http://localhost:1313)
+
+到这里，网站搭建工作已经完成了，接下来是把这个网站，部署到网络上，这样其他人才可以访问你的网站了。
+
+## 五、Create a new repository 创新一个新的 repository在 GitHub
 
 [点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，也不需要文字，跟着图走就行。
 
-初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
+1.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
 
 ```bash
 #仓库名字repository以3cho为例
@@ -82,6 +103,8 @@ git commit -m "first commit"
 git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
+
+2.
 ## 五、Netlify 
 
 
