@@ -115,6 +115,3 @@ collections:
         label: Content
         required: false
         hint: Page content
-  - name: authors
-    label: Authors Data
-    files:
