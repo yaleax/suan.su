@@ -122,9 +122,8 @@ rm -rf .git
 ```Bash
 nano netlify.toml
 ```
+复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
 ```toml
-#复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。可以不改。
-
 [build]
 publish = "public"
 command = "hugo --gc --minify"
