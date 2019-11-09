@@ -13,15 +13,15 @@ weight: ''
 
 ## 零、总结
 
-经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
-博客生成平台：[Hugo](https://gohugo.io/)
-博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
-博客代码托管：[GitHub](https://github.com/)
-网站服务器供应商：[Netlify](https://www.netlify.com/)
-博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
-域名服务商：[RuTLD](https://ru-tld.ru/en/)
-DNS服务商：[CloudFlare](CloudFlare)
-域名证书和CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
+- 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
+- 博客生成平台：[Hugo](https://gohugo.io/)
+- 博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
+- 博客代码托管：[GitHub](https://github.com/)
+- 网站服务器供应商：[Netlify](https://www.netlify.com/)
+- 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
+- 域名服务商：[RuTLD](https://ru-tld.ru/en/)
+- DNS服务商：[CloudFlare](CloudFlare)
+- 域名证书和CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
 上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
 ## 一、前置条件
