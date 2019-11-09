@@ -7,6 +7,7 @@ lastmod: 2019-11-09T05:26:47.139Z
 tags: []
 categories:
   - index
+  - shortcodes
 draft: false
 comment: true
 toc: true
