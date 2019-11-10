@@ -114,11 +114,11 @@ hugo server
 
 点击访问你的博客<http://localhost:1313>
 
-到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
+> 到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
 
 6.关闭本地博客服务器
 
-<kbd>ctrl</kbd>+<kbd>c</kbd> 关闭本地博客服务器
+使用快捷键 <kbd>ctrl</kbd>+<kbd>c</kbd> 关闭本地博客服务器
 
 ## 五、GitHub
 
@@ -188,7 +188,7 @@ HUGO_VERSION = "0.59.1"
 HUGO_ENABLEGITINFO = "true"
 ```
 
-粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 4.创建 Netlify CMS所需要的配置文件和目录
 
 ```bash
@@ -227,7 +227,7 @@ nano /var/www/3cho/static/admin/index.html
 </html>
 ```
 
-> 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
 8.创建Netlify CMS配置文件
 
@@ -682,7 +682,7 @@ collections:
         hint: Page content
 ```
 
-> 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
 ## 七、Netlify 
 
