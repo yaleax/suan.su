@@ -25,7 +25,7 @@ weight: 1
 * DNS服务商：[CloudFlare](https://www.cloudflare.com/)
 * 域名证书：[CloudFlare](https://www.cloudflare.com/)
 * CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
-* 图床：[backblaze](https://www.backblaze.com/)
+* 图床：[BackBlaze](https://www.backblaze.com/)
   
 上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
