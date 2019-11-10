@@ -1,5 +1,5 @@
 ---
-title: 使用Stackbit 来快速搭建静态博客
+title: 使用Stackbit 来快速搭建静态博客（未完成❎）
 description: 静态博客支持hugo、hexo、Jekyll、Gatsby等后台编辑支持Forestry、Netlify CMS、Contentful
 author: Suan
 date: 2019-11-09T12:00:51.184Z
