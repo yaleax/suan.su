@@ -9,20 +9,22 @@ tags:
 weight: 1
 ---
 ## 写在最前面
+
 这是一篇手动创建博客的教程，你也可以使用 Stackbit来自动创建博客。并且创建时选择性更多。那么我为什么还要写这篇文章呢？手动创建博客除了成就感更高一些，还能够帮助你理解，这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。文章会有疏漏，如果导致你无法前进，那么欢迎留言反馈你遇到的问题。
 
 ## 零、总结
+
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术服务有哪些。
 
-- 博客生成平台：[Hugo](https://gohugo.io/)
-- 博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
-- 博客代码托管：[GitHub](https://github.com/)
-- 网站服务器供应商：[Netlify](https://www.netlify.com/)
-- 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
-- 域名服务商：[RuTLD](https://ru-tld.ru/en/)
-- DNS服务商：[CloudFlare](CloudFlare)
-- 域名证书和CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
-上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
+* 博客生成平台：[Hugo](https://gohugo.io/)
+* 博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
+* 博客代码托管：[GitHub](https://github.com/)
+* 网站服务器供应商：[Netlify](https://www.netlify.com/)
+* 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
+* 域名服务商：[RuTLD](https://ru-tld.ru/en/)
+* DNS服务商：[CloudFlare](CloudFlare)
+* 域名证书和CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
+  上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
 ## 一、前置条件
 
@@ -35,7 +37,7 @@ weight: 1
 
 1. Hugo 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
 2. 多平台支持，你可以在自己的电脑上搭建Hugo平台，然后把生成好的静态博客推送到 GitHub里。放心，主流的操作系统都支持安装 hugo。
-3. Netlify 提供免费的静态博客托管服务和免费二级域名（类似<https://suan.netlify.com>），
+3. Netlify 提供免费的静态博客托管服务和免费二级域名,<https://suan.netlify.com>。
 4. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
 5. Netlify CMS是一套开源的后台管理平台，支持 Markdown 语法，有了它，你可以以在线的方式更新博客了。如果你喜欢传统的 git 推送模式，最好也安装一个，因为它可以帮你在任何电子设备上，更新博客，修改错别字。
 
@@ -51,18 +53,20 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linu
 #使用 dpkg 安装 .deb 文件
 sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
+
 2.MacOS 系统：
 
 ```bash
 brew install hugo
 ```
+
 如果你没有[brew](https://brew.sh/)包工具，你可以用下面的命令安装brew包工具
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## 四、使用 Hugo创建静态博客 
+## 四、使用 Hugo创建静态博客
 
 1.创建网站存放目录
 
@@ -75,7 +79,7 @@ cd /var/www
 hugo new site 3cho
 ```
 
-2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以[even](https://github.com/olOwOlo/hugo-theme-even themes/even)主题为例
+2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以\[even](https://github.com/olOwOlo/hugo-theme-even themes/even)主题为例
 
 ```bash
 # 进入新建好的3cho目录
@@ -85,21 +89,28 @@ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 #复制主题自带的 config.toml文件到当前根目录
 cp themes/even/exampleSite/config.toml ./config.toml
 ```
+
 3.创建一篇测试新文章
+
 ```bash
 #生成一篇新文章
 hugo new post/hello.md
 ```
+
 4.生成博客静态博客
+
 ```bash
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
+
 5.启动本地博客服务器
+
 ```bash
 hugo server
 ```
-点击访问你的博客[http://localhost:1313](http://localhost:1313)
+
+点击访问你的博客<http://localhost:1313>
 
 到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
 
@@ -133,12 +144,15 @@ git push -u origin master
 cd /var/www/3cho/themes/even
 rm -rf .git
 ```
+
 2.创建 Netlify 需要的配置文件
 
 ```Bash
 nano netlify.toml
 ```
+
 3.复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
+
 ```toml
 [build]
 publish = "public"
@@ -171,21 +185,29 @@ HUGO_VERSION = "0.59.1"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 ```
+
 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
 4.创建 Netlify CMS所需要的配置文件和目录
+
 ```bash
 touch static/.keep data/.keep
 ```
+
 5.创建Netlify CMS需要用的 admin 和 img文件夹
+
 ```bash
 mkdir /var/www/3cho/static/admin
 mkdir /var/www/3cho/static/img
 ```
+
 6.创建Netlify CMS页面
+
 ```bash
 nano /var/www/3cho/static/admin/index.html
 ```
+
 7.复制下面的文件粘贴进去
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -202,14 +224,17 @@ nano /var/www/3cho/static/admin/index.html
   </body>
 </html>
 ```
+
 > 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
 
 8.创建Netlify CMS配置文件
+
 ```bash
 nano /var/www/3cho/static/admin/config.yml
-
 ```
+
 9.复制下面的文件粘贴进去
+
 ```yml
 backend:
   name: git-gateway
@@ -653,6 +678,6 @@ collections:
         label: Content
         required: false
         hint: Page content
-
 ```
+
 > 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
