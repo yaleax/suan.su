@@ -10,7 +10,7 @@ weight: 1
 ---
 ## 写在最前面
 
-这是一篇手动创建博客的教程，你也可以使用 Stackbit来自动创建博客。并且创建时选择性更多。那么我为什么还要写这篇文章呢？手动创建博客除了成就感更高一些，还能够帮助你理解，这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。文章会有疏漏，如果导致你无法前进，那么欢迎留言反馈你遇到的问题。
+这是一篇手动创建博客的教程，你也可以使用 Stackbit来自动创建博客。并且创建时选择性更多。那么你为什么还要手动创建呢？手动创建博客除了成就感更高一些，还能够帮助你理解，这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。如果你都理解了，那就试试自动创建吧。
 
 ## 零、总结
 
@@ -22,9 +22,11 @@ weight: 1
 * 网站服务器供应商：[Netlify](https://www.netlify.com/)
 * 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
 * 域名服务商：[RuTLD](https://ru-tld.ru/en/)
-* DNS服务商：[CloudFlare](CloudFlare)
-* 域名证书和CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
-  上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
+* DNS服务商：[CloudFlare](https://www.cloudflare.com/)
+* 域名证书：[CloudFlare](https://www.cloudflare.com/)
+* CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
+  
+上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
 ## 一、前置条件
 
