@@ -684,5 +684,5 @@ collections:
 
 > 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
 
-## 七、Netify 
+## 七、Netlify 
 
