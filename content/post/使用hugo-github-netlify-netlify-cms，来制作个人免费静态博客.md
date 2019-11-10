@@ -112,7 +112,7 @@ hugo server
 1.Create a new repository 创新一个新的 repository在 GitHub
 [点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，你不需要看文字，跟着图走就行。repository名字是什么很重要，下面我们要用它来替换3cho。
 
-1.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
+2.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
 
 ```bash
 #仓库名字repository以3cho为例
@@ -202,8 +202,8 @@ nano /var/www/3cho/static/admin/index.html
 </html>
 ```
 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
-8.创建Netlify CMS配置文件
 
+8.创建Netlify CMS配置文件
 ```bash
 nano /var/www/3cho/static/admin/config.yml
 
