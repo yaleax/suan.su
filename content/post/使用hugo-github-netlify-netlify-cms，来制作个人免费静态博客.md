@@ -685,5 +685,17 @@ collections:
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
+10.上传到GitHub
+
+```bash
+#仓库名字repository以3cho为例
+echo "# 3cho" >> README.md
+git init
+git add .
+git commit -m "install"
+git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
+git push -u origin master
+```
+
 ## 七、Netlify 
 
