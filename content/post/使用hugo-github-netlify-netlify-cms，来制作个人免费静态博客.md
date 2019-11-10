@@ -201,7 +201,7 @@ nano /var/www/3cho/static/admin/index.html
   </body>
 </html>
 ```
-粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+> 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
 
 8.创建Netlify CMS配置文件
 ```bash
@@ -654,4 +654,4 @@ collections:
         hint: Page content
 
 ```
-粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
+> 粘贴完成后，你需要同时按control x 退出,输入 y 确认保存，再按回车确认保存当前名字。
