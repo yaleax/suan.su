@@ -81,7 +81,7 @@ cd /var/www
 hugo new site 3cho
 ```
 
-2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以\[even](https://github.com/olOwOlo/hugo-theme-even themes/even)主题为例
+2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以\[even](https://github.com/olOwOlo/hugo-theme-even)主题为例
 
 ```bash
 # 进入新建好的3cho目录
