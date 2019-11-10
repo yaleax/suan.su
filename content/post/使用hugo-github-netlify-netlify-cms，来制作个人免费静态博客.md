@@ -105,7 +105,7 @@ hugo server
 
 6.关闭本地博客服务器
 
-键盘同时按Control建和c建，关闭本地博客服务器
+> 键盘同时按Control建和c建，关闭本地博客服务器
 
 ## 五、GitHub
 
