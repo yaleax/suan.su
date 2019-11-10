@@ -2,7 +2,7 @@
 title: About
 date: 2019-11-10T13:38:52.000Z
 lastmod: 2019-11-10T13:41:52.000Z
-menu: main
+menu: mian
 weight: 50
 comment: false
 mathjax: false
