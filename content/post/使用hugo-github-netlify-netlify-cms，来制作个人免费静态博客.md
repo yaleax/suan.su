@@ -47,13 +47,13 @@ weight: 1
 
 1.Ubuntu系统：
 
-先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.0，你也可以直接复制下面的代码，进行下载和安装。
+先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.1，你也可以直接复制下面的代码，进行下载和安装。
 
 ```bash
 #使用 wget 下载 hugo
-wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linux-64bit.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linux-64bit.deb
 #使用 dpkg 安装 .deb 文件
-sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
+sudo dpkg -i hugo_0.59.1_Linux-64bit.deb
 ```
 
 2.MacOS 系统：
