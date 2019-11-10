@@ -6,13 +6,14 @@ lastmod: 2019-11-09T06:46:37.895Z
 tags:
   - hugo
   - 博客
-weight: 0
+weight: 1
 ---
 ## 写在最前面
 这是一篇手动创建博客的教程，实际上你可以使用 Stackbit来自动创建博客，来实现我标题里面说的这些，并且远不有更多选择。我计划在另外一篇文章里，讲述如何使用Stackbit。那么我为什么还要写这篇文章呢？其实手动创建除了有一点成就感外，还能够帮助你更好的理解，这些服务是如何在一起工作的，不能部分的功能是什么，以及他们的配置文件等等。文章会有疏漏，如果导致你无法前进，那么欢迎留言反馈你愚到的问题。
 
 ## 零、总结
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
+
 - 博客生成平台：[Hugo](https://gohugo.io/)
 - 博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
 - 博客代码托管：[GitHub](https://github.com/)
@@ -88,7 +89,9 @@ cp themes/even/exampleSite/config.toml ./config.toml
 ```bash
 #生成一篇新文章
 hugo new post/hello.md
+```
 4.生成博客静态博客
+```bash
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
@@ -100,7 +103,7 @@ hugo server
 
 到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
 
-6关闭本地博客服务器
+6.关闭本地博客服务器
 
 键盘同时按Control建和c建，关闭本地博客服务器
 
@@ -120,7 +123,7 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 五、连接Netlify前的准备
+## 六、连接Netlify前的准备
 
 1.删除主题下面的.git文件，主题以 even为例
 
