@@ -1,24 +1,21 @@
 ---
-title: "About"
-date: 2017-08-20T21:38:52+08:00
-lastmod: 2017-08-28T21:41:52+08:00
-menu: "main"
+title: About
+date: 2017-08-20T13:38:52.000Z
+lastmod: 2017-08-28T13:41:52.000Z
+menu: main
 weight: 50
-
-# you can close something for this content if you open it in config.toml.
 comment: false
 mathjax: false
 ---
 
-Hugo is a static site engine written in Go.
-
-
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+* 博客生成平台：[Hugo](https://gohugo.io/)
+* 博客主题：[Jane](https://github.com/xianmin/hugo-theme-jane)
+* 博客代码托管：[GitHub](https://github.com/)
+* 网站服务器供应商：[Netlify](https://www.netlify.com/)
+* 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
+* 域名服务商：[RuTLD](https://ru-tld.ru/en/)
+* DNS服务商：[CloudFlare](https://www.cloudflare.com/)
+* 域名证书：[CloudFlare](https://www.cloudflare.com/)
+* CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
+* 图床：[backblaze](https://www.backblaze.com/)
 
