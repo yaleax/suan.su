@@ -17,5 +17,5 @@ mathjax: false
 * DNS服务商：[CloudFlare](https://www.cloudflare.com/)
 * 域名证书：[CloudFlare](https://www.cloudflare.com/)
 * CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
-* 图床：[backblaze](https://www.backblaze.com/)
+* 图床：[BackLaze](https://www.backblaze.com/)
 
