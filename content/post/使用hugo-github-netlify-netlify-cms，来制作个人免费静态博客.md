@@ -110,6 +110,7 @@ hugo server
 ## 五、GitHub
 
 1.创新一个新的Github仓库
+
 Create a new repository  repository在 GitHub[点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，你不需要看文字，跟着图走就行。repository名字是什么很重要，下面我们要用它来替换3cho。
 
 2.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
