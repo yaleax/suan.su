@@ -37,13 +37,14 @@ weight: 1
 3. 注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
 4. 一台可以访问网络的计算机（废话）
 
-## 二、Hugo 介绍
+## 二、博客使用的服务介绍
 
-1. Hugo 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
-2. 多平台支持，你可以在自己的电脑上搭建Hugo平台，然后把生成好的静态博客推送到 GitHub里。放心，主流的操作系统都支持安装 hugo。
-3. Netlify 提供免费的静态博客托管服务和免费二级域名,<https://suan.netlify.com>。
-4. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
-5. Netlify CMS是一套开源的后台管理平台，支持 Markdown 语法，有了它，你可以以在线的方式更新博客了。如果你喜欢传统的 git 推送模式，最好也安装一个，因为它可以帮你在任何电子设备上，更新博客，修改错别字。
+1. [Hugo](https://gohugo.io/) 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
+2. [Netlify](https://www.netlify.com/) 提供免费的静态博客托管服务和免费二级域名,<https://suan.netlify.com>。
+3. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
+4. [Netlify CMS](https://www.netlifycms.org/)是一套开源的后台管理平台，支持 Markdown 语法，给习惯在后台编辑文章的人使用。
+5.[CloudFlare](https://www.cloudflare.com/)拥有全球最大的网络之一，提供 CDN,DNS,ssl证书等服务,远不止这些。
+
 
 ## 三、安装 Hugo
 
