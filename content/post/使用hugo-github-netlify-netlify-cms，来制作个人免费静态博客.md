@@ -10,14 +10,8 @@ weight: 1
 ---
 ## 写在最前面
 
-这是一篇手动创建博客的教程，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它除了支持Hugo,还支持Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。
-如果你知道如何修改配置文件，那么去试试自动创建吧。
+这是一篇如何手动创建 Hugo博客的教程，它能够帮助你理解，上面列举的这些服务是如何连接在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等。你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它除了支持Hugo,还支持Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。如果你知道如何修改配置文件，那么去试试自动创建吧。关于[Stackbit](https://www.stackbit.com/)的教程，以后会写，先挖坑。
 
-手动创建博客成就感能更高一些，还能够帮助你理解，上面列举的这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。
-
-关于[Stackbit](https://www.stackbit.com/)的教程，以后会写，写一篇教程真的挺难的。
-
-如果你已经知道 Gugo
 
 ## 零、总结
 
