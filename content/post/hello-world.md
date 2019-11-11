@@ -10,4 +10,4 @@ lastmod: 2019-11-10T11:07:48.951Z
 
 3.域名一个
 
-![测试](https://img.suan.su/file/suansu/Screen-Shot-2019-11-11-09-11-55.png)
+![测试](https://img.suan.su/Screen-Shot-2019-11-11-09-11-55.png)
