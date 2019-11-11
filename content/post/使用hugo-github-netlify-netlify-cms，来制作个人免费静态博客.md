@@ -6,7 +6,7 @@ lastmod: 2019-11-09T06:46:37.895Z
 tags:
   - hugo
   - 博客
-weight: ''
+weight: -1
 ---
 ## 写在最前面
 
@@ -720,16 +720,16 @@ git push -u origin master
 
 > 大功告成
 
-八、登录Netlify CMS
+# 八、登录Netlify CMS
 
-1.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
-2.创建后台登录帐号
+1.创建后台登录帐号
 ![](https://img.suan.su/pb-W8ymYipYXE.png)
-3.开启 Git Gateway
+2.开启 Git Gateway
 ![](https://img.suan.su/pb-SXUAftKp1b.png)
-4.开启邮箱免验证功能
+3.开启邮箱免验证功能
 ![](https://img.suan.su/pb-XAnpBjmygb.png)
-5.邀请自己成为管理员
+4.邀请自己成为管理员
 ![](https://img.suan.su/pb-BPUoTrJr83.png)
-6.填写自己的邮箱  
-7.去邮箱接收邀请邮箱
+5.填写自己的邮箱  
+6.去邮箱接收邀请邮箱
+7.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
