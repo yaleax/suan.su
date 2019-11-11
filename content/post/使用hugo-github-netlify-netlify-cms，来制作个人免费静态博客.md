@@ -722,6 +722,6 @@ git push -u origin master
 
 八、登录Netlify CMS
 
-1.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是：<https://suan.su/admin>  
+1.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
 2.设置帐号
 
