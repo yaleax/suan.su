@@ -710,7 +710,9 @@ git push -u origin master
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-25-01.png)
 5.部署
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-26-39.png)
+
 > 等待完成，你的博客就已经成功创建了。Netlify 会提供一个二级域名。但是名字比较难记，你可以更改一个好记一些的。
+
 6.更改二级域名名字
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-35-38.png)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-36-01.png)
