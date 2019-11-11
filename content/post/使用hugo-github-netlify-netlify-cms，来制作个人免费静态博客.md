@@ -10,7 +10,14 @@ weight: 1
 ---
 ## 写在最前面
 
-这是一篇手动创建博客的教程，你也可以使用 Stackbit来自动创建博客。并且创建时选择性更多。那么你为什么还要手动创建呢？手动创建博客除了成就感更高一些，还能够帮助你理解，这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。如果这些你都理解了，那就试试自动创建吧。
+这是一篇手动创建博客的教程，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它除了支持Hugo,还支持Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。
+如果你知道如何修改配置文件，那么去试试自动创建吧。
+
+手动创建博客成就感能更高一些，还能够帮助你理解，上面列举的这些服务是如何组合在一起的，每一部分的功能是什么，以及如何修改他们的配置文件等等。
+
+关于[Stackbit](https://www.stackbit.com/)的教程，以后会写，写一篇教程真的挺难的。
+
+如果你已经知道 Gugo
 
 ## 零、总结
 
@@ -26,7 +33,7 @@ weight: 1
 * 域名证书：[CloudFlare](https://www.cloudflare.com/)
 * CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
 * 图床：[BackBlaze](https://www.backblaze.com/)
-  
+
 上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
 ## 一、前置条件
@@ -698,5 +705,4 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 七、Netlify 
-
+## 七、Netlify
