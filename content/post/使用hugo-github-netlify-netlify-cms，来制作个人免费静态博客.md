@@ -12,7 +12,6 @@ weight: 1
 
 这是一篇手动创建Hugo博客的教程，只要你跟着教程，一步一步的进行，最终你将会得到一个类似我这样的博客，在这个过程中，如果你能用心思考，善用搜索，你将会理解，这些服务彼此是如何连接的，每一项服务的功能是什么，以及如何修改它们的配置文件。如果不想手动创建，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它支持Hugo,Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。关于[Stackbit的教程](#)，以后会写，先挖坑。
 
-
 ## 零、总结
 
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
@@ -43,8 +42,7 @@ weight: 1
 2. [Netlify](https://www.netlify.com/) 提供免费的静态博客托管服务和免费二级域名,<https://suan.netlify.com>。
 3. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
 4. [Netlify CMS](https://www.netlifycms.org/)是一套开源的后台管理平台，支持 Markdown 语法，给习惯在后台编辑文章的人使用。
-5.[CloudFlare](https://www.cloudflare.com/)拥有全球最大的网络之一，提供 CDN,DNS,ssl证书等服务,远不止这些。
-
+5. [CloudFlare](https://www.cloudflare.com/)拥有全球最大的网络之一，提供 CDN,DNS,ssl证书等服务,远不止这些。
 
 ## 三、安装 Hugo
 
