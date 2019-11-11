@@ -40,7 +40,7 @@ weight: 1
 
 1. [Hugo](https://gohugo.io/) 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
 2. [Netlify](https://www.netlify.com/) 提供免费的静态博客托管服务和免费二级域名,<https://suan.netlify.com>。
-3. GitHub提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
+3. [GitHub](https://github.com/)提供免费代码托管服务，Hugo 生成的代码，会存在这里里。
 4. [Netlify CMS](https://www.netlifycms.org/)是一套开源的后台管理平台，支持 Markdown 语法，给习惯在后台编辑文章的人使用。
 5. [CloudFlare](https://www.cloudflare.com/)拥有全球最大的网络之一，提供 CDN,DNS,ssl证书等服务,远不止这些。
 
