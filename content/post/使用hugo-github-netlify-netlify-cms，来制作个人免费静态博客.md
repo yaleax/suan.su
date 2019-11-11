@@ -701,6 +701,7 @@ git push -u origin master
 ## 七、Netlify
 
 1.使用Github帐号登录[Netlify](https://app.netlify.com/)
+![](https://img.suan.su/Screen-Shot-2019-11-11-16-30-16.18.png)
 2.创建新的站点
 ![Netlfiy 创建新站点](https://img.suan.su/Screen-Shot-2019-11-11-16-07-20.png)
 3.连接 Github
