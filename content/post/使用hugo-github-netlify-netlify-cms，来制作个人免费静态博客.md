@@ -10,7 +10,7 @@ weight: 1
 ---
 ## 写在最前面
 
-这是一篇手动创建Hugo博客的教程，只要你跟着教程，一步一步的进行，最终你将会得到一个类似我这样的博客，在这个过程中，如果你能用心思考，善用搜索，你将会理解，这些服务彼此是如何连接的，每一项服务的功能是什么，以及如何修改它们的配置文件。如果不想手动创建，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它支持Hugo,Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。关于[Stackbit的教程](#)，以后会写，先挖坑。
+这是一篇手动创建Hugo博客的教程，跟着教程一步一步的进行，最终你将会得到一个类似我这样的博客，在这个过程中，如果你能用心思考，善用搜索，你将会理解，这些服务彼此是如何连接的，每一项服务的功能是什么，以及如何修改它们的配置文件。理解这些后，你就可以根据自己的需求，创建自己的博客组合了。如果不想手动创建，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它支持Hugo,Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。关于[Stackbit的教程](#)，以后会写，先挖坑。
 
 ## 零、总结
 
@@ -34,7 +34,7 @@ weight: 1
 1. 注册 [GitHub](https://github.com/join)
 2. 注册 [Netlify](https://app.netlify.com/signup)
 3. 注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
-4. 一台可以访问网络的计算机（废话）
+4. 一台可以访问网络的计算机
 
 ## 二、博客使用的服务介绍
 
