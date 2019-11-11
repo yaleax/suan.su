@@ -699,3 +699,13 @@ git push -u origin master
 ```
 
 ## 七、Netlify
+
+1.使用Github帐号登录[Netlify](https://app.netlify.com/)
+2.创建新的站点
+![Netlfiy 创建新站点](https://img.suan.su/Screen-Shot-2019-11-11-16-07-20.png)
+3.连接 Github
+![](https://img.suan.su/Screen-Shot-2019-11-11-16-11-10.png)
+4.选择博客说在的GitHub仓库
+![](https://img.suan.su/Screen-Shot-2019-11-11-16-25-01.png)
+5.部署
+![](https://img.suan.su/Screen-Shot-2019-11-11-16-26-39.png)
