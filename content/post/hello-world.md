@@ -12,7 +12,7 @@ lastmod: 2019-11-10T11:07:48.951Z
 
 ## 教程
 
-已经有人写了教程，并且写的很好了，所以我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
+[驱蚊器喵](https://blog.meow.page)已经写了教程，并且写的很好了，所以我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
 
 
 
