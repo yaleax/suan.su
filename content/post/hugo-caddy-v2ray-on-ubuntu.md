@@ -18,7 +18,6 @@ tags:
 1. VPS 服务器 Ubuntu 18.04 系统
 2. 域名一个
 3. 域名已经绑定 VPS的 ip
-
 ##  Hugo
 
 1. 安装 Hugo
@@ -64,7 +63,6 @@ hugo new post/hello.md
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
-
 ## GitHub
 
 1. 创新一个新的Github仓库
@@ -79,7 +77,6 @@ git commit -m "first commit"
 git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
-
 ## V2ray
 
 1. 更新时间
@@ -152,7 +149,6 @@ nano /etc/v2ray/config.json
 sudo systemctl start v2ray    
 sudo systemctl status v2ray
 ```
-
 ## Caddy
 
 1. 安装 Caddy
@@ -212,7 +208,6 @@ caddy           # 启动 Caddy
 ```
 
 完成！访问自己的域名试试吧！
-
 ## 后话
 如果你真想当正常博客使用，你还需要把下面这些坑填上。    
 1. [ ] Hugo没有修改博客配置文件。
