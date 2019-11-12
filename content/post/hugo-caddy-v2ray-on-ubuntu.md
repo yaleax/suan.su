@@ -12,7 +12,7 @@ tags:
 
 这个教程绝大部分代码你都可以复制粘贴，但是请仔细阅读代码里面的备注，也就是#后面的文字。
 
- ## 必要条件
+##  必要条件
 
 1. VPS 服务器 Ubuntu 18.04 系统
 
@@ -96,7 +96,7 @@ wget https://install.direct/go.sh
 sudo bash go.sh
 ```
 
-> V2ray 控制命令,以后使用。
+V2ray 控制命令,以后使用。
 
 ```bash
 sudo systemctl start v2ray     # 启动v2ray
