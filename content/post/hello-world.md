@@ -10,4 +10,10 @@ lastmod: 2019-11-10T11:07:48.951Z
 
 3.域名一个
 
-![测试](https://img.suan.su/Screen-Shot-2019-11-11-09-11-55.png)
+## 教程
+
+已经有人写的很好了，我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
+
+
+
+
