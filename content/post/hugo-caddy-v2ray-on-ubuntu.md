@@ -215,6 +215,7 @@ caddy           # 启动 Caddy
 3. [ ] Caddy启动方式比较原始，需要配置自动化。
 4. [x] 没写以后博客如何更新文章。
 - [ ] Hugo没有修改博客配置文件。
+- [ ] a task list item
 
 
 
