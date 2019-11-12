@@ -18,6 +18,7 @@ tags:
 1. VPS 服务器 Ubuntu 18.04 系统
 2. 域名一个
 3. 域名已经绑定 VPS的 ip
+
 ##  Hugo
 
 1. 安装 Hugo
