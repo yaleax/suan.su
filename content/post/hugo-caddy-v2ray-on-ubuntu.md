@@ -15,7 +15,6 @@ tags:
 ##  必要条件
 
 1. VPS 服务器 Ubuntu 18.04 系统
-
 2. 域名一个
 3. 域名已经绑定 VPS的 ip
 
@@ -144,7 +143,7 @@ nano /etc/v2ray/config.json
 }
 ```
 
-> 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
 5. 启动 V2ray并查看状态
 
@@ -202,7 +201,7 @@ nano /etc/caddy/Caddyfile
 }
 ```
 
-> 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
 5. 启动 Caddy
 
@@ -212,6 +211,8 @@ caddy           # 启动 Caddy
 ```
 
 完成！
+
 ## 后话
-关于 Caddy 还有一些缺陷，就是启动方式比较原始，需要修饰一下。
+1. Caddy 还有一些缺陷，就是启动方式比较原始，需要修饰一下。
+2. V2ray 客户端配置没有将
 
