@@ -720,7 +720,7 @@ git push -u origin master
 
 > 大功告成
 
-## 九、登录Netlify CMS
+## 九、Netlify CMS
 
 1.开启身份验证功能
 ![](https://img.suan.su/pb-W8ymYipYXE.png)
