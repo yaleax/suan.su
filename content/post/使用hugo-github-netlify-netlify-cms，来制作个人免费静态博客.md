@@ -12,7 +12,7 @@ weight: -1
 
 这是一篇手动创建Hugo博客的教程，跟着教程一步一步的进行，最终你将会得到一个类似我这样的博客，在这个过程中，如果你能用心思考，善用搜索，你将会理解，这些服务彼此是如何连接的，每一项服务的功能是什么，以及如何修改它们的配置文件。理解这些后，你就可以根据自己的需求，创建自己的博客组合了。如果不想手动创建，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它支持Hugo,Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。关于[Stackbit的教程](#)，以后会写，先挖坑。
 
-## 零、总结
+## 零、技术总结
 
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
 
@@ -731,5 +731,5 @@ git push -u origin master
 4.邀请自己成为管理员
 ![](https://img.suan.su/pb-BPUoTrJr83.png)
 5.填写自己的邮箱  
-6.去邮箱接收邀请邮箱
+6.去邮箱接收邀请邮箱    
 7.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
