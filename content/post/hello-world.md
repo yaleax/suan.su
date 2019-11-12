@@ -17,6 +17,10 @@ Backblaze，提供了前10G的免费存储空间，但是下载需要收费。�
 
 3.域名一个
 
+## 可选项
+1. ShareX for Windows
+2. Dropshare for MacOS
+
 ## 教程
 
 [驱蚊器喵](https://blog.meow.page)已经写了教程，并且写的很好，所以我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
