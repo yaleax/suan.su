@@ -8,11 +8,11 @@ tags:
   - 博客
 weight: -1
 ---
-## 写在最前面
+## 前言
 
 这是一篇手动创建Hugo博客的教程，跟着教程一步一步的进行，最终你将会得到一个类似我这样的博客，在这个过程中，如果你能用心思考，善用搜索，你将会理解，这些服务彼此是如何连接的，每一项服务的功能是什么，以及如何修改它们的配置文件。理解这些后，你就可以根据自己的需求，创建自己的博客组合了。如果不想手动创建，你也可以使用 [Stackbit](https://www.stackbit.com/)来自动创建博客。它支持Hugo,Gatsby和Jekyll，后台管理支持Netlify CMS，Forestry和Contentful。关于[Stackbit的教程](#)，以后会写，先挖坑。
 
-## 零、技术总结
+## 一、技术总结
 
 经过一周的摸索和实践，终于把这个博客搭建成功了。简单总结一下本博客所使用的技术。
 
@@ -29,14 +29,14 @@ weight: -1
 
 上面提到的这些服务，除了购买域名需要花钱，其他服务都是免费的，购买域名也不是必要条件， Netlify 可以提供的二级域名。 
 
-## 一、前置条件
+## 二、必要条件
 
 1. 注册 [GitHub](https://github.com/join)
 2. 注册 [Netlify](https://app.netlify.com/signup)
 3. 注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
 4. 一台可以访问网络的计算机
 
-## 二、博客使用的服务介绍
+## 三、博客使用的服务简介
 
 1. [Hugo](https://gohugo.io/) 是使用 Go 语言编写的，静态博客生成平台。使用Hugo平台，你可以快速的生成博客页面，因为是静态博客，所以访问者的载入速度是非常快的，静态博客对爬虫是很友好的，这样就利于被搜索引擎抓取网站。
 2. [Netlify](https://www.netlify.com/) 提供免费的静态博客托管服务和免费二级域名：<https://suan.netlify.com>。
@@ -44,7 +44,7 @@ weight: -1
 4. [Netlify CMS](https://www.netlifycms.org/)是一套开源的后台管理平台，支持 Markdown 语法，给习惯在后台编辑文章的人使用。
 5. [CloudFlare](https://www.cloudflare.com/)拥有全球最大的网络之一，提供 CDN,DNS,ssl证书等服务,远不止这些。
 
-## 三、安装 Hugo
+## 四、安装 Hugo
 
 1.Ubuntu系统：
 
@@ -69,7 +69,7 @@ brew install hugo
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## 四、使用 Hugo创建静态博客
+## 五、使用 Hugo创建静态博客
 
 1.创建网站存放目录
 
@@ -121,7 +121,7 @@ hugo server
 
 使用快捷键 <kbd>ctrl</kbd>+<kbd>c</kbd> 关闭本地博客服务器
 
-## 五、GitHub
+## 六、GitHub使用
 
 1.创新一个新的Github仓库
 
@@ -139,7 +139,7 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 六、连接Netlify前的准备
+## 七、连接Netlify前的准备
 
 1.删除主题下面的.git文件，主题以 even为例
 
@@ -698,7 +698,7 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 七、Netlify
+## 八、Netlify
 
 1.使用Github帐号登录[Netlify](https://app.netlify.com/)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-30-16.18.png)
@@ -720,7 +720,7 @@ git push -u origin master
 
 > 大功告成
 
-## 八、登录Netlify CMS
+## 九、登录Netlify CMS
 
 1.开启身份验证功能
 ![](https://img.suan.su/pb-W8ymYipYXE.png)
