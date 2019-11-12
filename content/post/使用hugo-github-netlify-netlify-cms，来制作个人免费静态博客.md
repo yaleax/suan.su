@@ -698,7 +698,7 @@ git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
 
-## 八、Netlify
+## 八、Netlify连接 GitHub仓库
 
 1.使用Github帐号登录[Netlify](https://app.netlify.com/)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-30-16.18.png)
