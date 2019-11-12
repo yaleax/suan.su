@@ -11,11 +11,11 @@ Backblaze，免费提供10G的存储空间。因为下载需要收费，所以�
 ![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-15-43.png)
 
 ## 必要条件
-1.注册 [Backblaze](https://www.backblaze.com/b2/sign-up.html)
+1. 注册 [Backblaze](https://www.backblaze.com/b2/sign-up.html)
 
-2.注册 [Cloudflare](https://dash.cloudflare.com/sign-up)
+2. 注册 [Cloudflare](https://dash.cloudflare.com/sign-up)
 
-3.域名一个
+3. 域名一个
 
 ## 可选项
 1. ShareX for Windows
