@@ -8,7 +8,7 @@ Backblaze，免费提供10G的存储空间。因为下载需要收费，所以�
 
 ##  测试图床&Backblaze存储价格
 
-![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-13-36.png)
+![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-15-43.png)
 
 ## 必要条件
 1.注册 [Backblaze](https://www.backblaze.com/b2/sign-up.html)
