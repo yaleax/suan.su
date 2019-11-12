@@ -4,11 +4,11 @@ date: 2019-11-10T11:07:48.854Z
 lastmod: 2019-11-10T11:07:48.951Z
 ---
 ## 前言
-Backblaze，提供了前10G的免费存储空间，但是下载需要收费。因为Cloudflare和Backblaze互访是免流量费的，所以我们可以利用这点，来实现免费图床的目的。
+Backblaze，免费提供10G的存储空间，但是下载需要收费。因为Cloudflare和Backblaze互访是免流量费的，所以我们可以利用这点，来实现免费图床的目的。
 
-##  测试图床
+##  测试图床&Backblaze存储价格
 
-![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-04-41.99.png )
+![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-10-14.png)
 
 ## 必要条件
 1.注册 [Backblaze](https://www.backblaze.com/b2/sign-up.html)
