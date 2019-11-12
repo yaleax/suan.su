@@ -8,7 +8,7 @@ Backblaze，免费提供10G的存储空间，但是下载需要收费。因为Cl
 
 ##  测试图床&Backblaze存储价格
 
-![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-10-14.png)
+![Backblaze](https://img.suan.su/Screen-Shot-2019-11-12-13-13-36.png)
 
 ## 必要条件
 1.注册 [Backblaze](https://www.backblaze.com/b2/sign-up.html)
@@ -23,7 +23,7 @@ Backblaze，免费提供10G的存储空间，但是下载需要收费。因为Cl
 
 ## 教程
 
-[驱蚊器喵](https://blog.meow.page)已经写了教程，并且写的很好，所以我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
+[驱蚊器喵](https://blog.meow.page)已经写了教程，还包括如何防止盗链，教程写的真好。所以我就不用写了，[去教程](https://blog.meow.page/2019/09/24/free-personal-image-hosting-with-backblaze-b2-and-cloudflare-workers/)。
 
 
 
