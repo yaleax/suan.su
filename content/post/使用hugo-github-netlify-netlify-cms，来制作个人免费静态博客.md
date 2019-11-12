@@ -722,7 +722,7 @@ git push -u origin master
 
 ## 八、登录Netlify CMS
 
-1.创建后台登录帐号
+1.开启身份验证功能
 ![](https://img.suan.su/pb-W8ymYipYXE.png)
 2.开启 Git Gateway
 ![](https://img.suan.su/pb-SXUAftKp1b.png)
