@@ -31,8 +31,8 @@ weight: 0
 
 ## 二、必要条件
 
-### 1.注册 [GitHub](https://github.com/join)
-### 2.注册 [Netlify](https://app.netlify.com/signup)
+1.注册 [GitHub](https://github.com/join)
+2.注册 [Netlify](https://app.netlify.com/signup)
 3. 注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
 4. 一台可以访问网络的计算机
 
@@ -46,7 +46,7 @@ weight: 0
 
 ## 四、安装 Hugo
 
-1.Ubuntu系统：
+### 1.Ubuntu系统：
 
 先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.1，你也可以直接复制下面的代码，进行下载和安装。
 
@@ -57,7 +57,7 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_0.59.1_Linu
 sudo dpkg -i hugo_0.59.1_Linux-64bit.deb
 ```
 
-2.MacOS 系统：
+### 2.MacOS 系统：
 
 ```bash
 brew install hugo
@@ -71,7 +71,7 @@ brew install hugo
 
 ## 五、使用 Hugo创建静态博客
 
-1.创建网站存放目录
+### 1.创建网站存放目录
 
 ```bash
 # 使用 mkdir命令，创建网站目录
@@ -82,7 +82,7 @@ cd /var/www
 hugo new site 3cho
 ```
 
-2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
+### 2.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
 
 ```bash
 # 进入新建好的3cho目录
@@ -93,21 +93,21 @@ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 cp themes/even/exampleSite/config.toml ./config.toml
 ```
 
-3.创建一篇测试新文章
+### 3.创建一篇测试新文章
 
 ```bash
 #生成一篇新文章
 hugo new post/hello.md
 ```
 
-4.生成博客静态博客
+### 4.生成博客静态博客
 
 ```bash
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
 
-5.启动本地博客服务器
+### 5.启动本地博客服务器
 
 ```bash
 hugo server
@@ -117,17 +117,17 @@ hugo server
 
 > 到这里，博客搭建工作已经完成了，接下来是把这个博客，部署到网络上，这样其他人才可以访问你的博客了。
 
-6.关闭本地博客服务器
+### 6.关闭本地博客服务器
 
 使用快捷键 <kbd>ctrl</kbd>+<kbd>c</kbd> 关闭本地博客服务器
 
 ## 六、GitHub使用
 
-1.创新一个新的Github仓库
+### 1.创新一个新的Github仓库
 
 Create a new repository  repository在 GitHub[点击查看官方教程](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository)，你不需要看文字，跟着图走就行。repository名字是什么很重要，下面我们要用它来替换3cho。
 
-2.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
+### 2.初始化 GitHub，初始化意思是初次建立本地目录和 GitHub远程仓库的连接
 
 ```bash
 #仓库名字repository以3cho为例
@@ -141,20 +141,20 @@ git push -u origin master
 
 ## 七、连接Netlify前的准备
 
-1.删除主题下面的.git文件，主题以 even为例
+### 1.删除主题下面的.git文件，主题以 even为例
 
 ```Bash
 cd /var/www/3cho/themes/even
 rm -rf .git
 ```
 
-2.创建 Netlify 需要的配置文件
+### 2.创建 Netlify 需要的配置文件
 
 ```Bash
 nano netlify.toml
 ```
 
-3.复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
+### 3.复制下面的文件粘贴进去，Hugo version后面的数字替换成，你安装的版本。不明白什么意思，可以不改。
 
 ```toml
 [build]
@@ -191,26 +191,26 @@ HUGO_ENABLEGITINFO = "true"
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-4.创建 Netlify CMS所需要的配置文件和目录
+### 4.创建 Netlify CMS所需要的配置文件和目录
 
 ```bash
 touch static/.keep data/.keep
 ```
 
-5.创建Netlify CMS需要用的 admin 和 img文件夹
+### 5.创建Netlify CMS需要用的 admin 和 img文件夹
 
 ```bash
 mkdir /var/www/3cho/static/admin
 mkdir /var/www/3cho/static/img
 ```
 
-6.创建Netlify CMS页面
+### 6.创建Netlify CMS页面
 
 ```bash
 nano /var/www/3cho/static/admin/index.html
 ```
 
-7.复制下面的文件粘贴进去
+### 7.复制下面的文件粘贴进去
 
 ```html
 <!DOCTYPE html>
@@ -231,13 +231,13 @@ nano /var/www/3cho/static/admin/index.html
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-8.创建Netlify CMS配置文件
+### 8.创建Netlify CMS配置文件
 
 ```bash
 nano /var/www/3cho/static/admin/config.yml
 ```
 
-9.复制下面的文件粘贴进去
+### 9.复制下面的文件粘贴进去
 
 ```yml
 backend:
@@ -686,7 +686,7 @@ collections:
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-10.上传到GitHub
+### 10.上传到GitHub
 
 ```bash
 #仓库名字repository以3cho为例
@@ -700,20 +700,20 @@ git push -u origin master
 
 ## 八、Netlify连接 GitHub仓库
 
-1.使用Github帐号登录[Netlify](https://app.netlify.com/)
+### 1.使用Github帐号登录[Netlify](https://app.netlify.com/)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-30-16.18.png)
-2.创建新的站点
+### 2.创建新的站点
 ![Netlfiy 创建新站点](https://img.suan.su/Screen-Shot-2019-11-11-16-07-20.png)
-3.连接 Github
+### 3.连接 Github
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-11-10.png)
-4.选择博客说在的GitHub仓库
+### 4.选择博客说在的GitHub仓库
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-25-01.png)
-5.部署
+### 5.部署
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-26-39.png)
 
 > 等待完成，你的博客就已经成功创建了。Netlify 会提供一个二级域名。但是名字比较难记，你可以更改一个好记一些的。
 
-6.更改二级域名名字
+### 6.更改二级域名名字
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-35-38.png)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-36-01.png)
 ![](https://img.suan.su/Screen-Shot-2019-11-11-16-38-37.png)
@@ -722,14 +722,18 @@ git push -u origin master
 
 ## 九、Netlify CMS
 
-1.开启身份验证功能
+### 1.开启身份验证功能
 ![](https://img.suan.su/pb-W8ymYipYXE.png)
-2.开启 Git Gateway
+### 2.开启 Git Gateway
 ![](https://img.suan.su/pb-SXUAftKp1b.png)
-3.开启邮箱免验证功能
+### 3.开启邮箱免验证功能
 ![](https://img.suan.su/pb-XAnpBjmygb.png)
-4.邀请自己成为管理员
+### 4.邀请自己成为管理员
 ![](https://img.suan.su/pb-BPUoTrJr83.png)
-5.填写自己的邮箱  
-6.去邮箱接收邀请邮箱    
-7.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
+### 5.填写自己的邮箱  
+### 6.去邮箱接收邀请邮箱    
+### 7.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
+
+## 后话
+
+当我逐渐熟悉了 Markdown本地文本编辑后，我已经不太建议你使用 netlify cms了。
