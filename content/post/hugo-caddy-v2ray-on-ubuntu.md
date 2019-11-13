@@ -205,7 +205,7 @@ nano /etc/caddy/Caddyfile
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-6. 创建 systemd配置文件，实现自启动
+5. 创建 systemd配置文件，实现自启动
 
 ```bash
 nano /etc/systemd/system/caddy.service
@@ -277,13 +277,13 @@ WantedBy=multi-user.target
 
 Caddy 服务使用
 
-```
+```bash
 systemctl enable caddy.service # 设置 caddy 服务自启动
 systemctl start caddy.service  # 启动 caddy 服务
 systemctl status caddy.service # 查看 caddy 状态
 ```
 
-7. 启动 caddy服务
+6. 启动 caddy服务
 
 ```bash
 systemctl start caddy.service
@@ -294,7 +294,7 @@ systemctl start caddy.service
 
 如果你当正常博客使用，你还需要把下面这些坑填上。    
 
-1. Hugo没有修改博客配置文件。
-2. V2ray没有客户端配置教程。
-3. Caddy启动方式比较原始，需要配置自动化。
-4. 没写以后博客如何更新文章。
+1. [ ] Hugo没有修改博客配置文件。
+2. [ ] V2ray没有客户端配置教程。
+3. [x] Caddy启动方式比较原始，需要配置自动化。
+4. [ ] 没写以后博客如何更新文章。
