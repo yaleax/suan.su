@@ -209,7 +209,8 @@ cd /etc/caddy/  #进入caddy配置文件目录
 caddy           # 启动 Caddy
 ```
 
-完成！访问自己的域名试试吧！
+完成！访问自己的域名试试吧!    
+
 6. 创建 systemd配置文件，实现自启动
 ```bash
 nano /etc/systemd/system/caddy.service
