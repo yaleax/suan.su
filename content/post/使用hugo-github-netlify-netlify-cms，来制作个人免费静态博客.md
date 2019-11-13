@@ -732,7 +732,8 @@ git push -u origin master
 ![](https://img.suan.su/pb-BPUoTrJr83.png)
 ### 5.填写自己的邮箱  
 ### 6.去邮箱接收邀请邮箱    
-### 7.Netlify CMS的后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
+### 7.访问Netlify CMS后台
+后台地址是，你的网站后面加 admin，以 <https://suan.su> 为例，后台管理登录地址应该是:<https://suan.su/admin>  
 
 ## 后话
 
