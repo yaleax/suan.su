@@ -42,7 +42,7 @@ cd /var/www
 hugo new site 3cho
 ```
 
-3. 安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
+### 3.安装主题，主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
 
 ```bash
 # 进入新建好的3cho目录
@@ -53,13 +53,13 @@ git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 cp themes/even/exampleSite/config.toml ./config.toml
 ```
 
-4. 创建一篇测试新文章
+### 4.创建一篇测试新文章
 
 ```bash
 hugo new post/hello.md
 ```
 
-5. 生成博客静态博客
+### 5.生成博客静态博客
 
 ```bash
 # 生成静态网页，包括草稿，生成好的内容在public目录中
@@ -68,8 +68,8 @@ hugo -D
 
 ## GitHub
 
-1. 创新一个新的Github仓库
-2. 初始化 GitHub,并上传全部 Hugo博客源码
+### 1.创新一个新的Github仓库
+### 2.初始化 GitHub,并上传全部 Hugo博客源码
 
 ```bash
 #仓库名字repository以3cho为例
@@ -83,14 +83,14 @@ git push -u origin master
 
 ## V2ray
 
-1. 更新时间
+### 1.更新时间
 
 ```bash
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 date -R
 ```
 
-2. 安装 V2ray
+### 2.安装 V2ray
 
 ```bash
 wget https://install.direct/go.sh
@@ -106,13 +106,13 @@ sudo systemctl stop v2ray      # 停止v2ray
 sudo systemctl restart v2ray   # 重新启动v2ray
 ```
 
-3. 编辑v2ray配置
+### 3.编辑v2ray配置
 
 ```bash
 nano /etc/v2ray/config.json
 ```
 
-4. v2ray 配置内容
+### 4.v2ray 配置内容
 
 ```json
 {
@@ -147,7 +147,7 @@ nano /etc/v2ray/config.json
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-5. 启动 V2ray并查看状态
+### 5.启动 V2ray并查看状态
 
 ```bash
 sudo systemctl start v2ray    
@@ -156,13 +156,13 @@ sudo systemctl status v2ray
 
 ## Caddy
 
-1. 安装 Caddy
+### 1.安装 Caddy
 
 ```bash
 curl https://getcaddy.com | bash -s personal
 ```
 
-2. 配置目录权限
+### 2.配置目录权限
 
 ```bash
 # 建立配置文件，更改文件所有权
@@ -181,13 +181,13 @@ chown -R www-data:root /var/log/caddy
 chmod 0666 /var/log/caddy/access.log
 ```
 
-3. 编辑 Caddy配置文件
+### 3.编辑 Caddy配置文件
 
 ```bash
 nano /etc/caddy/Caddyfile
 ```
 
-4. Caddy配置文件
+### 4.Caddy配置文件
 
 ```bash
 3cho.cn
@@ -205,7 +205,7 @@ nano /etc/caddy/Caddyfile
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-5. 创建 systemd配置文件，实现自启动
+### 5.创建 systemd配置文件，实现自启动
 
 ```bash
 nano /etc/systemd/system/caddy.service
@@ -275,14 +275,14 @@ WantedBy=multi-user.target
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-Caddy 服务使用
+Caddy 控制命令，以后使用
 
 ```bash
 systemctl enable caddy.service # 设置 caddy 服务自启动
 systemctl start caddy.service  # 启动 caddy 服务
 systemctl status caddy.service # 查看 caddy 状态
 ```
-6. 启动 caddy服务
+### 6.启动 caddy服务
 
 ```bash
 systemctl start caddy.service
