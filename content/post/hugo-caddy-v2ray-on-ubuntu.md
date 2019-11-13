@@ -8,19 +8,19 @@ tags:
   - Caddy
   - Hugo
 ---
-##  前言
+## 前言
 
 这个教程绝大部分代码你都可以复制粘贴，但是请仔细阅读代码里面的备注，#后面的文字。    
 
 > 特别提醒请注意修改代码里面的参数！
 
-##  必要条件
+## 必要条件
 
 1. VPS 服务器 Ubuntu 18.04 系统
 2. 域名一个
 3. 域名已经绑定 VPS的 ip
 
-##  Hugo
+## Hugo
 
 1. 安装 Hugo
 
@@ -65,6 +65,7 @@ hugo new post/hello.md
 # 生成静态网页，包括草稿，生成好的内容在public目录中
 hugo -D
 ```
+
 ## GitHub
 
 1. 创新一个新的Github仓库
@@ -79,6 +80,7 @@ git commit -m "first commit"
 git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
+
 ## V2ray
 
 1. 更新时间
@@ -151,6 +153,7 @@ nano /etc/v2ray/config.json
 sudo systemctl start v2ray    
 sudo systemctl status v2ray
 ```
+
 ## Caddy
 
 1. 安装 Caddy
@@ -202,19 +205,12 @@ nano /etc/caddy/Caddyfile
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-5. 启动 Caddy
-
-```bash
-cd /etc/caddy/  #进入caddy配置文件目录
-caddy           # 启动 Caddy
-```
-
-完成！访问自己的域名试试吧!    
-
 6. 创建 systemd配置文件，实现自启动
+
 ```bash
 nano /etc/systemd/system/caddy.service
 ```
+
 粘贴复制下面官方提供的配置
 
 ```
@@ -275,26 +271,30 @@ ReadWriteDirectories=/etc/ssl/caddy
 
 [Install]
 WantedBy=multi-user.target
-
 ```
+
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-Caddy 服务宠用
+Caddy 服务使用
+
 ```
 systemctl enable caddy.service # 设置 caddy 服务自启动
 systemctl start caddy.service  # 启动 caddy 服务
 systemctl status caddy.service # 查看 caddy 状态
 ```
 
+7. 启动 caddy服务
+
+```bash
+systemctl start caddy.service
+```
+完成！访问自己的域名试试吧! 
+
 ## 后话
+
 如果你当正常博客使用，你还需要把下面这些坑填上。    
 
-1. [ ] Hugo没有修改博客配置文件。
-2. [ ] V2ray没有客户端配置教程。
-3. [x] Caddy启动方式比较原始，需要配置自动化。
-4. [ ] 没写以后博客如何更新文章。
-
-
-
-
-
+1. Hugo没有修改博客配置文件。
+2. V2ray没有客户端配置教程。
+3. Caddy启动方式比较原始，需要配置自动化。
+4. 没写以后博客如何更新文章。
