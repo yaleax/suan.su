@@ -290,7 +290,7 @@ systemctl status caddy.service # 查看 caddy 状态
 
 1. [ ] Hugo没有修改博客配置文件。
 2. [ ] V2ray没有客户端配置教程。
-3. [ ] Caddy启动方式比较原始，需要配置自动化。
+3. [x] Caddy启动方式比较原始，需要配置自动化。
 4. [ ] 没写以后博客如何更新文章。
 
 
