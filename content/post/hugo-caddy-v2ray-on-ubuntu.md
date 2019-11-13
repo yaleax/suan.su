@@ -109,6 +109,7 @@ sudo systemctl restart v2ray   # 重新启动v2ray
 ### 3.编辑v2ray配置
 
 ```bash
+rm /etc/v2ray/config.json
 nano /etc/v2ray/config.json
 ```
 
