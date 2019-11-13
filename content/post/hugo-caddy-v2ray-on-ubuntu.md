@@ -22,7 +22,7 @@ tags:
 
 ## Hugo
 
-1. 安装 Hugo
+### 1.安装 Hugo
 
 ```bash
 #使用 wget 下载 hugo
@@ -31,7 +31,7 @@ wget https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_0.59.0_Linu
 sudo dpkg -i hugo_0.59.0_Linux-64bit.deb
 ```
 
-2. 创建网站存放目录
+### 2.创建网站存放目录
 
 ```bash
 # 使用 mkdir命令，创建网站目录
