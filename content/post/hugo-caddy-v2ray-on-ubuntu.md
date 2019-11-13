@@ -282,7 +282,6 @@ systemctl enable caddy.service # 设置 caddy 服务自启动
 systemctl start caddy.service  # 启动 caddy 服务
 systemctl status caddy.service # 查看 caddy 状态
 ```
-
 6. 启动 caddy服务
 
 ```bash
