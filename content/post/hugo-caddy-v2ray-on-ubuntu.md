@@ -187,7 +187,7 @@ chmod 0666 /var/log/caddy/access.log
 nano /etc/caddy/Caddyfile
 ```
 
-### 4.Caddy配置文件
+Caddy配置文件
 
 ```bash
 3cho.cn
@@ -205,7 +205,7 @@ nano /etc/caddy/Caddyfile
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-### 5.创建 systemd配置文件，实现自启动
+### 4.创建 systemd配置文件，实现自启动
 
 ```bash
 nano /etc/systemd/system/caddy.service
@@ -282,7 +282,7 @@ systemctl enable caddy.service # 设置 caddy 服务自启动
 systemctl start caddy.service  # 启动 caddy 服务
 systemctl status caddy.service # 查看 caddy 状态
 ```
-### 6.启动 caddy服务
+### 5.启动 caddy服务
 
 ```bash
 systemctl start caddy.service
