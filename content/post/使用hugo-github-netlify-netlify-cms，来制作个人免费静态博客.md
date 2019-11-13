@@ -31,8 +31,8 @@ weight: 0
 
 ## 二、必要条件
 
-1. 注册 [GitHub](https://github.com/join)
-2. 注册 [Netlify](https://app.netlify.com/signup)
+### 1.注册 [GitHub](https://github.com/join)
+### 2.注册 [Netlify](https://app.netlify.com/signup)
 3. 注册 [CloudFlare](https://dash.cloudflare.com/sign-up)
 4. 一台可以访问网络的计算机
 
