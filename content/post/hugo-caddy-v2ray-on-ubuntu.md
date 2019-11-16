@@ -161,32 +161,14 @@ sudo systemctl status v2ray
 ### 1.安装 Caddy
 
 ```bash
-curl https://getcaddy.com | bash -s personal
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+#备用地址
+wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 ```
-
-### 2.配置目录权限
+### 2.编辑 Caddy配置文件
 
 ```bash
-# 建立配置文件，更改文件所有权
-mkdir /etc/caddy
-touch /etc/caddy/Caddyfile
-chown -R root:www-data /etc/caddy
-# caddy自动获得的https证书存放位置
-mkdir /etc/ssl/caddy
-chown -R www-data:root /etc/ssl/caddy
-# 私钥禁止其他用户访问
-chmod 0770 /etc/ssl/caddy
-# 建立日志目录，给与写入权限
-mkdir /var/log/caddy
-touch /var/log/caddy/access.log
-chown -R www-data:root /var/log/caddy
-chmod 0666 /var/log/caddy/access.log
-```
-
-### 3.编辑 Caddy配置文件
-
-```bash
-nano /etc/caddy/Caddyfile
+nano /usr/local/caddy/Caddyfile
 ```
 
 Caddy配置文件
@@ -207,84 +189,24 @@ Caddy配置文件
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-### 4.创建 systemd配置文件，实现自启动
-
-```bash
-nano /etc/systemd/system/caddy.service
-```
-
-粘贴复制下面官方提供的配置
-
-```
-[Unit]
-Description=Caddy HTTP/2 web server
-Documentation=https://caddyserver.com/docs
-After=network-online.target
-Wants=network-online.target systemd-networkd-wait-online.service
-
-[Service]
-Restart=on-abnormal
-
-; Do not allow the process to be restarted in a tight loop. If the
-; process fails to start, something critical needs to be fixed.
-StartLimitIntervalSec=14400
-StartLimitBurst=10
-
-; User and group the process will run as.
-User=www-data
-Group=www-data
-
-; Letsencrypt-issued certificates will be written to this directory.
-Environment=CADDYPATH=/etc/ssl/caddy
-
-; Always set "-root" to something safe in case it gets forgotten in the Caddyfile.
-ExecStart=/usr/local/bin/caddy -log stdout -log-timestamps=false -agree=true -conf=/etc/caddy/Caddyfile -root=/var/tmp
-ExecReload=/bin/kill -USR1 $MAINPID
-
-; Use graceful shutdown with a reasonable timeout
-KillMode=mixed
-KillSignal=SIGQUIT
-TimeoutStopSec=5s
-
-; Limit the number of file descriptors; see `man systemd.exec` for more limit settings.
-LimitNOFILE=1048576
-; Unmodified caddy is not expected to use more than that.
-LimitNPROC=512
-
-; Use private /tmp and /var/tmp, which are discarded after caddy stops.
-PrivateTmp=true
-; Use a minimal /dev (May bring additional security if switched to 'true', but it may not work on Raspberry Pi's or other devices, so it has been disabled in this dist.)
-PrivateDevices=false
-; Hide /home, /root, and /run/user. Nobody will steal your SSH-keys.
-ProtectHome=true
-; Make /usr, /boot, /etc and possibly some more folders read-only.
-ProtectSystem=full
-; … except /etc/ssl/caddy, because we want Letsencrypt-certificates there.
-;   This merely retains r/w access rights, it does not add any new. Must still be writable on the host!
-ReadWritePaths=/etc/ssl/caddy
-ReadWriteDirectories=/etc/ssl/caddy
-
-; The following additional security directives only work with systemd v229 or later.
-; They further restrict privileges that can be gained by caddy. Uncomment if you like.
-; Note that you may have to add capabilities required by any plugins in use.
-;CapabilityBoundingSet=CAP_NET_BIND_SERVICE
-;AmbientCapabilities=CAP_NET_BIND_SERVICE
-;NoNewPrivileges=true
-
-[Install]
-WantedBy=multi-user.target
-```
-
-粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
-
 Caddy 控制命令，以后使用
 
+### 3.启动说明
+
 ```bash
-systemctl enable caddy.service # 设置 caddy 服务自启动
-systemctl start caddy.service  # 启动 caddy 服务
-systemctl status caddy.service # 查看 caddy 状态
+启动：/etc/init.d/caddy start
+停止：/etc/init.d/caddy stop
+重启：/etc/init.d/caddy restart
+查看状态：/etc/init.d/caddy status
+查看Caddy启动日志：tail -f /tmp/caddy.log
 ```
-### 5.启动 caddy服务
+
+> 安装目录：/usr/local/caddy
+Caddy配置文件位置：/usr/local/caddy/Caddyfile
+Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
+
+
+### 4.启动 caddy服务
 
 ```bash
 systemctl start caddy.service
