@@ -119,20 +119,21 @@ nano /etc/v2ray/config.json
 {
   "inbounds": [
     {
-      "port": 30123, //可以更改自己喜欢的端口号
-      "listen":"127.0.0.1",//只监听 127.0.0.1，避免除本机外的机器探测到开放了 1$
+      "port": 10000,
+      "listen":"127.0.0.1", //只监听 127.0.0.1，避免除本机外的机器探测到开放了 10000 端口
       "protocol": "vmess",
       "settings": {
         "clients": [
           {
-            "id": "0a10ad4e-0355-4435-8d17-4b75ab5677c4", //更改成自己的uuid
+            "id": "b831381d-6324-4d53-ad4f-8cda48b30811",
             "alterId": 64
           }
         ]
+      },
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-        "path": "/andykeywold" //任意关键字
+        "path": "/ray"
         }
       }
     }
