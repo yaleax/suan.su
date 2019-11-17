@@ -141,11 +141,13 @@ nano /etc/v2ray/config.json
 }
 ```
 
-粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+{{% notice tip 提示 %}}  
+修改完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+{{% /notice %}}
 
 ### 5.V2ray 控制命令
 
-{{% notice tip 命令提示 %}}  
+{{% notice info 命令提示 %}}  
 sudo systemctl start v2ray     # 启动v2ray  
 sudo systemctl status v2ray    # 查看v2ray状态  
 sudo systemctl stop v2ray      # 停止v2ray  
@@ -190,7 +192,9 @@ nano /usr/local/caddy/Caddyfile
 }
 ```
 
-粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+{{% notice tip 提示 %}}  
+修改完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+{{% /notice %}}
 
 ### 4.Caddy文件说明
 安装目录：/usr/local/caddy
@@ -198,7 +202,7 @@ Caddy配置文件位置：/usr/local/caddy/Caddyfile
 Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
 ### 5.Caddy 控制命令
-{{% notice tip 命令提示 %}}  
+{{% notice info 命令提示 %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
