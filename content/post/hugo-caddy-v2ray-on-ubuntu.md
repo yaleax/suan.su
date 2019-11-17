@@ -100,23 +100,14 @@ wget https://install.direct/go.sh
 sudo bash go.sh
 ```
 
-### 3.V2ray 控制命令
-
-{{% notice tip 命令提示： %}}  
-sudo systemctl start v2ray     # 启动v2ray  
-sudo systemctl status v2ray    # 查看v2ray状态  
-sudo systemctl stop v2ray      # 停止v2ray  
-sudo systemctl restart v2ray   # 重新启动v2ray
-{{% /notice %}}
-
-### 4.编辑v2ray配置
+### 3.编辑v2ray配置
 
 ```bash
 rm /etc/v2ray/config.json
 nano /etc/v2ray/config.json
 ```
 
-### 5.v2ray 配置内容
+### 4.v2ray 配置内容
 
 ```json
 {
@@ -151,6 +142,15 @@ nano /etc/v2ray/config.json
 ```
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
+
+### 5.V2ray 控制命令
+
+{{% notice tip 命令提示： %}}  
+sudo systemctl start v2ray     # 启动v2ray  
+sudo systemctl status v2ray    # 查看v2ray状态  
+sudo systemctl stop v2ray      # 停止v2ray  
+sudo systemctl restart v2ray   # 重新启动v2ray
+{{% /notice %}}
 
 ### 6.启动 V2ray并查看状态
 
