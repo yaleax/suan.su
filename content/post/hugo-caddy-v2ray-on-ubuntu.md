@@ -198,7 +198,7 @@ Caddy配置文件位置：/usr/local/caddy/Caddyfile
 Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
 ### 5.Caddy 控制命令
-{{% notice note 命令 %}}  
+{{% notice tip 命令 %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
