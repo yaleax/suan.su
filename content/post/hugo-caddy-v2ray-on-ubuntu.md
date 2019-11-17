@@ -180,7 +180,7 @@ nano /usr/local/caddy/Caddyfile
 ### 3.Caddy配置文件
 
 ```bash
-3cho.cn
+suan.su
 {
   gzip
   tls 123456212@mail.com
