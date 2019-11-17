@@ -197,9 +197,11 @@ nano /usr/local/caddy/Caddyfile
 {{% /notice %}}
 
 ### 4.Caddy文件说明
-安装目录：/usr/local/caddy
-Caddy配置文件位置：/usr/local/caddy/Caddyfile
-Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
+ 
+安装目录：`/usr/local/caddy`  
+Caddy配置文件位置：`/usr/local/caddy/Caddyfile`  
+Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/`
+
 
 ### 5.Caddy 控制命令
 {{% notice info 命令信息 %}}  
