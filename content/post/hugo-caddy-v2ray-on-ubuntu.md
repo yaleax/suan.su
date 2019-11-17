@@ -73,6 +73,7 @@ hugo -D
 ## GitHub
 
 ### 1.创新一个新的Github仓库
+![](https://img.suan.su/Screen-Recording-2019-11-17-20-13-44.gif)
 ### 2.初始化 GitHub,并上传全部 Hugo博客源码
 
 ```bash
