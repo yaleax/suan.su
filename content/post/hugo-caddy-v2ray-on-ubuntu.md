@@ -78,12 +78,12 @@ hugo -D
 ### 2.初始化 GitHub,并上传全部 Hugo博客源码
 
 ```bash
-#仓库名字repository以3cho为例
-echo "# 3cho" >> README.md
+#仓库名字repository以hellotest为例
+echo "# hellotest" >> README.md
 git init
 git add .
 git commit -m "first commit"
-git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
+git remote add origin git@github.com:替换成你的GitHub用户名/hellotest.git
 git push -u origin master
 ```
 
