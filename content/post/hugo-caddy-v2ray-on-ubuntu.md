@@ -213,7 +213,7 @@ Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/si
 查看Caddy启动日志：tail -f /tmp/caddy.log  
 {{% /notice %}}
 
-### 6.启动 caddy服务
+### 6.启动 caddy服务并查询状态
 
 ```bash
 /etc/init.d/caddy start
