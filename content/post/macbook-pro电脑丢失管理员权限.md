@@ -10,11 +10,16 @@ tags:
 
 ## 解决方案
 1. 重新启动电脑。
+
 2. 同时按 <kbd>Command</kbd> + <kbd>S</kbd> 。
+
 3. 一直按住，直到有命令行画面显示。
+
 4. 输入命令`/sbin/fsck -fy`然后按 <kbd>回车</kbd> 。
+
 5. 输入命令`/sbin/mount -uw /`然后按<kbd>回车</kbd> 。
-6. 输入命令`rm /var/db/.AppleSetupDone`然后按<kbd>回车</kbd> 。    
+
+6. 输入命令`rm /var/db/.AppleSetupDone`然后按<kbd>回车</kbd> 。
 7. 最后，输入`reboot`然后按<kbd>回车</kbd>电脑会重启。
 ## 完成
 重新开机，你可以重新配置你的 mac 电脑了，祝你好运。
