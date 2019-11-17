@@ -9,7 +9,7 @@ tags:
   - Hugo
 weight: 1
 ---
-## 前言
+## 一、前言
 
 这个教程绝大部分代码你都可以复制粘贴，但是请仔细阅读代码里面的备注，也就是`#`后面的文字。    
 
@@ -17,13 +17,13 @@ weight: 1
 必须修改代码里面的参数，否则不可能成功！有问题就留言吧，祝你好运。
 {{% /notice %}}
 
-## 必要条件
+## 二、必要条件
 
 1. VPS 服务器 Ubuntu 18.04 系统
 2. 域名一个
 3. 域名已经绑定 VPS的 ip
 
-## Hugo
+## 三、Hugo
 
 ### 1.安装 Hugo  
 先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.1，你也可以直接复制下面的代码，进行下载和安装。
@@ -70,7 +70,7 @@ hugo new post/hello.md
 hugo -D
 ```
 
-## GitHub
+## 四、GitHub
 
 ### 1.新建一个Github仓库
 输完仓库名字后，按 <kbd>enter</kbd> 。
@@ -87,7 +87,7 @@ git remote add origin git@github.com:替换成你的GitHub用户名/hellotest.gi
 git push -u origin master
 ```
 
-## V2ray
+## 五、V2ray
 
 ### 1.更新时间
 
@@ -164,7 +164,7 @@ sudo systemctl start v2ray
 sudo systemctl status v2ray
 ```
 
-## Caddy
+## 六、Caddy
 
 ### 1.安装 Caddy
 
@@ -222,12 +222,11 @@ Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/si
 /etc/init.d/caddy status
 ```
 完成！访问自己的域名试试吧!  
-
-## 后话
+## 七、后话
 
 如果你当正常博客使用，你还需要把下面这些坑填上。    
 
 1. [ ] 修改Hugo博客配置文件。  
 2. [ ] V2ray客户端配置教程。  
 3. [x] Caddy自动化配置。
-4. [ ] 更新博客文章文章。
+4. [ ] 使用GitHub更新博客文章。
