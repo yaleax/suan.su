@@ -1,5 +1,5 @@
 ---
-title: Macbook Pro电脑丢失管理员权限
+title: 找回Macbook Pro电脑丢失管理员权限
 date: 2019-11-17T11:23:41.194Z
 lastmod: 2019-11-17T11:23:42.509Z
 tags:
