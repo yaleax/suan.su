@@ -12,7 +12,7 @@ tags:
 
 这个教程绝大部分代码你都可以复制粘贴，但是请仔细阅读代码里面的备注，#后面的文字。    
 
-{{% notice warning 特别提醒 %}}
+{{% notice warning 特别提醒： %}}
 请注意修改代码里面的参数，否则不可能成功！祝你好运。
 {{% /notice %}}
 
@@ -102,7 +102,7 @@ sudo bash go.sh
 
 ### 3.V2ray 控制命令
 
-{{% notice tip 命令提示 %}}  
+{{% notice tip 命令提示： %}}  
 sudo systemctl start v2ray     # 启动v2ray  
 sudo systemctl status v2ray    # 查看v2ray状态  
 sudo systemctl stop v2ray      # 停止v2ray  
@@ -198,7 +198,7 @@ Caddy配置文件位置：/usr/local/caddy/Caddyfile
 Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
 ### 5.Caddy 控制命令
-{{% notice tip 命令提示 %}}  
+{{% notice tip 命令提示： %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
