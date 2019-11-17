@@ -25,10 +25,16 @@ git commit -m "first commit"
 git remote add origin git@github.com:替换成你的 GitHub用户名/3cho.git
 git push -u origin master
 ```
-### 3. 下载更新
+### 3. 推送更新到远程 GitHub仓库
 
 ```bash
+git add <修改的文件>
+git commit -m "填写更新备注"
 git push
+```
+### 4. 下载远程 GitHub 仓库的更新
+```bash
+git pull
 ```
 
 ### GitHub命令速查表
