@@ -72,7 +72,7 @@ hugo -D
 
 ## GitHub
 
-### 1.创新一个新的Github仓库
+### 1.新建一个Github仓库
 输完仓库名字后，按 <kbd>enter</kbd> 。
 ![](https://img.suan.su/Screen-Recording-2019-11-17-20-13-44.gif)
 ### 2.初始化 GitHub
