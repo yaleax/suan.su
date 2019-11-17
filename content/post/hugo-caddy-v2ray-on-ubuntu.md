@@ -219,7 +219,7 @@ Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/si
 /etc/init.d/caddy start
 /etc/init.d/caddy status
 ```
-完成！访问自己的域名试试吧!  
+ :clap: 完成！访问自己的域名试试吧!  
 ## 七、后话
 
 如果你当正常博客使用，你还需要把下面这些坑填上。    
