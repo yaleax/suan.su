@@ -102,7 +102,7 @@ sudo bash go.sh
 
 ### 3.V2ray 控制命令
 
-{{% notice note 命令 %}}  
+{{% notice tip 命令 %}}  
 sudo systemctl start v2ray     # 启动v2ray  
 sudo systemctl status v2ray    # 查看v2ray状态  
 sudo systemctl stop v2ray      # 停止v2ray  
