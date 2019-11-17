@@ -123,8 +123,8 @@ nano /etc/v2ray/config.json
 {
   "inbounds": [
     {
-      "port": 10000,
-      "listen":"127.0.0.1", //只监听 127.0.0.1，避免除本机外的机器探测到开放了 10000 端口
+      "port": 30123,
+      "listen":"127.0.0.1", //只监听 127.0.0.1，避免除本机外的机器探测到开放了 30123 端口
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -137,7 +137,7 @@ nano /etc/v2ray/config.json
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-        "path": "/ray"
+        "path": "/ray30123"
         }
       }
     }
@@ -184,7 +184,7 @@ Caddy配置文件
   tls 123456212@mail.com
   log /var/log/caddy/access.log
   root /var/www/3cho/public
-  proxy /andykeywold localhost:30123 {
+  proxy /ray30123 localhost:30123 {
     websocket
     header_upstream -Origin
   }
@@ -196,19 +196,17 @@ Caddy配置文件
 Caddy 控制命令，以后使用
 
 ### 3.启动说明
+安装目录：/usr/local/caddy
+Caddy配置文件位置：/usr/local/caddy/Caddyfile
+Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
-```bash
+{{% notice 提示 %}}
 启动：/etc/init.d/caddy start
 停止：/etc/init.d/caddy stop
 重启：/etc/init.d/caddy restart
 查看状态：/etc/init.d/caddy status
 查看Caddy启动日志：tail -f /tmp/caddy.log
-```
-
-> 安装目录：/usr/local/caddy
-Caddy配置文件位置：/usr/local/caddy/Caddyfile
-Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
-
+{{% /tip %}}
 
 ### 4.启动 caddy服务
 
