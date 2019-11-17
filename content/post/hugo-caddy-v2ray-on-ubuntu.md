@@ -25,7 +25,7 @@ weight: 1
 
 ## Hugo
 
-### 1.安装 Hugo
+### 1.安装 Hugo  
 先去 [Hugo release](https://github.com/gohugoio/hugo/releases)查看 Hugo的最新版本，用最新版本号替代下面代码里面的0.59.1，你也可以直接复制下面的代码，进行下载和安装。
 ```bash
 #使用 wget 下载 hugo
