@@ -737,4 +737,4 @@ git push -u origin master
 
 ## 后话
 
-当我逐渐熟悉了 Markdown本地文本编辑后，我已经不太建议你使用 netlify cms了。
+当我逐渐熟悉了Github和找到了喜爱的本地Markdown编辑器 Typora后，我已经不太想使用netlify cms了，但是 netlify cms对初学者还是很友好的。
