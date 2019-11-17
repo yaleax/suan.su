@@ -36,7 +36,7 @@ PasswordAuthentication yes
 {{% /notice %}}
 
 ### 4.给root用户密码
-
+输入2次密码
 ```bash
 passwd root
 ```
