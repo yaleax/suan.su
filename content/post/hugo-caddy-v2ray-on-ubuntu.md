@@ -101,7 +101,7 @@ sudo bash go.sh
 
 V2ray 控制命令,以后使用。
 
-{{% notice note 控制命令 %}}  
+{{% notice note V2ray 控制命令 %}}  
 sudo systemctl start v2ray     # 启动v2ray  
 sudo systemctl status v2ray    # 查看v2ray状态  
 sudo systemctl stop v2ray      # 停止v2ray  
@@ -198,7 +198,7 @@ Caddy 控制命令，以后使用
 Caddy配置文件位置：/usr/local/caddy/Caddyfile
 Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
-{{% notice note 控制命令 %}}  
+{{% notice note Caddy 控制命令 %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
