@@ -21,6 +21,7 @@ tags:
 6. 输入命令`rm /var/db/.AppleSetupDone`然后按 <kbd>回车</kbd> 。
 
 7. 最后，输入`reboot`然后按 <kbd>回车</kbd> 电脑会重启。
+
 ## 完成
 重新开机，你可以重新配置你的 mac 电脑了，祝你好运。
 
