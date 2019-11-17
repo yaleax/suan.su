@@ -99,7 +99,7 @@ wget https://install.direct/go.sh
 sudo bash go.sh
 ```
 
-V2ray 控制命令,以后使用。
+### 3.V2ray 控制命令
 
 {{% notice note V2ray 控制命令 %}}  
 sudo systemctl start v2ray     # 启动v2ray  
@@ -108,14 +108,14 @@ sudo systemctl stop v2ray      # 停止v2ray
 sudo systemctl restart v2ray   # 重新启动v2ray
 {{% /notice %}}
 
-### 3.编辑v2ray配置
+### 4.编辑v2ray配置
 
 ```bash
 rm /etc/v2ray/config.json
 nano /etc/v2ray/config.json
 ```
 
-### 4.v2ray 配置内容
+### 5.v2ray 配置内容
 
 ```json
 {
@@ -151,7 +151,7 @@ nano /etc/v2ray/config.json
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-### 5.启动 V2ray并查看状态
+### 6.启动 V2ray并查看状态
 
 ```bash
 sudo systemctl start v2ray    
@@ -173,7 +173,7 @@ wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_ins
 nano /usr/local/caddy/Caddyfile
 ```
 
-Caddy配置文件
+### 3.Caddy配置文件
 
 ```bash
 3cho.cn
@@ -191,13 +191,12 @@ Caddy配置文件
 
 粘贴完成后，你需要同时按 <kbd>ctrl</kbd>+<kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按<kbd>回车</kbd>确认保存。
 
-Caddy 控制命令，以后使用
-
-### 3.启动说明
+### 4.Caddy文件说明
 安装目录：/usr/local/caddy
 Caddy配置文件位置：/usr/local/caddy/Caddyfile
 Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/
 
+### 5.Caddy 控制命令
 {{% notice note Caddy 控制命令 %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
@@ -206,7 +205,7 @@ Caddy自动申请SSL证书位置：/.caddy/acme/acme-v01.api.letsencrypt.org/sit
 查看Caddy启动日志：tail -f /tmp/caddy.log  
 {{% /notice %}}
 
-### 4.启动 caddy服务
+### 6.启动 caddy服务
 
 ```bash
 systemctl start caddy.service
