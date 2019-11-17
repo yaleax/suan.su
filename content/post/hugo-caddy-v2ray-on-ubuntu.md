@@ -75,8 +75,8 @@ hugo -D
 ### 1.创新一个新的Github仓库
 输完仓库名字后，按 <kbd>enter</kbd> 。
 ![](https://img.suan.su/Screen-Recording-2019-11-17-20-13-44.gif)
-### 2.初始化 GitHub,并上传全部 Hugo博客源码
-
+### 2.初始化 GitHub
+这些命令完成后，会上传全部Hugo博客源码到 GitHub
 ```bash
 #仓库名字repository以hellotest为例
 echo "# hellotest" >> README.md
