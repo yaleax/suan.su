@@ -29,8 +29,8 @@ DNSStubListener=no
 ```bash
 reboot
 ```
-### 4.[安装解锁工具][footnote2]
-[footnote2]:[解锁 Netflix来源](https://www.mebi.me/1035)
+### 4.安装解锁工具[^footnote2]
+[^footnote2]:[解锁 Netflix来源](https://www.mebi.me/1035)
 ```bash
 wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
@@ -45,12 +45,12 @@ reboot
 {{% notice warning 重要提示 %}}
 想要解锁的服务器上输入下面的命令
 {{% /notice %}}
-### 1. 设置 ip
+### 1.设置 ip
 把下面代码里面的 ip 更改成，可以看 netflix 的服务器 ip。
 ```bash
 echo nameserver IP > /etc/resolv.conf
 ```
-### 2. 查看是否成功
+### 2.查看是否成功
 如果返回的 ip 是可以看 netflix 的服务器 ip，那么就说明成功了。
 ```bash
 ping -c4 netflix.com
