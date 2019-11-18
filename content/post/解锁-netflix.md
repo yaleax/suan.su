@@ -55,10 +55,13 @@ echo nameserver IP > /etc/resolv.conf
 ```bash
 ping -c4 netflix.com
 ```
-:tada:完成\
+:tada: 完成\
 ## 五、后话
-后来我发现另外一个思路，现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。原理是在能看Netflix 的机器上安装 ss。不能看 Netlify 的机器上使用 V2ray 连接能看Netflix 的机器上安装 ss。
-下面是 V2ray 的配置文件
+后来我发现另外一种解锁思路，现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。
+### 1.原理  
+在能看Netflix 的机器上安装 ss。不能看 Netlify 的机器上使用 V2ray 连接能看Netflix 的机器上安装 ss。
+
+### 2.V2ray配置
 ```json
 {
   "inbound": {
