@@ -56,3 +56,5 @@ echo nameserver IP > /etc/resolv.conf
 ping -c4 netflix.com
 ```
 :tada:完成\
+## 五、后话
+后来发现另外一个思路现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。
