@@ -14,8 +14,8 @@ Dnsmasq SNIproxy一键脚本，是利用Dnsmasq的DNS将网站解析劫持到SNI
 ### 2.想要解锁的服务器
 ## 三、教程第1部分
 在可以看 Netlify的服务器上输入下面的命令
-### 1.关闭dnsmasq[^参考1]
-[^参考1]:[关闭Dnsmasq](https://superuser.com/questions/1318220/ubuntu-18-04-disable-dnsmasq-base-and-enable-full-dnsmasq)
+### 1.关闭dnsmasq[^footnote1]
+[^footnote1]:[关闭Dnsmasq](https://superuser.com/questions/1318220/ubuntu-18-04-disable-dnsmasq-base-and-enable-full-dnsmasq)
 ```bash
 nano /etc/systemd/resolved.conf
 ```
@@ -27,8 +27,8 @@ DNSStubListener=no
 ```bash
 reboot
 ```
-### 4.[安装解锁工具][参考2]
-[参考2]:[解锁 Netflix来源](https://www.mebi.me/1035)
+### 4.[安装解锁工具][footnote2]
+[footnote2]:[解锁 Netflix来源](https://www.mebi.me/1035)
 ```bash
 wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
