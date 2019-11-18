@@ -13,7 +13,7 @@ Dnsmasq SNIproxy一键脚本，是利用Dnsmasq的DNS将网站解析劫持到SNI
 ### 1.可以看 Netlify的服务器
 ### 2.想要解锁的服务器
 ## 三、教程第1部分
-{{% notice warning 提示%}}
+{{% notice warning 重要提示%}}
 在可以看 Netlify的服务器上输入下面的命令
 {{% /notice %}}
 ### 1.关闭dnsmasq[^footnote1]
