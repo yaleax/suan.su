@@ -59,9 +59,11 @@ ping -c4 netflix.com
 ## 五、后话
 后来我发现另外一种解锁思路，现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。
 ### 1.原理  
-在能看Netflix 的机器上安装 ss。不能看 Netlify 的机器上使用 V2ray 连接能看Netflix 的机器上安装 ss。
+在能看Netflix 的机器上安装 ss。在不能看 Netlify 的机器上使用 V2ray 连接能看Netflix 的机器上安装 ss。
+### 2.优点
+不占用53端口，所以 nat 机器也可以做为解锁机器了。
 
-### 2.V2ray配置
+### 3.V2ray配置
 ```json
 {
   "inbound": {
