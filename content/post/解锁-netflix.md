@@ -27,8 +27,8 @@ DNSStubListener=no
 ```bash
 reboot
 ```
-### 4.安装解锁工具[^参考2]
-[^footnote2]:[解锁 Netflix来源](https://www.mebi.me/1035)
+### 4.[安装解锁工具][参考2]
+[参考2]:[解锁 Netflix来源](https://www.mebi.me/1035)
 ```bash
 wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
