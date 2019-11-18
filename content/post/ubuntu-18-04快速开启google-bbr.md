@@ -6,7 +6,7 @@ tags:
   - Linux
 ---
 ## 前言
-Google BBR 是一款免费开源的TCP拥塞控制传输控制协议, 可以使 Linux 服务器显著提高吞吐量和减少 TCP 连接的延迟。 [项目地址:]<https://github.com/google/bbr>
+Google BBR 是一款免费开源的TCP拥塞控制传输控制协议, 可以使 Linux 服务器显著提高吞吐量和减少 TCP 连接的延迟。 [项目地址]<https://github.com/google/bbr>
 
 ## 教程
 
