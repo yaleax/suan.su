@@ -34,7 +34,6 @@ sysctl net.ipv4.tcp_available_congestion_control
 显示以下即已开启：
 
 ```bash
-# sysctl net.ipv4.tcp_available_congestion_control
 net.ipv4.tcp_available_congestion_control = reno cubic bbr
 ```
 
@@ -47,7 +46,6 @@ lsmod | grep bbr
 显示以下即启动成功：
 
 ```bash
-# lsmod | grep bbr
 tcp_bbr                20480  1
 ```
 
