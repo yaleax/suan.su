@@ -57,4 +57,62 @@ ping -c4 netflix.com
 ```
 :tada:完成\
 ## 五、后话
-后来发现另外一个思路现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。
+后来我发现另外一个思路，现在分享在这里[V2ray路由解锁Netflix](https://blog.mojxtang.com/784/)。原理是在能看Netflix 的机器上安装 ss。不能看 Netlify 的机器上使用 V2ray 连接能看Netflix 的机器上安装 ss。
+下面是 V2ray 的配置文件
+```json
+{
+  "inbound": {
+    "port": 10000,
+    "listen": "127.0.0.1",
+    "protocol": "vmess",
+    "settings": {
+      "clients": [{
+        "id": "b50a11fc-xxxx-xxxx-xxxx-c9cb6eacbc55",
+        "alterId": 64
+      }]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/v"
+      }
+    }
+  },
+  "outbound": {
+    "protocol": "freedom",
+    "settings": {}
+  },
+  "outboundDetour": [{
+    "protocol": "shadowsocks",
+    "settings": {
+      "servers": [{
+        "address": "【这里输入ss服务器的IP地址】",
+        "method": "【这里输入ss服务器的加密】",
+        "password": "【这里输入ss服务器的密码】",
+        "port": 【这里输入ss服务器的端口】,
+        "ota": false
+      }]
+    },
+    "tag": "ban"
+  }],
+  "routing": {
+    "strategy": "rules",
+    "settings": {
+      "domainStrategy": "AsIs",
+      "rules": [{
+        "type": "field",
+        "domain": [
+          "domain:fast.com",
+          "domain:netflix.com",
+          "domain:netflix.net",
+          "domain:nflxext.com",
+          "domain:nflxso.net",
+          "domain:nflxvideo.net",
+          "domain:nflximg.net"
+        ],
+        "outboundTag": "ban"
+      }]
+    }
+  }
+}
+```
