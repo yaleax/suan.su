@@ -14,7 +14,7 @@ Dnsmasq SNIproxy一键脚本，是利用Dnsmasq的DNS将网站解析劫持到SNI
 ### 2.想要解锁的服务器
 ## 三、教程第1部分
 {{% notice warning 重要提示%}}
-在可以看 Netlify的服务器上输入下面的命令
+在可以看Netlify的服务器上输入下面的命令
 {{% /notice %}}
 ### 1.如何关闭dnsmasq[^footnote1]
 [^footnote1]:[关闭Dnsmasq](https://superuser.com/questions/1318220/ubuntu-18-04-disable-dnsmasq-base-and-enable-full-dnsmasq)
@@ -43,7 +43,7 @@ reboot
 ```
 ## 四、教程第2部分
 {{% notice warning 重要提示 %}}
-想要解锁的服务器上输入下面的命令
+在想要解锁的服务器上输入下面的命令
 {{% /notice %}}
 ### 1.设置 ip
 把下面代码里面的 ip 更改成，可以看 netflix 的服务器 ip。
