@@ -12,8 +12,8 @@ Dnsmasq SNIproxy一键脚本，是利用Dnsmasq的DNS将网站解析劫持到SNI
 ## 二、必要条件
 ### 1.可以看 Netlify的服务器
 ### 2.想要解锁的服务器
-
-## 三、教程第1部分
+## 三、教程第1部分[^footnote]
+[^footnote]:[关闭 Dnsmasq](https://superuser.com/questions/1318220/ubuntu-18-04-disable-dnsmasq-base-and-enable-full-dnsmasq)
 在可以看 Netlify的服务器上输入下面的命令
 ### 1.关闭dnsmasq
 ```bash
@@ -32,24 +32,18 @@ reboot
 wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -i
 ```
 {{% notice info 卸载命令 %}}
-```bash  
 wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent.com/myxuchangbin/dnsmasq_sniproxy_install/master/dnsmasq_sniproxy.sh && bash dnsmasq_sniproxy.sh -u
-```
 {{% /notice %}}
-
 ### 5.重启服务器
-
 ```bash
 reboot
 ```
-
 ## 四、教程第2部分
-想要解锁的服务器上输入下面代码
+想要解锁的服务器上输入下面的命令
 ### 1. 设置 ip
 把下面代码里面的 ip 更改成，可以看 netflix 的服务器 ip。
-
 ```bash
-    echo nameserver IP > /etc/resolv.conf
+echo nameserver IP > /etc/resolv.conf
 ```
 ### 2. 查看是否成功
 如果返回的 ip 是可以看 netflix 的服务器 ip，那么就说明成功了。
@@ -57,5 +51,5 @@ reboot
 ping -c4 netflix.com
 ```
 :tada:完成
-
+------
 [参考资料]<https://www.mebi.me/1035>
