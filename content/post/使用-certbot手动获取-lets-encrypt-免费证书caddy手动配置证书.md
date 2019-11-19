@@ -36,8 +36,6 @@ Let’s Encrypt目前支持三种验证方式：
 - http-01：在域名对应的 Web 服务器下放置一个 HTTP well-known URL 资源文件。
 - tls-sni-01：在域名对应的 Web 服务器下放置一个 HTTPS well-known URL 资源文件。
 
-使用 Certbot 客户端申请证书方法非常的简单，只需如下一行命令就搞定了。
-
 下面以 dns验证方式为例
 
 ```bash
@@ -48,24 +46,16 @@ Let’s Encrypt目前支持三种验证方式：
 2.`xxx.com` 请根据自己的域名自行更改。
 {{% /notice %}}    
 
-相关参数说明：
-
-{{% notice info 说明%}}
-certonly 表示插件，Certbot 有很多插件。不同的插件都可以申请证书，用户可以根据需要自行选择。
--d 为哪些主机申请证书。如果是通配符，输入 *.xxx.com (根据实际情况替换为你自己的域名)。
---preferred-challenges dns-01，使用 DNS 方式校验域名所有权。
---server，Let's Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定。
-{{% /notice %}}    
-
+等待安装一些相关环境文件，接下来的操作参考下面得图片
 
 ![](https://img.suan.su/le_ssl_01.png)
 
-第五步 更改 dnstxt
+### 3.更改dnstxt
 
 测试验证
 
 ```
-dig  -t txt _acme-challenge.xxx.com @8.8.8.8 
+dig -t txt _acme-challenge.xxx.com@8.8.8.8 
 ```
 
 确认生效后，回车继续执行，最后会输出如下内容：
