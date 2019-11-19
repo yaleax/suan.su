@@ -6,21 +6,15 @@ tags:
   - Caddy
   - 证书
 ---
-# 使用 Certbot手动获取 Let's Encrypt 免费证书
-
-
-
 ## 一、前言
 
-如果我们要启用 HTTPS，就需要从证书授权机构(以下简称 CA ) 处获取一个证书，Let's Encrypt 就是一个 CA。
- [Let's Encrypt](https://letsencrypt.org) 是一个免费、开放，自动化的证书颁发机构。
+之前写了一个教程是利用 Caddy 自动获得证书得，最近总是失败，所以就选择手动获取，然后再配置 Caddy。首先我们需要从证书授权机构(以下简称 CA ) 处获取一个证书，Let's Encrypt 就是一个 CA。
+ [Let's Encrypt](https://letsencrypt.org) 是一个免费、开放，自动化的证书颁发机构，Caddy自动申请得也是这家。
  [Certbot](https://certbot.eff.org) 是 Let’s Encrypt 官方推荐的证书生成客户端工具
 
 
 
 ## 二、教程
-
-
 
 ### 1.安装 Cerbot
 
@@ -36,7 +30,7 @@ chmod a+x certbot-auto
 
 ### 2.申请通配符证书
 
-客户在申请 Let’s Encrypt 证书的时候，需要校验域名的所有权，证明操作者有权利为该域名申请证书，目前支持三种验证方式：
+Let’s Encrypt目前支持三种验证方式：
 
 - dns-01：给域名添加一个 DNS TXT 记录。
 - http-01：在域名对应的 Web 服务器下放置一个 HTTP well-known URL 资源文件。
@@ -62,13 +56,7 @@ certonly 表示插件，Certbot 有很多插件。不同的插件都可以申请
 --server，Let's Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定。
 ```
 
-第一步输入邮箱
-
-第二步输入 a
-
-第三步输入 y
-
-第四步输入 y
+![](https://img.suan.su/le_ssl_01.png)
 
 第五步 更改 dnstxt
 
