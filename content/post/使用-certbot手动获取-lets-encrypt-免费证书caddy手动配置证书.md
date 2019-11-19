@@ -43,18 +43,20 @@ Let’s Encrypt目前支持三种验证方式：
 ```bash
 ./certbot-auto certonly  -d "*.xxx.com" --manual --preferred-challenges dns-01  --server https://acme-v02.api.letsencrypt.org/directory
 ```
-
-> 1.申请通配符证书，只能使用 dns-01 的方式。  
-> 2.`xxx.com` 请根据自己的域名自行更改。
+{{% notice tip 提示%}}
+1.申请通配符证书，只能使用 dns-01 的方式。  
+2.`xxx.com` 请根据自己的域名自行更改。
+{{& /notice &}}
 
 相关参数说明：
 
-```
+{{% notice info 提示%}}
 certonly 表示插件，Certbot 有很多插件。不同的插件都可以申请证书，用户可以根据需要自行选择。
 -d 为哪些主机申请证书。如果是通配符，输入 *.xxx.com (根据实际情况替换为你自己的域名)。
 --preferred-challenges dns-01，使用 DNS 方式校验域名所有权。
 --server，Let's Encrypt ACME v2 版本使用的服务器不同于 v1 版本，需要显示指定。
-```
+{{% /notice %}}
+
 
 ![](https://img.suan.su/le_ssl_01.png)
 
