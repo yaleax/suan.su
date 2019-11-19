@@ -44,8 +44,8 @@ Let’s Encrypt目前支持三种验证方式：
 ./certbot-auto certonly  -d "*.xxx.com" --manual --preferred-challenges dns-01  --server https://acme-v02.api.letsencrypt.org/directory
 ```
 
-> 1.申请通配符证书，只能使用 dns-01 的方式。
->  2.`xxx.com` 请根据自己的域名自行更改。
+> 1.申请通配符证书，只能使用 dns-01 的方式。  
+> 2.`xxx.com` 请根据自己的域名自行更改。
 
 相关参数说明：
 
