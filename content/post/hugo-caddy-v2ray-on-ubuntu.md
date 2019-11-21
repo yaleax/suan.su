@@ -171,13 +171,29 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBack
 #备用地址
 wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 ```
-### 2.编辑 Caddy配置文件
+### 2.设置 Cadddy所需要的目录
+```bash
+# 建立配置文件，更改文件所有权
+mkdir /etc/caddy
+touch /etc/caddy/Caddyfile
+chown -R root:www-data /etc/caddy
+# caddy自动获得的https证书存放位置
+mkdir /etc/ssl/caddy
+chown -R www-data:root /etc/ssl/caddy
+# 私钥禁止其他用户访问
+chmod 0770 /etc/ssl/caddy
+# 建立日志目录，给与写入权限
+mkdir /var/log/caddy
+touch /var/log/caddy/access.log
+chown -R www-data:root /var/log/caddy
+chmod 0666 /var/log/caddy/access.log
+```
+### 3.编辑 Caddy配置文件
 
 ```bash
-nano /usr/local/caddy/Caddyfile
+nano /etc/caddy/Caddyfile
 ```
-
-### 3.Caddy配置文件
+### 4.Caddy配置文件
 
 ```bash
 suan.su
@@ -197,14 +213,14 @@ suan.su
 修改完成后，你需要同时按 <kbd>ctrl</kbd> + <kbd>x</kbd>来退出,再输入<kbd>y</kbd>确认保存，再按 <kbd>enter</kbd> 保存。  
 {{% /notice %}}
 
-### 4.Caddy文件说明
+### 5.Caddy文件说明
  
-安装目录：`/usr/local/caddy`  
-Caddy配置文件位置：`/usr/local/caddy/Caddyfile`  
+安装目录：`/etc/caddy`  
+Caddy配置文件位置：`/etc/caddy/Caddyfile`  
 Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/`
 
 
-### 5.Caddy 控制命令
+### 6.Caddy 控制命令
 {{% notice info 命令信息 %}}  
 启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
@@ -213,7 +229,7 @@ Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/si
 查看Caddy启动日志：tail -f /tmp/caddy.log  
 {{% /notice %}}
 
-### 6.启动 Caddy服务并查询状态
+### 7.启动 Caddy服务并查询状态
 
 ```bash
 /etc/init.d/caddy start
