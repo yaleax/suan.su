@@ -65,6 +65,7 @@ service clash start
 # 创建 .config目录
 mkdir .config 
 # 创建 clash 目录
+mkdir ~/.config/clash
 # 下载 dashboard
 wget https://github.com/haishanh/yacd/archive/gh-pages.zip
 # 用 unzip解压缩 
