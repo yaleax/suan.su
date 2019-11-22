@@ -99,5 +99,5 @@ service clash start
 
 
 ------
-[参考1：]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
-[参考2：]<https://qust.me/post/678ffe99.html>
+[参考1]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
+[参考2]<https://qust.me/post/678ffe99.html>
