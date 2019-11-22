@@ -171,15 +171,13 @@ sudo systemctl status v2ray
 #备用地址
 wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh~
 ```
-```bash
-curl https://getcaddy.com | bash -s personal http.git
-```
+
 
 ### 2.设置 Cadddy所需要的目录
 ```bash
 # 建立配置文件，更改文件所有权
-mkdir /etc/caddy
-touch /etc/caddy/Caddyfile
+mkdir /usr/local/caddy/
+touch /usr/local/caddy/Caddyfile
 chown -R root:www-data /etc/caddy
 # caddy自动获得的https证书存放位置
 mkdir /etc/ssl/caddy
@@ -195,7 +193,7 @@ chmod 0666 /var/log/caddy/access.log
 ### 3.编辑 Caddy配置文件
 
 ```bash
-nano /etc/caddy/Caddyfile
+nano /usr/local/caddy/Caddyfile
 ```
 ### 4.Caddy配置文件
 
@@ -219,9 +217,9 @@ suan.su
 
 ### 5.Caddy文件说明
  
-~安装目录：`/etc/caddy`  
-Caddy配置文件位置：`/etc/caddy/Caddyfile`  
-Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/`~
+安装目录：`/usr/local/caddy/`  
+Caddy配置文件位置：`/usr/local/caddy/Caddyfile`  
+
 
 
 ### 6.Caddy 控制命令
