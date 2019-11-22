@@ -97,6 +97,9 @@ service clash start
 
 访问http://serverip:9090/ui/ 试试吧
 
+## 二、通过V2ray访问已安装Clash的服务器
+
+
 
 ------
 [参考1]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
