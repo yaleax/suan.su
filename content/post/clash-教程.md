@@ -30,22 +30,20 @@ chmod +x /usr/local/bin/clash
 nano /etc/systemd/system/clash.service
 ```
 把下面的信息复制进去
-{{% notice info clash.service配置 %}}
-
+```bash
 [Unit]
 Description=clash service
 After=network.target
 
-[Service]  
-Type=simple  
-User=root  
-ExecStart=/usr/local/bin/clash  
-Restart=on-failure # or always, on-abort, etc  
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/local/bin/clash
+Restart=on-failure # or always, on-abort, etc
 
-[Install]  
+[Install]
 WantedBy=multi-user.target
-
-{{% /notice %}}
+```
 
 
 ### 3.设置 Clash 开机自启
