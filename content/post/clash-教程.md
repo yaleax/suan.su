@@ -48,9 +48,7 @@ systemctl enable clash
 
 {{% notice tip 其他功能%}}
 
-```bash
 service clash start
-```
 
 {{% /notice %}}
 
