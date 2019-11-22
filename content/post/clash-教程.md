@@ -52,11 +52,14 @@ service clash start
 
 {{% /notice %}}
 
-### 4.下载 dashborad 控制面板
+### 4.下载 dashboard 控制面板
 
 ```bash
+# 下载 dashboard
 wget https://github.com/haishanh/yacd/archive/gh-pages.zip
+# 用 unzip解压缩 
 unzip gh-pages.zip
+# 把文件改名层 dashboard
 mv yacd-gh-pages/ dashboard/
 ```
 
@@ -65,16 +68,18 @@ mv yacd-gh-pages/ dashboard/
 ### 5.配置 Clash 文件
 
 ```bash
+# 进入配置文件目录
 cd ~/.config/
 # 创建 Clash 目录
 mkdir clash
+# 编辑 Clash 配置文件config.yaml
 nano config.yaml
 
 ```
 
 {{% notice info %}}
 
-配置在这里
+配置写在这里
 
 {{% /notice %}}
 
