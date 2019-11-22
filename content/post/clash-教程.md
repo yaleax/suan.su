@@ -1,5 +1,5 @@
 ---
-title: Clash 教程
+title: '在 ubuntu服务器上安装Clash '
 date: 2019-11-18T08:37:54.156Z
 lastmod: 2019-11-18T08:37:55.541Z
 tags:
