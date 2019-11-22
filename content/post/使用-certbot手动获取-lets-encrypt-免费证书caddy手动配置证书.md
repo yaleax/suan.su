@@ -79,7 +79,7 @@ IMPORTANT NOTES:
 到了这一步后，恭喜您，证书申请成功。 证书和密钥保存在下列目录：
 
 ```
-$ tree /etc/letsencrypt/live/xxx.com/
+tree /etc/letsencrypt/live/xxx.com/
 .
 ├── cert.pem
 ├── chain.pem
@@ -90,7 +90,7 @@ $ tree /etc/letsencrypt/live/xxx.com/
 校验证书信息，输入如下命令：
 
 ```
-$ openssl x509 -in  /etc/letsencrypt/live/xxx.com/cert.pem -noout -text 
+openssl x509 -in  /etc/letsencrypt/live/xxx.com/cert.pem -noout -text 
 
 # 可以看到证书包含了 SAN 扩展，该扩展的值就是 *.xxx.com
 ...
