@@ -5,7 +5,9 @@ lastmod: 2019-11-18T08:37:55.541Z
 tags:
   - Clash
 ---
-## 一、安装Clash到 Linux 系统上
+## 一、初衷
+## 二、必要条件
+## 三、安装Clash到 Linux 系统上
 
 ### 1. 下载并安装Clash
 
@@ -97,7 +99,7 @@ service clash start
 
 访问http://serverip:9090/ui/ 试试吧
 
-## 二、通过V2ray访问已安装Clash的服务器
+## 四、通过V2ray访问已安装Clash的服务器
 
 
 
