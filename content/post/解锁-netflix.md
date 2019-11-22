@@ -121,3 +121,6 @@ ping -c4 netflix.com
   }
 }
 ```
+## 六、最后
+
+后来我发现用 把clash安装在 linxu 服务器上，然后让 clash 指定什么网站走那个服务器。
