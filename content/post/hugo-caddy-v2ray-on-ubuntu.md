@@ -224,7 +224,7 @@ Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
 
 ### 6.Caddy 控制命令
 {{% notice info 命令信息 %}}  
-~启动：/etc/init.d/caddy start  
+启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
 查看状态：/etc/init.d/caddy status  
