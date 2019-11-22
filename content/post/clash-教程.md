@@ -77,7 +77,7 @@ nano config.yaml
 
 ```
 
-{{% notice info %}}
+{{% notice info config.yaml配置 %}}
 
 配置写在这里
 
