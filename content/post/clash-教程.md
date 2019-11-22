@@ -83,7 +83,11 @@ nano config.yaml
 
 {{% /notice %}}
 
-### 6.启动 Clash
+### 6.启动前
+
+配置文件里面的加密是重点
+
+### 7.启动 Clash
 
 ```bash
 service clash start
