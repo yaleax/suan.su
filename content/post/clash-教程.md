@@ -95,7 +95,7 @@ nano config.yaml
 service clash start
 ```
 
-### 7.:tada: 完成
+### 8.:tada: 完成
 
 访问http://serverip:9090/ui/ 试试吧
 
