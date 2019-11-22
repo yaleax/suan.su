@@ -15,9 +15,9 @@ cd ~
 #下载二进制文件
 wget https://github.com/Dreamacro/clash/releases/download/v0.16.0/clash-linux-amd64-v0.16.0.gz 
 #使用 gzip 解压
-gzip -d clash-linux-amd64-v0.15.0.gz 
+gzip -d clash-linux-amd64-v0.16.0.gz 
 #移动到bin
-mv clash-linux-amd64-v0.15.0 /usr/local/bin/clash 
+mv clash-linux-amd64-v0.16.0 /usr/local/bin/clash 
 #添加执行权限
 chmod +x /usr/local/bin/clash 
 ```
@@ -98,4 +98,7 @@ service clash start
 访问http://serverip:9090/ui/ 试试吧
 
 
-
+------
+本文参考：
+[参考1：]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>
+[参考2：]<https://qust.me/post/678ffe99.html>
