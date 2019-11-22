@@ -161,7 +161,11 @@ sudo systemctl restart v2ray   # 重新启动v2ray
 sudo systemctl start v2ray    
 sudo systemctl status v2ray
 ```
+### 7.暂停 V2ray
 
+```bash
+sudo systemctl status stop
+```
 ## 六、Caddy
 
 ### 1.安装 Caddy
@@ -234,8 +238,8 @@ Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
 ### 7.启动 Caddy服务并查询状态
 
 ```bash
-~/etc/init.d/caddy start
-/etc/init.d/caddy status~
+/etc/init.d/caddy start
+sudo systemctl start v2ray    
 ```
  :tada: 完成！访问自己的域名试试吧!  
 ## 七、后话
