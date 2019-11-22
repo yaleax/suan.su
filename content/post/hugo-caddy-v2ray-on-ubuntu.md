@@ -167,10 +167,14 @@ sudo systemctl status v2ray
 ### 1.安装 Caddy
 
 ```bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+~wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 #备用地址
-wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh~
 ```
+```bash
+curl https://getcaddy.com | bash -s personal http.git
+```
+
 ### 2.设置 Cadddy所需要的目录
 ```bash
 # 建立配置文件，更改文件所有权
@@ -215,25 +219,25 @@ suan.su
 
 ### 5.Caddy文件说明
  
-安装目录：`/etc/caddy`  
+~安装目录：`/etc/caddy`  
 Caddy配置文件位置：`/etc/caddy/Caddyfile`  
-Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/`
+Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v01.api.letsencrypt.org/sites/xxx.xxx(域名)/`~
 
 
 ### 6.Caddy 控制命令
 {{% notice info 命令信息 %}}  
-启动：/etc/init.d/caddy start  
+~启动：/etc/init.d/caddy start  
 停止：/etc/init.d/caddy stop  
 重启：/etc/init.d/caddy restart  
 查看状态：/etc/init.d/caddy status  
 查看Caddy启动日志：tail -f /tmp/caddy.log  
-{{% /notice %}}
+{{% /notice %}}~
 
 ### 7.启动 Caddy服务并查询状态
 
 ```bash
-/etc/init.d/caddy start
-/etc/init.d/caddy status
+~/etc/init.d/caddy start
+/etc/init.d/caddy status~
 ```
  :tada: 完成！访问自己的域名试试吧!  
 ## 七、后话
