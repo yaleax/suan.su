@@ -108,7 +108,45 @@ service clash start
 
 ## 四、通过V2ray访问已安装Clash的服务器
 
-
+v2ray配置如下
+```bash
+{
+  "inbounds": [
+    {
+      "port": 30123,
+      "listen":"127.0.0.1", //只监听 127.0.0.1，避免除本机外的机器探测到开放了 30123 端口
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "b831381d-6324-4d53-ad4f-8cda48b30811",
+            "alterId": 64
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+        "path": "/ray30123"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "socks",
+      "settings": {
+        "settings": {
+        "servers": [{
+        "address": "127.0.0.1",
+        "port": 7891,
+        "auth": "noauth"
+      }]
+     }
+    }
+  ]
+}
+```
 
 ------
 [参考1]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
