@@ -52,7 +52,7 @@ systemctl enable clash
 service clash start
 ```
 
-{{% /noteice %}}
+{{% /notice %}}
 
 ### 4.下载 dashborad 控制面板
 
