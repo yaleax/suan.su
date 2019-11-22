@@ -106,3 +106,15 @@ X509v3 Subject Alternative Name:
 到此，我们就演示了如何在 Let’s Encrypt 申请免费的通配符证书。
 
 ## 三、Caddy 配置
+
+```bash
+example.moe
+gzip
+log /var/log/caddy/access.log
+tls /etc/ssl/cert.pem /etc/ssl/key.pem
+root /var/www/
+
+```
+
+-------
+[参考1]<https://youlu.tk/#header-n662>
