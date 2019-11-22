@@ -36,13 +36,13 @@ nano /etc/systemd/system/clash.service
 Description=clash service
 After=network.target
 
-[Service]
-Type=simple
-User=root
-ExecStart=/usr/local/bin/clash
-Restart=on-failure # or always, on-abort, etc
+[Service]  
+Type=simple  
+User=root  
+ExecStart=/usr/local/bin/clash  
+Restart=on-failure # or always, on-abort, etc  
 
-[Install]
+[Install]  
 WantedBy=multi-user.target
 
 {{% /notice %}}
