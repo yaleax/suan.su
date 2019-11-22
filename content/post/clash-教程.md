@@ -46,7 +46,7 @@ systemctl daemon-reload
 systemctl enable clash
 ```
 
-{{%notice tip 其他功能%}}
+{{% notice tip 其他功能%}}
 
 ```bash
 service clash start
@@ -74,7 +74,7 @@ nano config.yaml
 
 ```
 
-{{% notice %}}
+{{% notice info %}}
 
 配置在这里
 
