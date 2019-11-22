@@ -29,7 +29,7 @@ chmod +x /usr/local/bin/clash
 ```bash
 nano /etc/systemd/system/clash.service
 ```
-
+把下面的信息复制进去
 {{% notice info clash.service配置 %}}
 
 [Unit]
