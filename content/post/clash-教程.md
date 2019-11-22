@@ -56,9 +56,10 @@ systemctl enable clash
 ```
 
 {{% notice tip 其他功能%}}
-
 service clash start
-
+service clash stop
+service clash restart
+service clash status
 {{% /notice %}}
 
 ### 4.下载 dashboard 控制面板
@@ -90,7 +91,7 @@ nano config.yaml
 
 {{% notice info config.yaml配置 %}}
 
-配置写在这里
+[去 GitHub 自己复制吧]<https://github.com/ConnersHua/Profiles/edit/master/Clash/Pro.yaml>
 
 {{% /notice %}}
 
