@@ -5,7 +5,7 @@ lastmod: 2019-11-18T08:37:55.541Z
 tags:
   - Clash
 ---
-## 一、安装
+## 一、安装Clash到 Linux 系统上
 
 ### 1. 下载并安装Clash
 
