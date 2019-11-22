@@ -27,6 +27,11 @@ chmod +x /usr/local/bin/clash
 ### 2.配置Clash启动服务
 
 ```bash
+nano /etc/systemd/system/clash.service
+```
+
+{{% notice info clash.service配置 %}}
+
 [Unit]
 Description=clash service
 After=network.target
@@ -39,7 +44,9 @@ Restart=on-failure # or always, on-abort, etc
 
 [Install]
 WantedBy=multi-user.target
-```
+
+{{% /notice %}}
+
 
 ### 3.设置 Clash 开机自启
 
