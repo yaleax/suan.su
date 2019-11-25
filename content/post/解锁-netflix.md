@@ -67,19 +67,19 @@ ping -c4 netflix.com
 ```json
 {
   "inbound": {
-    "port": 10000,
+    "port": 端口,
     "listen": "127.0.0.1",
     "protocol": "vmess",
     "settings": {
       "clients": [{
-        "id": "b50a11fc-xxxx-xxxx-xxxx-c9cb6eacbc55",
-        "alterId": 64
+        "id": "更改",
+        "alterId": 90
       }]
     },
     "streamSettings": {
       "network": "ws",
       "wsSettings": {
-        "path": "/v"
+        "path": "/store123455"
       }
     }
   },
@@ -91,10 +91,10 @@ ping -c4 netflix.com
     "protocol": "shadowsocks",
     "settings": {
       "servers": [{
-        "address": "【这里输入ss服务器的IP地址】",
-        "method": "【这里输入ss服务器的加密】",
-        "password": "【这里输入ss服务器的密码】",
-        "port": 【这里输入ss服务器的端口】,
+        "address": "ip", //shadwosockip
+        "method": "加密方式",
+        "password": "密码",
+        "port": 端口,
         "ota": false
       }]
     },
