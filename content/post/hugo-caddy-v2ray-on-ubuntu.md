@@ -242,7 +242,7 @@ Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
 重启：/etc/init.d/caddy restart  
 查看状态：/etc/init.d/caddy status  
 查看Caddy启动日志：tail -f /tmp/caddy.log  
-{{% /notice %}}~
+{{% /notice %}}
 
 ### 7.启动 Caddy服务并查询状态
 
