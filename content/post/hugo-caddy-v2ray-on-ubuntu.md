@@ -44,8 +44,16 @@ hugo new site 3cho
 ```
 
 ### 3.安装主题
+{{% notice tip 提示 %}}  
+如果没有安装 git请先2
+{{% /notice %}}
+### 3.1安装 git
+```bash
+apt-get update
+apt-get install gi
+```
+###3.2 安装主题
 主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
-
 ```bash
 # 进入新建好的3cho目录
 cd /var/www/3cho
@@ -69,7 +77,9 @@ hugo -D
 ```
 
 ## 四、GitHub
-
+{{% notice tip 提示 %}}  
+如果你以后不想通过 github管理文章，这里可以跳过。
+{{% /notice %}}
 ### 1.新建一个Github仓库
 输完仓库名字后，按 <kbd>enter</kbd> 。
 ![](https://img.suan.su/Screen-Recording-2019-11-17-20-13-44.gif)
@@ -87,7 +97,7 @@ git push -u origin master
 
 ## 五、V2ray
 
-### 1.更新时间
+### 1.更新为上海时间
 
 ```bash
 cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
@@ -171,18 +181,17 @@ sudo systemctl status stop
 ### 1.安装 Caddy
 
 ```bash
-~wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
 #备用地址
 wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh~
 ```
-
 
 ### 2.设置 Cadddy所需要的目录
 ```bash
 # 建立配置文件，更改文件所有权
 mkdir /usr/local/caddy/
 touch /usr/local/caddy/Caddyfile
-chown -R root:www-data /etc/caddy
+chown -R root:www-data /usr/local/caddy/
 # caddy自动获得的https证书存放位置
 mkdir /etc/ssl/caddy
 chown -R www-data:root /etc/ssl/caddy
@@ -240,6 +249,7 @@ Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
 ```bash
 /etc/init.d/caddy start
 sudo systemctl start v2ray    
+tail -f /tmp/caddy.log 
 ```
  :tada: 完成！访问自己的域名试试吧!  
 ## 七、后话
