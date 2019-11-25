@@ -56,10 +56,10 @@ systemctl enable clash
 ```
 
 {{% notice tip 其他功能%}}
-service clash start
-service clash stop
-service clash restart
-service clash status
+service clash start    # 启动
+service clash stop     # 停止
+service clash restart  # 重启
+service clash status   # 状态
 {{% /notice %}}
 
 ### 4.下载 dashboard 控制面板
