@@ -149,7 +149,7 @@ v2ray配置如下
     }
   ]
 }
-```
+```    
 分享一个在线 json 编辑器，利用这个工具可以检查自己的 json 文件是否出错。去[在线 json 编辑器](http://jsoneditoronline.org/)
 ------
 [参考1]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
