@@ -151,6 +151,21 @@ v2ray配置如下
 }
 ```    
 ### [在线 json 编辑器](http://jsoneditoronline.org/)
+
+## 五、关闭端口
+
+```bash
+#打开端口
+iptables -A INPUT -p   $port   -j ACCEPT
+#关闭端口  
+iptables -A INPUT -p $port   -j DROP
+
+```
+
+作者：十野早望
+链接：https://www.jianshu.com/p/d5b451e9ae87
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 ------
 [参考1]<https://breakertt.moe/2019/08/20/clash_gateway/index.html>    
 [参考2]<https://qust.me/post/678ffe99.html>
