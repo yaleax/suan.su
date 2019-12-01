@@ -226,7 +226,7 @@ suan.su
 ### 5.Caddy文件说明
  
 安装目录：`/usr/local/caddy/`  
-Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
+Caddy配置文件位置：`/usr/local/caddy/Caddyfile`  
 Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v02.api.letsencrypt.org/sites/xxx.xxx(域名)/`  
 
 
