@@ -192,11 +192,6 @@ wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_ins
 mkdir /usr/local/caddy/
 touch /usr/local/caddy/Caddyfile
 chown -R root:www-data /usr/local/caddy/
-# caddy自动获得的https证书存放位置
-mkdir /etc/ssl/caddy
-chown -R www-data:root /etc/ssl/caddy
-# 私钥禁止其他用户访问
-chmod 0770 /etc/ssl/caddy
 # 建立日志目录，给与写入权限
 mkdir /var/log/caddy
 touch /var/log/caddy/access.log
@@ -231,7 +226,8 @@ suan.su
 ### 5.Caddy文件说明
  
 安装目录：`/usr/local/caddy/`  
-Caddy配置文件位置：`/usr/local/caddy/Caddyfile`  
+Caddy配置文件位置：`/usr/local/caddy/Caddyfile`
+Caddy自动申请SSL证书位置：`/.caddy/acme/acme-v02.api.letsencrypt.org/sites/xxx.xxx(域名)/`  
 
 
 
