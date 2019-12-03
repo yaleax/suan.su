@@ -213,9 +213,9 @@ nano /etc/crontab
 @reboot root  rclone mount ldfdsa00: /root/rclone/ldfdsa00  --buffer-size 1G --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G  --allow-non-empty --allow-other   --dir-cache-time 12h  >/dev/null 2>&1 &
 ```
 ### 6.1重新挂在
+如果有问题，可以选择重新挂在
 ```bash
 umount /root/rclone/ldfdsa00 #卸载源目录
-
 rclone mount gd（换成新账号，内部目录要匹配）: /root/rclone/ldfdsa00  --buffer-size 1G --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G  --allow-non-empty --allow-other   --dir-cache-time 12h  >/dev/null 2>&1 &      #重新挂载
 ```
 ----
