@@ -38,16 +38,16 @@ sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 ```bash
 -A PREROUTING -p tcp -m tcp --dport 10000 -j DNAT --to-destination 1.1.1.1
 -A PREROUTING -p udp -m udp --dport 10000 -j DNAT --to-destination 1.1.1.1
--A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000 -j SNAT --to-source [本地服务器IP]
--A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000 -j SNAT --to-source [本地服务器IP]
+-A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000 -j SNAT --to-source 本地服务器IP
+-A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000 -j SNAT --to-source 本地服务器IP
 ```
 ### 2.非同端口号配置方案    
 使用本地服务器的60000端口来转发目标IP为1.1.1.1的50000端口
 ```bash
 -A PREROUTING -p tcp -m tcp --dport 60000 -j DNAT --to-destination 1.1.1.1:50000
 -A PREROUTING -p udp -m udp --dport 60000 -j DNAT --to-destination 1.1.1.1:50000
--A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 50000 -j SNAT --to-source [本地服务器IP]
--A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 50000 -j SNAT --to-source [本地服务器IP]
+-A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 50000 -j SNAT --to-source 本地服务器IP
+-A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 50000 -j SNAT --to-source 本地服务器IP
 ```
 
 ### 3.多端口转发配置方案     
@@ -55,8 +55,8 @@ sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 ```bash
 -A PREROUTING -p tcp -m tcp --dport 10000:65535 -j DNAT --to-destination 1.1.1.1
 -A PREROUTING -p udp -m udp --dport 10000:65535 -j DNAT --to-destination 1.1.1.1
--A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000:65535 -j SNAT --to-source [本地服务器IP]
--A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000:65535 -j SNAT --to-source [本地服务器IP]
+-A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
+-A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
 ```
 ### 4.保存并重启
 
