@@ -66,5 +66,5 @@ service iptables restart
 
 -----
 
-[参考1：]<https://www.cloudiplc.com/knowledgebase.php?action=displayarticle&id=9>   
-[参考2：]<https://moe.best/vps-domain/cloudiplc-nat.html>
+[参考1]<https://www.cloudiplc.com/knowledgebase.php?action=displayarticle&id=9>   
+[参考2]<https://moe.best/vps-domain/cloudiplc-nat.html>
