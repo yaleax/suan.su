@@ -6,11 +6,11 @@ lastmod: 2019-11-30T11:22:02.630Z
 
 有人已经写的挺好了，我为啥还要写？
 
-记录一下，[去教程](https://sunpma.com/567.html)!
+[去教程](https://sunpma.com/567.html)!
 
 ## 一、前言
 
-如果这个教程没有了，改怎么办？所以，还是备份一下吧，照抄！重新排版！
+如果那个教程没有了，该怎么办？还是备份一下吧，照抄！重新排版！
 
 ## 二、必要条件
 这个应该是 Ubuntu/Debian 系统比较实用，别的系统命令有细微差别。
@@ -203,7 +203,7 @@ LocalFolder  #本地要挂载的文件夹绝对路径
 例：/usr/bin/rclone mount GD:VPS /home/GoogleDrive \
 {{% /notice %}}
 
-### 5.挂在
+### 5.挂载
 ```bash
 rclone mount ldfdsa00: /root/rclone/ldfdsa00  --buffer-size 1G --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G  --allow-non-empty --allow-other   --dir-cache-time 12h  >/dev/null 2>&1 &
 ```
