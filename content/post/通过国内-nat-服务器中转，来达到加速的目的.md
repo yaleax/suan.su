@@ -23,7 +23,9 @@ systemctl enable iptables.service
 ### 2.开启端口转发功能
 
 ```bash
+#添加net.ipv4.ip_forward = 1到cloudiplc.conf    
 echo "net.ipv4.ip_forward = 1" >> /usr/lib/sysctl.d/cloudiplc.conf
+#启动cloudiplc.conf
 sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 ```
 ## 三、iptales 规则
