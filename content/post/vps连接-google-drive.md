@@ -219,6 +219,6 @@ umount /root/rclone/ldfdsa00 #卸载源目录
 rclone mount gd（换成新账号，内部目录要匹配）: /root/rclone/ldfdsa00  --buffer-size 1G --vfs-read-chunk-size 256M --vfs-read-chunk-size-limit 2G  --allow-non-empty --allow-other   --dir-cache-time 12h  >/dev/null 2>&1 &      #重新挂载
 ```
 ----
-[参考1]<https://wzfou.com/rclone-cos-fuse-ossfs/>
-[参考2]<https://sunpma.com/567.html>
-[参考3]<http://dxz.plus/index.php/2019/11/03/10.html>
+[参考1]<https://wzfou.com/rclone-cos-fuse-ossfs/>   
+[参考2]<https://sunpma.com/567.html>   
+[参考3]<http://dxz.plus/index.php/2019/11/03/10.html>   
