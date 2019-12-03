@@ -61,7 +61,9 @@ sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 ## 四、保存并重启
 
 ```bash
+#保存
 service iptables save
+#重启
 service iptables restart
 ```
 ## 五、完成 
