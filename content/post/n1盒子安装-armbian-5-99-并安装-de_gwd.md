@@ -6,10 +6,11 @@ lastmod: 2019-11-30T11:22:47.298Z
 ## 一、De_GWD介绍
 
 ### 1.名字解析
-- De: 的意思是 Debian，linux 的一个分支。   
-- GW: 的意思是 gateway，也就是网关。   
-- D: 的意思是 DNS,域名解析系统   
 理解了名字，你其实也就能知道这套系统是干什么的了。  
+- De: 的意思是 Debian，linux 的一个分支。   
+- GW: 的意思是 gateway，也就是网关。
+- D: 的意思是 DNS,域名解析系统   
+
 ### 2.功能
 - V2ray tls 1.3 ws   
 - pi-hole    
