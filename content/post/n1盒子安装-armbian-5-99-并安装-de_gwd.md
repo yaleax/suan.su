@@ -5,19 +5,20 @@ lastmod: 2019-11-30T11:22:47.298Z
 ---
 ## 一、De_GWD介绍
 
-1.名字解析
-De 的意思是 Debian，linux 的一个分支。
-GW 的意思是 gateway，也就是网关。
-D 的意思是 DNS,域名解析系统
-理解了名字，你其实也就能知道这套系统是干什么的了。
-2.功能
-- V2ray tls 1.3 ws 
-- pi-hole 
-- WireGuard Server 
+### 1.名字解析
+- De: 的意思是 Debian，linux 的一个分支。   
+- GW: 的意思是 gateway，也就是网关。   
+- D: 的意思是 DNS,域名解析系统   
+理解了名字，你其实也就能知道这套系统是干什么的了。  
+### 2.功能
+- V2ray tls 1.3 ws   
+- pi-hole    
+- WireGuard Server   
 - 内网分流
 - CloudFlare DDNS 
+
 ![](https://img.suan.su/Screen-Shot-2019-12-03-20-40-29.31.png)
-3.工作原理
+### 3.工作原理
 DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所以你需要在客户端和服务端都安装De_GWD。
 
 ## 二、在境外服务器上安装De_GWD
