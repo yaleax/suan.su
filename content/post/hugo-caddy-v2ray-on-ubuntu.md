@@ -1,5 +1,5 @@
 ---
-title: Hugo Caddy V2ray on Ubuntu
+title: Hugo Caddy V2ray on Ubuntu and file
 author: Suan
 date: 2019-11-10T02:09:16.066Z
 lastmod: 2019-11-10T02:09:16.132Z
@@ -181,7 +181,7 @@ sudo systemctl v2ray stop
 ### 1.安装 Caddy
 
 ```bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubiBackup/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh install http.filemanager http.git
 #备用地址
 wget -N --no-check-certificate https://www.moerats.com/usr/shell/Caddy/caddy_install.sh && chmod +x caddy_install.sh && bash caddy_install.sh~
 ```
