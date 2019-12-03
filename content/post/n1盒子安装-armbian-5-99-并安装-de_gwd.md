@@ -47,4 +47,6 @@ bash <(wget --no-check-certificate -qO- https://acccmi.cf/gwd/client)
 ```
 ### 3.配置参数
 
-   
+## 四、完成
+
+好多信息没写，你很难成功。好像配置都是口口相传的，所以，你去群里面问吧。[![telegram](https://i.loli.net/2019/10/23/Ol9PX7io5b3hZsz.png)](https://t.me/de_GWD)
