@@ -196,10 +196,10 @@ mkdir rclone/ldfdsa00
 ```
 {{% notice info 说明 %}}   
 #/usr/bin/rclone mount DriveName:Folder LocalFolder \
-下面整体代码中最上面的这条需要自己修改，不要直接复制，注意代码中有空格
-DriveName       #配置时填写的name
-Folder          #网盘里要挂载的文件夹名
-LocalFolder     #本地要挂载的文件夹绝对路径
+下面整体代码中最上面的这条需要自己修改，不要直接复制，注意代码中有空格    
+DriveName    #配置时填写的name    
+Folder       #网盘里要挂载的文件夹名    
+LocalFolder  #本地要挂载的文件夹绝对路径    
 例：/usr/bin/rclone mount GD:VPS /home/GoogleDrive \
 {{% /notice %}}
 
