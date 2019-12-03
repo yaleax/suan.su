@@ -174,7 +174,7 @@ sudo systemctl status v2ray
 ### 7.暂停 V2ray
 
 ```bash
-sudo systemctl status stop
+sudo systemctl v2ray stop
 ```
 ## 六、Caddy
 
