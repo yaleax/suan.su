@@ -58,13 +58,13 @@ sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 -A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
 -A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
 ```
-### 4.保存并重启
+## 四、保存并重启
 
 ```bash
 service iptables save
 service iptables restart
 ```
-## 四、完成 
+## 五、完成 
 ​:tada:​ 祝你好运。
 
 -----
