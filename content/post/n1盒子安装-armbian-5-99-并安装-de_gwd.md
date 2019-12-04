@@ -27,18 +27,19 @@ DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所�
 ## 二、在境外服务器上安装De_GWD
 ### 1.选择 debian系统
 ### 2.安装
-执行后，等待就行了。
+全自动安装，选择1
 ```bash
 apt install -y wget
 bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/jacyl4/de_GWD/master/server)
 ```
 ### 3.配置参数
 
+全自动安装，选择1
 ## 三、在 N1上安装De_GWD 安装
 ### 1.在 N1上安装Debian系统
 [N1参考]<https://yuerblog.cc/2019/10/23/%e6%96%90%e8%ae%afn1-%e5%ae%8c%e7%be%8e%e5%88%b7%e6%9c%baarmbian%e6%95%99%e7%a8%8b/> 
 ### 2.在 Debian安装 De_GWD
-安装速度挺慢的，最好是挂梯子安装。
+全自动安装，选择1，安装速度挺慢的，最好是挂梯子安装。
 ```bash
 apt install -y wget
 bash <(wget --no-check-certificate -qO- https://acccmi.cf/gwd/client)
