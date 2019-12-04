@@ -14,7 +14,7 @@ lastmod: 2019-11-30T11:22:47.298Z
 
 ### 2.功能
 - V2ray tls 1.3 ws   
-- pi-hole    
+- Pi-hole    
 - WireGuard Server   
 - 内网分流
 - CloudFlare DDNS 
