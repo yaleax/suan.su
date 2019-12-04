@@ -250,7 +250,7 @@ http://你的ip:1888/admin
 帐号:`admin`  
 密码:`admin`  
 ### 9.启动 https    
-启动 https后面会介绍，利用 Caddy 反代,添加一句
+启动 https后面会介绍，利用 Caddy 反代,添加一句  
 `proxy /admin 127.0.0.1:18888 \\反代 filebreowser`
 
 
