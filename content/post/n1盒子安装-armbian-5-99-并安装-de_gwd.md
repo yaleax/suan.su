@@ -19,6 +19,7 @@ lastmod: 2019-11-30T11:22:47.298Z
 - 内网分流
 - CloudFlare DDNS 
 ### 3.客户端界面
+
 ![](https://img.suan.su/Screen-Shot-2019-12-03-20-40-29.31.png)
 ### 3.工作原理
 DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所以你需要在客户端和服务端都安装De_GWD。
