@@ -1,5 +1,5 @@
 ---
-title: Hugo Caddy V2ray on Ubuntu and file
+title: Hugo Caddy V2ray on Ubuntu and filebrowser
 author: Suan
 date: 2019-11-10T02:09:16.066Z
 lastmod: 2019-11-10T02:09:16.132Z
@@ -176,7 +176,84 @@ sudo systemctl status v2ray
 ```bash
 sudo systemctl v2ray stop
 ```
-## 六、Caddy
+## 六、Filebrowser
+
+1.安装 Filebrowser
+
+```bash
+curl -fsSL https://filebrowser.xyz/get.sh | bash
+```
+
+安装目录：`/usr/local/bin/filebrowser`
+
+2.创建 Filebrowser配置文件
+
+```bash
+mkdir /etc/filebrowser
+mkdir /etc/filebrowser/filebrowser
+nano /etc/filebrowser/filebrowser.json
+```
+{{% notice infor 配置文件 %}}
+{
+  "port": 18888,
+  "baseURL": "/admin", //后缀名字例如：3cho.cn/admin
+  "address": "0.0.0.0",
+  "log": "stdout",
+  "database": "/var/www/3cho/database.db", //数据存放地址
+  "root": "/var/www/3cho"  //你想管理的目录
+}
+{{% /notice %}}
+
+3.设置系统服务文件
+
+```bash
+nano /etc/systemd/system/filebrowser.service
+```
+
+4.filebrowser.service配置文件
+
+{{% notice infor 配置文件 %}}
+[Unit]
+Description=File Browser
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/filebrowser -c /etc/filebrowser/filebrowser.json
+
+[Install]
+WantedBy=multi-user.target
+{{% /notice %}}
+
+5.重新载入systemctl
+
+```bash
+systemctl daemon-reload
+```
+
+6.启动 filebrowser
+```bash
+systemctl start filebrowser
+
+```
+
+{{% notice infor 配置文件 %}}
+
+状态：systemctl status filebrowser
+启动：systemctl start filebrowser
+停止：systemctl stop filebrowser
+重启：systemctl restart filebrowser
+{{% /notice %}}
+7.登录地址
+http://你的ip:1888/admin
+帐号:`admin`
+密码:`admin`
+8.启动 https
+
+启动 https后面会介绍，利用 Caddy 反代,添加一句
+`proxy /admin 127.0.0.1:18888 \\反代 filebreowser`
+
+
+## 七、Caddy
 
 ### 1.安装 Caddy
 
@@ -212,6 +289,7 @@ suan.su
   tls 123456212@mail.com
   log /var/log/caddy/access.log
   root /var/www/3cho/public
+  proxy /admin 127.0.0.1:18888 \\反代 filebreowser
   proxy /ray30123 localhost:30123 {
     websocket
     header_upstream -Origin
@@ -248,7 +326,7 @@ sudo systemctl start v2ray
 tail -f /tmp/caddy.log 
 ```
  :tada: 完成！访问自己的域名试试吧!  
-## 七、后话
+## 八、后话
 
 如果你当正常博客使用，你还需要把下面这些坑填上。    
 
