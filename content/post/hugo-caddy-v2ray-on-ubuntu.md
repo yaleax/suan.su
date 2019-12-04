@@ -198,11 +198,11 @@ nano /etc/filebrowser/filebrowser.json
 ```bash
 {
   "port": 18888,
-  "baseURL": "/admin", //后缀名字例如：3cho.cn/admin
+  "baseURL": "/admin", //后缀名字例如：suan.su/admin
   "address": "0.0.0.0",
   "log": "stdout",
-  "database": "/var/www/3cho/database.db", //数据存放地址
-  "root": "/var/www/3cho"  //你想管理的目录
+  "database": "/var/www/suan/database.db", //数据存放地址
+  "root": "/var/www/suan"  //你想管理的目录
 }
 ```
 
@@ -289,7 +289,7 @@ suan.su
   gzip
   tls 123456212@mail.com
   log /var/log/caddy/access.log
-  root /var/www/3cho/public
+  root /var/www/suan/public
   proxy /admin 127.0.0.1:18888 \\反代 filebreowser
   proxy /ray30123 localhost:30123 {
     websocket
