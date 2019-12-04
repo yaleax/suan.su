@@ -194,6 +194,7 @@ mkdir /etc/filebrowser/filebrowser
 nano /etc/filebrowser/filebrowser.json
 ```
 ### 3.Filebrowser.json配置信息
+把这些信息复制进去
 ```bash
 {
   "port": 18888,
