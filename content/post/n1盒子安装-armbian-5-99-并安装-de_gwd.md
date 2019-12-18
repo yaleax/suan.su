@@ -27,6 +27,16 @@ DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所�
 
 ## 二、在境外服务器上安装De_GWD
 ### 1.选择 debian系统
+中科大源：
+deb https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
+
+deb https://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib non-free
+deb-src https://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib non-free
+
 ### 2.安装
 全自动安装，选择1
 ```bash
