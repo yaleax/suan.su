@@ -45,12 +45,12 @@ hugo new site 3cho
 
 ### 3.安装主题
 {{% notice tip 提示 %}}  
-如果没有安装 git请先2
+如果没有安装 git先安装
 {{% /notice %}}
 ### 3.1安装 git
 ```bash
 apt-get update
-apt-get install gi
+apt-get install git
 ```
 ###3.2 安装主题
 主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
@@ -174,7 +174,7 @@ sudo systemctl status v2ray
 ### 7.暂停 V2ray
 
 ```bash
-sudo systemctl v2ray stop
+sudo systemctl stop v2ray
 ```
 ## 六、Filebrowser
 
