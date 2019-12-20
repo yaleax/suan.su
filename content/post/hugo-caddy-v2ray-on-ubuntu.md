@@ -40,7 +40,7 @@ mkdir -p /var/www
 # 使用 cd命令，进入创建的目录
 cd /var/www
 # 新建站点，名字为3cho,你可以替换成自己的名字
-hugo new site 3cho
+hugo new site suan
 ```
 
 ### 3.安装主题
@@ -55,8 +55,8 @@ apt-get install git
 ###3.2 安装主题
 主题可以去Hugo[官方主题库](https://themes.gohugo.io/)下载,本文以 [even](https://github.com/olOwOlo/hugo-theme-even) 主题为例
 ```bash
-# 进入新建好的3cho目录
-cd /var/www/3cho
+# 进入新建好的suan目录
+cd /var/www/suan
 # 安装主题（不同主题安装方式不同）
 git clone https://github.com/olOwOlo/hugo-theme-even themes/even
 #复制主题自带的 config.toml文件到当前根目录
