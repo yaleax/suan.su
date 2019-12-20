@@ -198,11 +198,11 @@ nano /etc/filebrowser/filebrowser.json
 ```json
 {
   "port": 18888,
-  "baseURL": "/admin", //后缀名字例如：suan.su/admin
+  "baseURL": "/admin",
   "address": "0.0.0.0",
   "log": "stdout",
-  "database": "/var/www/suan/database.db", //数据存放地址
-  "root": "/"  //你想管理的目录
+  "database": "/var/www/suan/database.db",
+  "root": "/var/www"
 }
 ```
 
