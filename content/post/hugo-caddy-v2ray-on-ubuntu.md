@@ -202,7 +202,7 @@ nano /etc/filebrowser/filebrowser.json
   "address": "0.0.0.0",
   "log": "stdout",
   "database": "/var/www/suan/database.db", //数据存放地址
-  "root": "/var/www/suan"  //你想管理的目录
+  "root": "/"  //你想管理的目录
 }
 ```
 
