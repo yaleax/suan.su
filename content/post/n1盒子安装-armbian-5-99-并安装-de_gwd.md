@@ -39,9 +39,9 @@ deb-src https://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib
 
 ### 2.安装
 安装必备软件
-
+```bash
 apt install dhcpcd5 lighttpd php-common php-cgi php-sqlite3 dhcpcd5 lighttpd php-common php-cgi php-sqlite3 
-
+```
 全自动安装，选择1
 ```bash
 apt install -y wget
