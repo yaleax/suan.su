@@ -327,6 +327,13 @@ sudo systemctl start v2ray
 tail -f /tmp/caddy.log 
 ```
  :tada: 完成！访问自己的域名试试吧!  
+
+### 7.1 安装 bbrplus
+```bash
+wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh"
+chmod +x tcp.sh
+./tcp.sh
+```
 ## 八、后话
 
 如果你当正常博客使用，你还需要把下面这些坑填上。    
