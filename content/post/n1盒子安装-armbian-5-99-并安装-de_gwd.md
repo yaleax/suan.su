@@ -27,24 +27,19 @@ DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所�
 
 ## 二、在境外服务器上安装De_GWD
 ### 1.选择 debian系统
-中科大源：
-deb https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
-deb-src https://mirrors.ustc.edu.cn/debian/ buster main contrib non-free
-
-deb https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
-deb-src https://mirrors.ustc.edu.cn/debian/ buster-updates main contrib non-free
-
-deb https://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib non-free
-deb-src https://mirrors.ustc.edu.cn/debian-security/ buster/updates main contrib non-free
-
-### 2.安装
-安装必备软件
+已有系统可以一键 dd 成 debian9
 ```bash
-apt install dhcpcd5 lighttpd php-common php-cgi php-sqlite3 dhcpcd5 lighttpd php-common php-cgi php-sqlite3 
+bash <(wget --no-check-certificate -qO- 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh') -d 9 -v 64 -a -firmware﻿
 ```
-全自动安装，选择1
+ssh root@你的 ip 地址
+密码：MoeClub.org
+### 2.安装
 ```bash
-apt install -y wget
+apt-get install ca-certificates
+```
+安装 bbrplush
+先选择2安装 bbr，安装好后会重启，重启后再次执行下面的标本，选址1，输入域名后，就全自动安装了。
+```bash
 bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/jacyl4/de_GWD/master/server)
 ```
 ### 3.配置参数
@@ -54,10 +49,14 @@ bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/jacyl4
 ### 1.在 N1上安装Debian系统
 [N1参考]<https://yuerblog.cc/2019/10/23/%e6%96%90%e8%ae%afn1-%e5%ae%8c%e7%be%8e%e5%88%b7%e6%9c%baarmbian%e6%95%99%e7%a8%8b/> 
 ### 2.在 Debian安装 De_GWD
+先安装必备软件
+```bash
+apt install dhcpcd5 lighttpd php-common php-cgi php-sqlite3 dhcpcd5 lighttpd php-common php-cgi php-sqlite3 
+```
 全自动安装，选择1，安装速度挺慢的，最好是挂梯子安装。
 ```bash
 apt install -y wget
-bash <(wget --no-check-certificate -qO- https://acccmi.cf/gwd/client)
+bash <(wget --no-check-certificate -qO- http://xz-nat.uovz.com:10178/gwd/client)
 ```
 ### 3.配置参数
 
