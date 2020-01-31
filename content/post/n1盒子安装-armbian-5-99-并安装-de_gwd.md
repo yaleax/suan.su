@@ -1,5 +1,5 @@
 ---
-title: 'N1盒子安装 Armbian 5.99,安装 De_gwd，旁路由。'
+title: 'N1盒子Armbian 5.98,安装 De_gwd，最快速的科学上网方案。'
 date: 2019-11-30T11:22:47.248Z
 lastmod: 2019-11-30T11:22:47.298Z
 ---
@@ -13,9 +13,10 @@ lastmod: 2019-11-30T11:22:47.298Z
 - D: DNS,域名解析系统，对抗 DNS 域名污染。     
 
 ### 2.功能
-- V2ray tls 1.3 ws   
-- Pi-hole    
-- WireGuard Server   
+- 科学上网方案：V2ray tls 1.3 ws   
+- 境外 DNS 解析方案：Pi-hole
+- 国内 DNS 解析方案：SmartDNS    
+- VPN方案：WireGuard   
 - 内网分流
 - CloudFlare DDNS   
 
@@ -23,7 +24,7 @@ lastmod: 2019-11-30T11:22:47.298Z
 
 ![](https://img.suan.su/Screen-Shot-2019-12-03-20-40-29.31.png)
 ### 3.工作原理
-DNS 部分是通过 v2ray tls we 的方式连接远程服务器获取DNS，所以你需要在客户端和服务端都安装De_GWD。
+
 
 ## 二、在境外服务器上安装De_GWD
 ### 1.选择 debian系统
