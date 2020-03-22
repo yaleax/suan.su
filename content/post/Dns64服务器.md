@@ -1,10 +1,10 @@
 ---
-title: "Dns64服务器"
-date: 2020-03-21T20:36:25+08:00
-draft: true
+title: Dns64服务器
+date: 2020-03-21T12:36:25.000Z
+lastmod: 2020-03-22T02:53:50.806Z
 tags:
   - dns64
-
+draft: true
 ---
 
 ### Dns64 server是什么
