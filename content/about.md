@@ -11,7 +11,7 @@ weight: 50
 * 博客代码托管：[GitHub](https://github.com/)
 * 网站服务器供应商：[Netlify](https://www.netlify.com/)
 * 博客后台管理平台：[Netlify CMS](https://www.netlifycms.org/)
-* 域名服务商：[RuTLD](https://ru-tld.ru/en/)
+* 域名服务商：[EU.ORG](https://nic.eu.org/)
 * DNS服务商：[CloudFlare](https://www.cloudflare.com/)
 * 域名证书：[CloudFlare](https://www.cloudflare.com/)
 * CDN网络加速：[CloudFlare](https://www.cloudflare.com/)
