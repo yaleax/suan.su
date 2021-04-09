@@ -49,7 +49,10 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/mast
 ##镜像文件在GoogleDrive
 wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
 ```
+﻿### 1.2 Windows7 精简包 账户：Administrator 密码：nat.ee
 
+```bash
+wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn.vhd.gz'
 
 
 ## 自定义 IP 安装
