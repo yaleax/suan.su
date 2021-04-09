@@ -44,19 +44,21 @@ Linux默认密码：`MoeClub.org`  or  `cxthhhhh.com`
 
 
 ```
-
 ##镜像文件在OneDrive
 wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-od.sh && chmod +x dd-od.sh && ./dd-od.sh
 
 ##镜像文件在GoogleDrive
 wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
 ```
+
 ﻿### 1.2 Windows7 精简包 账户：Administrator 密码：nat.ee
 
 ```bash
 wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn-efi.vhd.gz'
+```
 
 ### 1.2.1 激活
+
 ```bash
 slmgr.vbs -upk
 slmgr.vbs -ipk RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289
