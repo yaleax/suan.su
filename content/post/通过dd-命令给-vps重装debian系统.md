@@ -54,7 +54,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/mast
 \### 1.2 Windows7 精简包 账户：Administrator 密码：nat.ee
 
 ```bash
-wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn-efi.vhd.gz'
+wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn.vhd.gz'
 ```
 
 1. ### 1.2 激活
