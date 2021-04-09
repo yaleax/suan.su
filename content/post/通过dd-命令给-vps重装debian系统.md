@@ -1,10 +1,11 @@
 ---
 title: 通过dd 命令给 VPS重装debian系统
+author: Yaleax
 date: 2020-02-25T02:43:40.419Z
 lastmod: 2020-02-25T02:43:41.956Z
 menu:
   main:
-    weight: 0
+    weight: ""
 ---
 
 ##   前言  
