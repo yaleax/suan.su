@@ -1,7 +1,7 @@
 ---
 title: K2P老毛子padavan固件 设置开启ipv6
-date: 2020-03-21T11:57:27.000Z
-lastmod: 2020-03-22T02:54:04.660Z
+date: 2020-01-21T11:57:00.000Z
+lastmod: 2020-01-22T02:54:00.000Z
 tags:
   - k2p
 draft: false
