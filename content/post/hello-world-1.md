@@ -1,13 +1,8 @@
 ---
-title: hello world
+title: 给vps套上warp来解锁奈飞
 date: 2021-03-24T05:40:52.544Z
 lastmod: 2021-03-24T05:40:52.674Z
-tags:
-  - Netflix
-  - Linux
-  - Wireguard
 ---
-
 
 本教程只是用于能够修改内核的KVM产品，或者内核高于5.6的无法修改内核的产品。unamer -r 可以查看自己的内核。下面所有命令只在Debian/Ubuntu环境下工作。
 
