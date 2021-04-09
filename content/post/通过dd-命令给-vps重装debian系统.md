@@ -2,6 +2,7 @@
 title: 通过dd 命令给 VPS重装debian系统
 date: 2020-02-25T02:43:00.000Z
 lastmod: 2021-04-09T01:10:00.000Z
+comment: true
 ---
 
 ##   前言  
