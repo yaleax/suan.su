@@ -54,6 +54,14 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/mast
 ```bash
 wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn-efi.vhd.gz'
 
+### 1.2.1 激活
+```bash
+slmgr.vbs -upk
+slmgr.vbs -ipk RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289
+slmgr.vbs -skms kms.cangshui.net
+slmgr.vbs -ato
+slmgr.vbs -dlv
+```
 
 ## 自定义 IP 安装
 
