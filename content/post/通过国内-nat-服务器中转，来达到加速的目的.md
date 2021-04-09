@@ -26,11 +26,19 @@ systemctl enable iptables.service
 ### 2.开启端口转发功能
 
 ```bash
-#添加net.ipv4.ip_forward = 1到cloudiplc.conf    
-echo "net.ipv4.ip_forward = 1" >> /usr/lib/sysctl.d/cloudiplc.conf
-#启动cloudiplc.conf
-sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
+#添加net.ipv4.ip_forward = 1到sysctl.conf    
+echo "net.ipv4.ip_forward = 1" | sudo tee -a /etc/sysctl.conf
+#查看
+sudo sysctl -p
+
 ```
+
+### 3.查看本级ip地址
+
+```bash
+ip a
+```
+
 ## 三、iptales 规则
 请根据自己的需求选择
 ### 1.同端口号配置方案      
@@ -58,16 +66,30 @@ sysctl -p /usr/lib/sysctl.d/cloudiplc.conf
 -A POSTROUTING -d 1.1.1.1 -p tcp -m tcp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
 -A POSTROUTING -d 1.1.1.1 -p udp -m udp --dport 10000:65535 -j SNAT --to-source 本地服务器IP
 ```
+
+### 4.删除端口
+
+```bash
+#删除
+sudo iptables -t nat -D PREROUTING -p tcp --dport 21998 -j DNAT --to-destination 1.1.1.1:443
+sudo iptables -t nat -D PREROUTING -p udp --dport 21998 -j DNAT --to-destination 1.1.1.1:443
+sudo iptables -t nat -D POSTROUTING -p tcp -d 1.1.1.1 --dport 443 -j SNAT --to-source 本地服务器IP
+sudo iptables -t nat -D POSTROUTING -p udp -d 1.1.1.1 --dport 443 -j SNAT --to-source 本地服务器IP
+```
+
 ## 四、保存并重启
 
 ```bash
-#保存
-service iptables save
-#重启
-service iptables restart
+sudo apt install iptables-persistent -y
+sudo netfilter-persistent save
+sudo netfilter-persistent start
 ```
-## 五、完成 
-​:tada:​ 祝你好运。
+## 五、查看当前运行端口
+```bash
+​iptables -t nat -nL
+```
+
+
 
 -----
 
