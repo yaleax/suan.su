@@ -51,11 +51,12 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/mast
 wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/master/dd-gd.sh && chmod +x dd-gd.sh && ./dd-gd.sh
 ```
 
-\### 1.2 Windows7 精简包 账户：Administrator 密码：nat.ee
+### 1.2 Windows7 精简包 账户：Administrator 密码：nat.ee
 
 ```bash
 wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn.vhd.gz'
 ```
+
 
 1. ### 1.2 激活
 
@@ -105,5 +106,8 @@ bash InstallNET.sh -d 9 -v amd64 -a \
 
 - - -
 
-\[参考1]：[https://github.com/jacyl4/de_GWD](https://github.com/jacyl4/de_GWD/wiki/%E9%87%8D%E8%A3%85vps-debian-%E9%80%9A%E8%BF%87dd-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E6%96%B9%E5%BC%8F-%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95)
-\[参考2]：<https://moeclub.org/2018/04/03/603/>
+[参考1]：[https://github.com/jacyl4/de_GWD](https://github.com/jacyl4/de_GWD/wiki/%E9%87%8D%E8%A3%85vps-debian-%E9%80%9A%E8%BF%87dd-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E6%96%B9%E5%BC%8F-%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95)
+
+[参考2]：<https://moeclub.org/2018/04/03/603/>
+
+[参考3]：<http://a.iplc.best/natee/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85.txt>
