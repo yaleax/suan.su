@@ -62,8 +62,9 @@ wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/Lin
 
 ```bash
 slmgr.vbs -upk
-slmgr.vbs -ipk RHTBY-VWY6D-QJRJ9-JGQ3X-Q2289
-slmgr.vbs -skms kms.cangshui.net
+slmgr -skms skms.netnr.eu.org
+slmgr -ipk 33PXH-7Y6KF-2VJC9-XBBR8-HVTHH 
+slmgr -ato
 slmgr.vbs -ato
 slmgr.vbs -dlv
 ```
