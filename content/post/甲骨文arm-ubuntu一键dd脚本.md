@@ -29,6 +29,7 @@ sudo shutdown -r now
 
 ```
 ssh root@1.2.3.4
+
 ```
-﻿来源：
-[保姆级教程！甲骨文ARM DD成Debian10并升级内核成5.10-美国VPS综合讨论-全球主机交流论坛 - Powered by Discuz! (hostloc.com)](https://hostloc.com/thread-849672-1-1.html)
+-------------------------------------------------------
+[来源](https://hostloc.com/thread-849672-1-1.html)
