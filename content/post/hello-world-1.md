@@ -3,7 +3,6 @@ title: 给vps套上warp来解锁奈飞
 date: 2021-03-24T05:40:52.544Z
 lastmod: 2021-03-24T05:40:52.674Z
 ---
-
 本教程只是用于能够修改内核的KVM产品，或者内核高于5.6的无法修改内核的产品。unamer -r 可以查看自己的内核。下面所有命令只在Debian/Ubuntu环境下工作。
 
 ## 一、升级内核
@@ -17,6 +16,7 @@ bash <(wget --no-check-certificate -qO- https://raw.githubusercontent.com/jacyl4
 ## 二、Wireguard
 
 ### 2.1 安装Wireguard
+
 ```bash
 apt install wireguard
 ```
@@ -62,7 +62,7 @@ AllowedIPs = ::/0
 Endpoint = 162.159.192.1:2408
 ```
 
-```
+````
 [Interface]
 PrivateKey = GDA8jNe6kr2jXf9DjBtpobXjcFDO8fpa/IZWr3sYpVY=
 Address = 172.16.0.2/32
@@ -79,7 +79,7 @@ Endpoint = [2606:4700:d0::a29f:c001]:2408
 
 ```bash
 sudo cp wgcf-profile.conf /etc/wireguard/wgcf.conf
-```
+````
 
 ### 3.7 启动Wireguard
 
@@ -96,7 +96,7 @@ curl -6 ip.p3terx.com
 curl -4 ip.p3terx.com
 ```
 
-### 3.9 关闭Wirguard 
+### 3.9 关闭Wirguard
 
 ```bash
 sudo wg-quick down wgcf
@@ -133,7 +133,7 @@ grep -qE '^[ ]*label[ ]*2002::/16[ ]*2' /etc/gai.conf || echo 'label 2002::/16  
 ]
 ```
 
-## 五、一些常用命令
+## 五、5.1一些常用命令
 
 ```bash
 nano /opt/de_GWD/vtrui/config.json
@@ -141,7 +141,20 @@ systemctl restart vtrui
 nano /etc/wireguard/wgcf.conf
 ```
 
+## 六 、5.2 一键到底
 
+仅支持Debian 10/Ubuntu 20.04系统，根据自己需求选择以下脚本1或者脚本2（有无成功可查看脚本末尾提示）
+脚本1：IPV4是WARP分配的IP，IPV6是VPS本地IP
+
+```
+wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp4.sh|bash
+```
+
+脚本2：IPV4与IPV6都是WARP分配的IP
+
+```
+wget -qO- https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/warp64.sh|bash
+```
 
 ## 六、引用
 
@@ -153,3 +166,4 @@ nano /etc/wireguard/wgcf.conf
 
 [关于v2ray在搭建了cloudflare warp的机器上无法按照系统路由流量的解决方法 – LOUKKY的博客](https://loukky.com/archives/1507)
 
+https://github.com/YG-tsj/EUserv-warp
