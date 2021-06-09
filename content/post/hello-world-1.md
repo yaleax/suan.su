@@ -62,6 +62,19 @@ AllowedIPs = ::/0
 Endpoint = 162.159.192.1:2408
 ```
 
+```
+[Interface]
+PrivateKey = GDA8jNe6kr2jXf9DjBtpobXjcFDO8fpa/IZWr3sYpVY=
+Address = 172.16.0.2/32
+Address = fd01:5ca1:ab1e:8b43:4d28:9678:4fbb:1f61/128
+DNS = 2001:4860:4860::8888,2001:4860:4860::8844,8.8.8.8,8.8.4.4
+MTU = 1280
+[Peer]
+PublicKey = bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+AllowedIPs = 0.0.0.0/0
+Endpoint = [2606:4700:d0::a29f:c001]:2408
+```﻿
+
 ### 3.6 移动配置到Wireguard目录
 
 ```bash
