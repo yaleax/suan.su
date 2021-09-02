@@ -7,7 +7,6 @@ lastmod: 2021-09-02T04:11:49.852Z
 
 代号 Bullseye 的 [Debian 11](https://www.debugpoint.com/2021/05/debian-11-features/) 即将正式发布。2021 年 7 月 15 日，Debian 11 进入完全冻结状态，这意味着发行在即。虽然官方发布日期还没有最终确定，但你现在就可以从 Debian 10 安装或升级到 Debian 11。
 
-以下是方法。
 
 ### 前提条件
 
@@ -20,6 +19,8 @@ lastmod: 2021-09-02T04:11:49.852Z
 - 并为你的系统留出足够的停机时间。因为根据你的系统配置，Debian 版本升级需要时间大约在 1.5 小时到 2 小时之间。
 
 ### 将 Debian 10 Buster 升级到 11 Bullseye
+
+#### 1.获取软件包更新
 
 确保你的系统是最新的，而且你的软件包列表是最新的。
 
@@ -34,6 +35,8 @@ sudo apt install gcc-8-base
 ```
 
 ![upgrade debian – system check](https://img.linux.net.cn/data/attachment/album/202108/04/114435o024zj0x0hy4vtxm.jpg)
+
+#### 2.修改源文件
 
 打开 ` /etc/apt/sources.list`，通过注释 Debian 10 buster 包，而使用 bullseye 仓库进行更新。
 
@@ -58,7 +61,7 @@ deb http://ftp.debian.org/debian bullseye-backports main contrib non-free
 
 按 `Ctrl + O` 保存文件，按 `Ctrl + X` 退出 `nano`。
 
-更新一次系统仓库列表，以验证仓库的添加情况。
+#### 3.更新一次系统仓库列表，以验证仓库的添加情况。
 
 ```
 sudo apt update
@@ -68,6 +71,8 @@ sudo apt update
 
 现在，通过运行下面的命令开始升级过程。基本安装的下载大小约为 1.2GB。这可能会根据你的系统配置而有所不同。
 
+#### 4.升级系统
+
 ```
 sudo apt full-upgrade
 ```
@@ -75,7 +80,7 @@ sudo apt full-upgrade
 ![Debian upgrade start](https://img.linux.net.cn/data/attachment/album/202108/04/114436z9i7iyq7xkzy9iec.jpg)
 
 
-这个命令需要时间。但不要让系统无人看管。因为升级过程中需要各种输入。
+这个命令需要时间。但不要让系统无人看管。因为升级过程中需要各种输入。
 
 ![lib6 config](https://img.linux.net.cn/data/attachment/album/202108/04/114437isatsv93a9krva0r.jpg)
 
@@ -122,4 +127,5 @@ deb http://mirrors.aliyun.com/debian-security buster/updates main contrib non-fr
 
 -------
 抄袭：技术中国 (https://linux.cn/article-13647-1.html)
+
 抄袭：de_GWD （https://jacyl4.github.io/posts/debian-upgrade/）
