@@ -1,5 +1,5 @@
 ---
-title: 通过dd 命令给 VPS重装debian系统
+title: 通过dd 命令给 VPS重装debian 11 系统
 date: 2020-02-25T02:43:00.000Z
 lastmod: 2021-04-09T01:10:00.000Z
 comment: false
@@ -14,10 +14,10 @@ weight: 1
 
 ### 1.示例代码
 
-下面这个是安装 Debian10,密码是: `MoeClub.org`
+下面这个是安装 Debian11,密码是: `MoeClub.org`
 
 ```bash
-bash <(wget --no-check-certificate -qO- 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh') -d 10 -v 64 -a
+bash <(wget --no-check-certificate -qO- 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh') -d 11 -v 64 -a
 ```
 
 参照下面的提示,可以安装其他系统和版本
