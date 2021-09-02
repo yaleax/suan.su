@@ -1,5 +1,5 @@
 ---
-title: Debian10 升级 Debian 11
+title: Debian 10 升级 Debian 11
 date: 2021-09-02T04:11:49.773Z
 lastmod: 2021-09-02T04:11:49.852Z
 ---
@@ -101,5 +101,25 @@ sudo apt --purge autoremove
 cat /etc/os-release
 ```
 
+Debian9 升级到 Debian 10 是一样的过程，修改一下源，下面是ebian 10 的源。
+
+
+外国
+
+```
+deb http://deb.debian.org/debian buster main contrib non-free
+deb http://deb.debian.org/debian buster-updates main contrib non-free
+deb http://deb.debian.org/debian-security buster/updates main contrib non-free
+```
+
+中国
+
+```
+deb http://mirrors.aliyun.com/debian buster main contrib non-free
+deb http://mirrors.aliyun.com/debian buster-updates main contrib non-free
+deb http://mirrors.aliyun.com/debian-security buster/updates main contrib non-free
+```
+
 -------
 抄袭：技术中国 (https://linux.cn/article-13647-1.html)
+抄袭：de_GWD （https://jacyl4.github.io/posts/debian-upgrade/）
