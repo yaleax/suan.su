@@ -48,7 +48,10 @@ sudo apt install gcc-8-base
 在文件的末尾添加以下几行。
 
 ```
-deb http://deb.debian.org/debian bullseye main contrib non-freedeb http://deb.debian.org/debian bullseye-updates main contrib non-freedeb http://security.debian.org/debian-security bullseye-security maindeb http://ftp.debian.org/debian bullseye-backports main contrib non-free
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb http://security.debian.org/debian-security bullseye-security main
+deb http://ftp.debian.org/debian bullseye-backports main contrib non-free
 ```
 
 ![Add Debian 11 lines](https://img.linux.net.cn/data/attachment/album/202108/04/114436n0qqjzqs43zqjv3q.jpg)
