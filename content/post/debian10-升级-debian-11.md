@@ -35,8 +35,6 @@ sudo apt install gcc-8-base
 
 ![upgrade debian – system check](https://img.linux.net.cn/data/attachment/album/202108/04/114435o024zj0x0hy4vtxm.jpg)
 
-*upgrade debian – system check*
-
 打开 ` /etc/apt/sources.list`，通过注释 Debian 10 buster 包，而使用 bullseye 仓库进行更新。
 
 、、、
@@ -46,8 +44,6 @@ nano /etc/apt/sources.list
 注释所有的 buster 仓库，在行的开头加上 `#`。
 
 ![Comment the Debian 10 lines](https://img.linux.net.cn/data/attachment/album/202108/04/114436hmapipjumm4k5443.jpg)
-
-*Comment the Debian 10 lines*
 
 在文件的末尾添加以下几行。
 
@@ -59,8 +55,6 @@ deb http://ftp.debian.org/debian bullseye-backports main contrib non-free
 ```
 
 ![Add Debian 11 lines](https://img.linux.net.cn/data/attachment/album/202108/04/114436n0qqjzqs43zqjv3q.jpg)
-
-*Add Debian 11 lines*
 
 按 `Ctrl + O` 保存文件，按 `Ctrl + X` 退出 `nano`。
 
@@ -80,17 +74,14 @@ sudo apt full-upgrade
 
 ![Debian upgrade start](https://img.linux.net.cn/data/attachment/album/202108/04/114436z9i7iyq7xkzy9iec.jpg)
 
-*Debian upgrade start*
 
 这个命令需要时间。但不要让系统无人看管。因为升级过程中需要各种输入。
 
 ![lib6 config](https://img.linux.net.cn/data/attachment/album/202108/04/114437isatsv93a9krva0r.jpg)
 
-*lib6 config*
 
 ![sudoers file](https://img.linux.net.cn/data/attachment/album/202108/04/114437iknli2hdali27tpk.jpg)
 
-*sudoers file*
 
 完成后，你可以用以下命令重启系统。
 
