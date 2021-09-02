@@ -37,7 +37,11 @@ sudo apt install gcc-8-base
 
 *upgrade debian – system check*
 
-打开 `nano /etc/apt/sources.list`，通过注释 Debian 10 buster 包，而使用 bullseye 仓库进行更新。
+打开 ` /etc/apt/sources.list`，通过注释 Debian 10 buster 包，而使用 bullseye 仓库进行更新。
+
+、、、
+nano /etc/apt/sources.list
+、、、
 
 注释所有的 buster 仓库，在行的开头加上 `#`。
 
