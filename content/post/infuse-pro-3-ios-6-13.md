@@ -5,4 +5,4 @@ lastmod: 2021-12-31T13:57:30.473Z
 ---
 
 
-使用safari浏览器打开后，点击[install](itms-services://?action=download-manifest&url=https://cloud.ldiglobal.org/s/Z5kYeQrZaLW5Nb5/download/manifest.plist)安装。
+使用safari浏览器打开后，点击[install](<itms-services://?action=download-manifest&url=https://cloud.ldiglobal.org/s/Z5kYeQrZaLW5Nb5/download/manifest.plist>)安装。
