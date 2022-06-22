@@ -14,7 +14,7 @@ curl -fLO https://raw.githubusercontent.com/bohanyang/debi/master/debi.sh
 3.执行脚本
 
 ```
-sudo ./debi.sh --architecture arm64 --user root --password password
+sudo bash debi.sh --architecture arm64 --user root --password password
 ```
 
 4.设置默认root的密码为password，登陆成功之后记得自己输入passwd修改密码！！！
