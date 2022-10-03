@@ -93,7 +93,15 @@ nano config.yaml
 
 {{% notice info config.yaml配置 %}}
 
-\[去 GitHub 自己复制吧]<https://github.com/ConnersHua/Profiles/edit/master/Clash/Pro.yaml>
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 0.0.0.0:9090
+external-ui: ~/.config/clash/dashboard
+secret: "1235"
+dns:
+    default-nameserver: \[127.0.0.1]
 
 {{% /notice %}}
 
@@ -144,7 +152,7 @@ v2ray配置如下
      "settings": {
      "servers": [{
      "address": "127.0.0.1",
-     "port": 7889,
+     "port": 7890,
      "auth": "noauth"
       }]
      }
