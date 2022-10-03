@@ -60,11 +60,11 @@ systemctl daemon-reload
 systemctl enable clash
 ```
 
-{{% notice tip 其他功能%}}\
-service clash start    # 启动\
-service clash stop     # 停止\
-service clash restart  # 重启\
-service clash status   # 状态\
+{{% notice tip 其他功能%}}
+service clash start    # 启动
+service clash stop     # 停止
+service clash restart  # 重启
+service clash status   # 状态
 {{% /notice %}}
 
 ### 4.下载 dashboard 控制面板
@@ -91,8 +91,9 @@ cd ~/.config/
 nano config.yaml
 ```
 
-{{% notice info config.yaml配置 %}}
+config.yaml配置
 
+```bash
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -101,9 +102,8 @@ external-controller: 0.0.0.0:9090
 external-ui: ~/.config/clash/dashboard
 secret: "1235"
 dns:
-    default-nameserver: \[127.0.0.1]
-
-{{% /notice %}}
+    default-nameserver: [127.0.0.1]
+```
 
 ### 6.启动前
 
@@ -113,7 +113,7 @@ dns:
 
 ```bash
 service clash start
-```
+````
 
 ### 8.:tada: 完成
 
