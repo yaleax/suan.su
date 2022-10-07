@@ -39,6 +39,21 @@ Usage:
 # -a/-m : 询问是否能进入VNC自行操作. -a 为不提示(一般用于全自动安装), -m 为提示.
 ```
 
+
+
+
+
+```
+url -fLO https://raw.githubusercontent.com/bohanyang/debi/master/debi.sh && chmod a+rx debi.sh
+
+sudo ./debi.sh --cdn --network-console --ethx --bbr --user root --password <新系统用户密码>
+
+```
+
+* 
+
+
+
 ### 1.1 整合代码包含windows，
 
 Linux默认密码：`MoeClub.org`  or  `cxthhhhh.com` 
@@ -56,7 +71,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/veip007/dd/mast
 ```bash
 wget --no-check-certificate -O InstallNET.sh 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh' && bash InstallNET.sh -dd 'http://a.iplc.best/natee/lite/win7-ent-sp1-x64-cn/win7-ent-sp1-x64-cn.vhd.gz'
 ```
-
 
 1. ### 1.2 激活
 
@@ -96,19 +110,27 @@ bash InstallNET.sh -d 9 -v amd64 -a \
 --ip-gate 10.10.10.1
 ```
 
-{{% notice info 备注 %}}\
+{{% notice info 备注 %}}
+
 第1行：下载萌咖大佬的脚本
+
 第2行：改dns为1.1.1.1
+
 第3行：想安装 debian几，就把数字9改成几。
+
 第4行：改root预设密码为admin
+
 第5行：改镜像源
-第6-8行：填写2查看的原 IP 地址\
+
+第6-8行：填写2查看的原 IP 地址
+
+\
 {{% /notice %}}
 
 - - -
 
-[参考1]：[https://github.com/jacyl4/de_GWD](https://github.com/jacyl4/de_GWD/wiki/%E9%87%8D%E8%A3%85vps-debian-%E9%80%9A%E8%BF%87dd-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E6%96%B9%E5%BC%8F-%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95)
+\[参考1]：[https://github.com/jacyl4/de_GWD](https://github.com/jacyl4/de_GWD/wiki/%E9%87%8D%E8%A3%85vps-debian-%E9%80%9A%E8%BF%87dd-%E5%91%BD%E4%BB%A4%E8%A1%8C-%E6%96%B9%E5%BC%8F-%E6%AD%A3%E7%A1%AE%E7%94%A8%E6%B3%95)
 
-[参考2]：<https://moeclub.org/2018/04/03/603/>
+\[参考2]：<https://moeclub.org/2018/04/03/603/>
 
-[参考3]：<http://a.iplc.best/natee/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85.txt>
+\[参考3]：<http://a.iplc.best/natee/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85.txt>
